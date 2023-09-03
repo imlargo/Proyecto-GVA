@@ -55,6 +55,7 @@ class PlaneScene(LinearTransformationScene):
     
         self.play(Transform(vector1, newVector1))
         self.wait(1)
+        self.play(ApplyMethod(vector2.shift, newVector1.get_end()))
         
         self.wait()
         self.play(Create(vector3), Create(label3))
