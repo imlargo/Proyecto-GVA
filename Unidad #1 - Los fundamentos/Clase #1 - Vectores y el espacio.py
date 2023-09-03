@@ -27,13 +27,13 @@ class PlaneScene(LinearTransformationScene):
             include_foreground_plane = True,
             #background_plane_kwargs = None,
             #foreground_plane_kwargs = None,
-            show_coordinates = True,
-            show_basis_vectors = True,
+            show_coordinates = False,
+            show_basis_vectors = False,
             leave_ghost_vectors = True
             )
         
     def construct(self):
-        self.sum_vectores([1,2], [-2, -1])
+        self.sum_vectores([2,1], [-3, 1])
         self.wait()
         
         
@@ -57,6 +57,8 @@ class PlaneScene(LinearTransformationScene):
         newVector1 = Vector(np.array(v1), color = PURPLE_A)
         
         sumaVec = (MathTex(r"\vec{A} + \vec{B} = \vec{X}")).to_corner(DOWN + LEFT)
+        sumaVec2 = (MathTex(r"\vec{B} + \vec{A} = \vec{X}")).to_corner(DOWN + LEFT)
+        
         sumaComp = MathTex(r"\begin{bmatrix} 1\\ 2\\ \end{bmatrix} + \begin{bmatrix} 2\\ -1\\ \end{bmatrix}").to_corner(DOWN + LEFT)
         sumaResult = MathTex(r"\begin{bmatrix} 1\\ 2\\ \end{bmatrix} + \begin{bmatrix} 2\\ -1\\ \end{bmatrix} = \begin{bmatrix} 3\\ 1\\ \end{bmatrix}").to_corner(DOWN + LEFT)
         
@@ -66,13 +68,15 @@ class PlaneScene(LinearTransformationScene):
         self.play(Create(titulo1))
         
         self.play(Write(sumaVec))
-        self.wait(1)
-        self.play(Transform(sumaVec, sumaComp))
-        self.wait(1)
+        self.wait()
+        #self.play(Transform(sumaVec, sumaComp))
+        
+        #self.wait(1)
         self.play(ApplyMethod(vector1.shift, vector2.get_end()))
-        self.play(Create(vector3), Create(label3), Transform(sumaComp, sumaResult))
+        self.play(Create(vector3), Create(label3)) #, Transform(sumaComp, sumaResult)
         
         #Segunda parte ---
+        self.play(Transform(sumaVec, sumaVec2))
         self.wait(1)
         self.play(Transform(titulo1, titulo2), FadeOut(vector3), FadeOut(label3))
         self.wait()
