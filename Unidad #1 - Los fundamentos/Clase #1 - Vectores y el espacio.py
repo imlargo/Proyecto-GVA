@@ -56,9 +56,9 @@ class PlaneScene(LinearTransformationScene):
         
         newVector1 = Vector(np.array(v1), color = PURPLE_A)
         
-        sumaVec = (MathTex(r"\vec{A} + \vec{B} = \vec{X}")).to_corner(DOWN + LEFT).scale(0.7)
-        sumaComp = MathTex(r"\begin{bmatrix} 1\\ 2\\ \end{bmatrix} + \begin{bmatrix} 2\\ -1\\ \end{bmatrix}").to_corner(DOWN + LEFT).scale(0.7)
-        sumaResult = MathTex(r"\begin{bmatrix} 1\\ 2\\ \end{bmatrix} + \begin{bmatrix} 2\\ -1\\ \end{bmatrix} = \begin{bmatrix} 3\\ 1\\ \end{bmatrix}").to_corner(DOWN + LEFT).scale(0.7)
+        sumaVec = (MathTex(r"\vec{A} + \vec{B} = \vec{X}")).to_corner(DOWN + LEFT)
+        sumaComp = MathTex(r"\begin{bmatrix} 1\\ 2\\ \end{bmatrix} + \begin{bmatrix} 2\\ -1\\ \end{bmatrix}").to_corner(DOWN + LEFT)
+        sumaResult = MathTex(r"\begin{bmatrix} 1\\ 2\\ \end{bmatrix} + \begin{bmatrix} 2\\ -1\\ \end{bmatrix} = \begin{bmatrix} 3\\ 1\\ \end{bmatrix}").to_corner(DOWN + LEFT)
         
         self.play(Create(vector1), Create(label1))
         self.play(Create(vector2), Create(label2))
@@ -83,11 +83,9 @@ class PlaneScene(LinearTransformationScene):
         
         self.wait()
         self.play(Create(vector3), Create(label3))
-        self.wait(2)
-
-        
+        self.wait(2)    
         pass
-    
+        
     def resta_vectores(self):    
         pass
     
