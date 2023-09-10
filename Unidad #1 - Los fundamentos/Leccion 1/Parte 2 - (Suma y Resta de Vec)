@@ -170,4 +170,4 @@ class PlaneScene(LinearTransformationScene):
         self.wait(1)
         self.play(Transform(minusV2, aux), FadeOut(vector3), FadeOut(label3), FadeOut(name3), Transform(nameM2, aux_name))
         
-        self.play(FadeOut(minusV2), FadeOut(vector1), FadeOut(nameM2),FadeOut(name1), FadeOut(Punto))
+        self.play(FadeOut(minusV2), FadeOut(vector1), FadeOut(nameM2),FadeOut(name1), FadeOut(punto))
