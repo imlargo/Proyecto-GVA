@@ -1,5 +1,3 @@
-from manim import *
-
 class LineScene(Scene):
     def construct(self):
         recta = NumberLine(
@@ -89,7 +87,7 @@ class PlaneScene(LinearTransformationScene):
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(label), FadeOut(lineaX), FadeOut(lineaY))
         self.wait()
 
-        vectors = [ [2, 1], [-3, -1], [2,-3], [-4, 1] ]
+        vectors = [ [5, 1], [-3, -1], [2,-3], [-4, 1] ]
 
         x = ValueTracker(0)
         y = ValueTracker(0)
