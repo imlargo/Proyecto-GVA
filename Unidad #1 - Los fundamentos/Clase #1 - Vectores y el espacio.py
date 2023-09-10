@@ -24,6 +24,7 @@ class PlaneScene(LinearTransformationScene):
 
             
     def trig(self):
+
         angulo = ValueTracker(0)
 
         def get_scaled_vector():
@@ -51,11 +52,18 @@ class PlaneScene(LinearTransformationScene):
             return Dot(point = [3 * cos(angulo.get_value()), 3 * sin(angulo.get_value()), 0], color = PURPLE_A)#.scale(3)
         
         def tex_cos():
-            return MathTex(f"cos({int(angulo.get_value())})").scale(0.7).move_to(np.array([3.5,0,0]))
+            tex = f"cos({int(angulo.get_value())}" + r"^{\circ})"
+            return MathTex(tex).scale(0.7).move_to(np.array([4, 0.5,0]))
 
         def tex_sin():
-            return MathTex(f"sin({int(angulo.get_value())})").scale(0.7).move_to(np.array([0,3.5,0]))
+            tex = f"sin({int(angulo.get_value())}" + r"^{\circ})"
+            return MathTex(tex).scale(0.7).move_to(np.array([0,3.5,0]))
 
+        def tex_vec():
+            x = f"cos({int(angulo.get_value())}" + r"^{\circ})"
+            y = f"sin({int(angulo.get_value())}" + r"^{\circ})"
+            return Matrix([[x], [y]]).scale(0.7).move_to(np.array([5,2.5,0]))
+        
         graph = ImplicitFunction(lambda x, y: (x ** 2) +  (y ** 2) - 9,color = PURPLE_A)
 
         v = always_redraw(get_scaled_vector)
@@ -66,14 +74,16 @@ class PlaneScene(LinearTransformationScene):
         pointY = always_redraw(get_point_y)
         texCos = always_redraw(tex_cos)
         texSin = always_redraw(tex_sin)
+        label = always_redraw(tex_vec)
         
 
-        self.play(Create(v), Create(graph), Create(texCos), Create(texSin), Create(point), Create(lineCos), Create(lineSin), Create(pointX), Create(pointY))
+        self.play(Create(v), Create(graph), Create(label), Create(texCos), Create(texSin), Create(point), Create(lineCos), Create(lineSin), Create(pointX), Create(pointY))
         self.play(angulo.animate.set_value(120), run_time = 3)
         self.wait()
         self.play(angulo.animate.set_value(-60), run_time = 2)
         self.wait()
-        self.play(angulo.animate.set_value(270), run_time = 3)
+        self.play(angulo.animate.set_value(270), run_time = 3)        
+        
 
         
     def desc(self):
