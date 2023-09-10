@@ -41,7 +41,8 @@ class PlaneScene(LinearTransformationScene):
         pass
         
     def desc(self):
-                v = [2,1]
+        
+        v = [2,1]
         v_ort = ortogonal(v)
         
         x = [2, 3]
@@ -56,6 +57,10 @@ class PlaneScene(LinearTransformationScene):
         label3 = vX.coordinate_label(color = YELLOW_C).scale(0.7)
         
         titulo1 = Tex("Descomposicion ortogonal").scale(0.7).to_corner(UP + RIGHT)
+        
+        msg = (MathTex(r"\vec{A} \cdot \vec{B} = 0")).scale(0.7).to_corner(UP + LEFT)
+        msg2 = (MathTex(r"\vec{B} = \vec{A}^{\perp}")).scale(0.7).to_corner(UP + LEFT)
+        msg3 = (MathTex(r"\vec{A} \cdot \vec{B} = 0")).scale(0.7).to_corner(UP + LEFT)
 
         sum1 = (MathTex(r"\vec{X} = P_{\vec{A}}(\vec{X}) + P_{\vec{B}}(\vec{X})")).scale(0.7).to_corner(UP + LEFT)
         sum2 = (MathTex(r"\vec{X} = P_{\vec{A}}(\vec{X}) + P_{\vec{A}^{\perp}}(\vec{X})")).scale(0.7).to_corner(UP + LEFT)
@@ -64,6 +69,15 @@ class PlaneScene(LinearTransformationScene):
         self.play(Create(vector1), run_time = 0.5) #Create(label1)
         self.play(Create(vector2), run_time = 0.5) # Create(label2)
         
+
+        self.play(Write(msg))
+        self.wait()
+        self.play(Transform(msg, msg2))
+        self.wait()
+        self.play(Transform(msg, msg3))
+        self.wait()
+        self.play(FadeOut(msg))
+
         self.play(Create(vX))
         self.wait()
 
@@ -88,13 +102,16 @@ class PlaneScene(LinearTransformationScene):
         line = Line(vX.get_end(), pB.get_end())
         self.play(Create(line))
         self.play(Transform(aux, pB))
-        self.add(pA)
+        self.add(pB)
         self.remove(aux)
         self.play(FadeOut(line))
         
-        self.play(ApplyMethod(pA.shift, pB.get_end()))
+        self.play(FadeOut(vector1), FadeOut(vector2))
         
+        self.play(ApplyMethod(pA.shift, pB.get_end()))
                 
+
+        
     def sum_vectores(self, v1, v2):
         vector1 = Vector(v1, color = PURPLE_A)
         label1 = vector1.coordinate_label(color = PURPLE_A).scale(0.7)
