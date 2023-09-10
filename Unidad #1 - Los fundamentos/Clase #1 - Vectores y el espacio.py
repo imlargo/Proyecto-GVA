@@ -40,7 +40,61 @@ class PlaneScene(LinearTransformationScene):
     def vectores(self):
         pass
         
+    def desc(self):
+                v = [2,1]
+        v_ort = ortogonal(v)
         
+        x = [2, 3]
+        
+        vector1 = Vector(v, color = PURPLE_A)
+        label1 = vector1.coordinate_label(color = PURPLE_A).scale(0.7)
+        
+        vector2 = Vector(v_ort, color = PURPLE_A)
+        label2 = vector2.coordinate_label(color = PURPLE_A).scale(0.7)
+        
+        vX = Vector(x, color = YELLOW_C)
+        label3 = vX.coordinate_label(color = YELLOW_C).scale(0.7)
+        
+        titulo1 = Tex("Descomposicion ortogonal").scale(0.7).to_corner(UP + RIGHT)
+
+        sum1 = (MathTex(r"\vec{X} = P_{\vec{A}}(\vec{X}) + P_{\vec{B}}(\vec{X})")).scale(0.7).to_corner(UP + LEFT)
+        sum2 = (MathTex(r"\vec{X} = P_{\vec{A}}(\vec{X}) + P_{\vec{A}^{\perp}}(\vec{X})")).scale(0.7).to_corner(UP + LEFT)
+
+        self.play(Create(titulo1))
+        self.play(Create(vector1), run_time = 0.5) #Create(label1)
+        self.play(Create(vector2), run_time = 0.5) # Create(label2)
+        
+        self.play(Create(vX))
+        self.wait()
+
+        self.play(Create(sum1))
+        self.wait()
+        self.play(Transform(sum1, sum2))
+        self.wait()
+
+        pA = Vector(proyect(x, v), color = TEAL_A)
+        pB = Vector(proyect(x, v_ort), color = TEAL_A)
+        
+        aux = vX.copy()
+        line = Line(vX.get_end(), pA.get_end())
+        self.play(Create(line))
+        self.play(Transform(aux, pA))
+        self.add(pA)
+        self.remove(aux)
+        self.play(FadeOut(line))
+        self.wait()
+        
+        aux = vX.copy()
+        line = Line(vX.get_end(), pB.get_end())
+        self.play(Create(line))
+        self.play(Transform(aux, pB))
+        self.add(pA)
+        self.remove(aux)
+        self.play(FadeOut(line))
+        
+        self.play(ApplyMethod(pA.shift, pB.get_end()))
+        
+                
     def sum_vectores(self, v1, v2):
         vector1 = Vector(v1, color = PURPLE_A)
         label1 = vector1.coordinate_label(color = PURPLE_A).scale(0.7)
