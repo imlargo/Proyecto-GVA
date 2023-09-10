@@ -1,11 +1,19 @@
+import numpy as np
+
+def sin(x):
+    return np.sin(np.radians(x))
+
+def cos(x):
+    return np.cos(np.radians(x))
+    
 def ortogonal(v):
     return [-v[1], v[0]]
+    
 
 def rot_vec(vector, angulo):
-    angle_radians = np.radians(angulo)
     x, y = np.array(vector)
-    x_new = x * np.cos(angle_radians) - y * np.sin(angle_radians)
-    y_new = x * np.sin(angle_radians) + y * np.cos(angle_radians)
+    x_new = x * cos(angulo) - y * sin(angulo)
+    y_new = x * sin(angulo) + y * cos(angulo)
     return np.array([x_new, y_new]).tolist()
 
 
