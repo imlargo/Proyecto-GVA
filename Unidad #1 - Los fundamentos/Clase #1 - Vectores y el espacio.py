@@ -24,7 +24,7 @@ class PlaneScene(LinearTransformationScene):
 
             
     def trig(self):
-        angulo = ValueTracker(30)
+        angulo = ValueTracker(0)
 
         def get_scaled_vector():
             v = Vector([3 * cos(angulo.get_value()), 3 * sin(angulo.get_value())], color = TEAL_C)            
@@ -47,14 +47,14 @@ class PlaneScene(LinearTransformationScene):
             return Dot(point = [0, 3 * sin(angulo.get_value()), 0], color = GREEN_C)#.scale(3)
         
         def get_point():
+            clear_output()
             return Dot(point = [3 * cos(angulo.get_value()), 3 * sin(angulo.get_value()), 0], color = PURPLE_A)#.scale(3)
         
-
         def tex_cos():
-            return MathTex(f"cos({int(angulo.get_value())})").shift(0.5 * UP)
+            return MathTex(f"cos({int(angulo.get_value())})").scale(0.7).move_to(np.array([3.5,0,0]))
 
         def tex_sin():
-            return MathTex(f"sin({int(angulo.get_value())})").shift(0.5 * RIGHT)
+            return MathTex(f"sin({int(angulo.get_value())})").scale(0.7).move_to(np.array([0,3.5,0]))
 
         graph = ImplicitFunction(lambda x, y: (x ** 2) +  (y ** 2) - 9,color = PURPLE_A)
 
@@ -73,8 +73,7 @@ class PlaneScene(LinearTransformationScene):
         self.wait()
         self.play(angulo.animate.set_value(-60), run_time = 2)
         self.wait()
-        self.play(angulo.animate.set_value(270), run_time = 3)        
-        
+        self.play(angulo.animate.set_value(270), run_time = 3)
 
         
     def desc(self):
