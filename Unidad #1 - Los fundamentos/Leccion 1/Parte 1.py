@@ -89,12 +89,7 @@ class PlaneScene(LinearTransformationScene):
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(label), FadeOut(lineaX), FadeOut(lineaY))
         self.wait()
 
-        vectors = [
-            [2, 1],
-            [-3, -1],
-            [2,-3],
-            [-4, 1],
-        ]
+        vectors = [ [2, 1], [-3, -1], [2,-3], [-4, 1] ]
 
         x = ValueTracker(0)
         y = ValueTracker(0)
@@ -103,12 +98,11 @@ class PlaneScene(LinearTransformationScene):
         lineaX = always_redraw(lambda: Line(np.array([0,0,0]), np.array([x.get_value(),0,0]), color = GREEN_C)) 
         lineaY = always_redraw(lambda: Line(np.array([x.get_value(),0,0]), np.array([x.get_value(),y.get_value(),0]), color = RED_C))
         vector = always_redraw(lambda: Vector([x.get_value(), y.get_value()], color = TEAL_C))
-        name = always_redraw(lambda: MathTex(r"\vec{v}", color = PURPLE_A).scale(0.8).shift((vector.get_end() - vector.get_start()) / 2))
-        label = always_redraw(lambda: vector.coordinate_label(color = TEAL_C))
+        name = always_redraw(lambda: MathTex(r"\vec{v}", color = PURPLE_A).scale(0.8).shift((vector.get_end() - vector.get_start()) / 2).shift(UP * 0.5))
 
-        self.play(Create(lineaX), Create(lineaY), Create(vector), Create(label), Create(punto), Create(name))
+        self.play(Create(lineaX), Create(lineaY), Create(vector), Create(punto), Create(name))
 
         for v1, v2 in vectors:
             self.play(x.animate.set_value(v1), y.animate.set_value(v2), run_time = 2)
         
-        self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(label), FadeOut(lineaX), FadeOut(lineaY))
+        self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(lineaX), FadeOut(lineaY))
