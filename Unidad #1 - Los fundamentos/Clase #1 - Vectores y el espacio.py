@@ -94,7 +94,7 @@ class PlaneScene(LinearTransformationScene):
         self.wait(1)
         self.play(ApplyMethod(pA.shift, ORIGIN))
         self.wait()
-        self.play(ApplyMethod(vector2.shift, newVector1.get_end()))
+        self.play(ApplyMethod(pB.shift, pA.get_end()))
         
 
         
