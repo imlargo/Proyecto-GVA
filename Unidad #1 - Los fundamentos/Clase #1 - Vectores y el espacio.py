@@ -21,6 +21,61 @@ class PlaneScene(LinearTransformationScene):
         
     def vectores(self):
         pass
+
+            
+    def trig(self):
+        angulo = ValueTracker(30)
+
+        def get_scaled_vector():
+            v = Vector([3 * cos(angulo.get_value()), 3 * sin(angulo.get_value())], color = TEAL_C)            
+            return v
+        
+        def get_line_x():
+            x = [3 * cos(angulo.get_value()), 3 * sin(angulo.get_value()), 0]
+            y = [0, 3 * sin(angulo.get_value()), 0]
+            return Line(np.array(y), np.array([0,0,0]), color = GREEN_C)
+
+        def get_line_y():
+            x = [(3 * cos(angulo.get_value())), (3 * sin(angulo.get_value())), 0]
+            y = [3 * cos(angulo.get_value()), 0, 0]
+            return Line(np.array([0, 0, 0]), np.array(y), color = RED_C)
+        
+        def get_point_x():
+            return Dot(point = [3 * cos(angulo.get_value()), 0, 0], color = RED_C)#.scale(3)
+
+        def get_point_y():
+            return Dot(point = [0, 3 * sin(angulo.get_value()), 0], color = GREEN_C)#.scale(3)
+        
+        def get_point():
+            return Dot(point = [3 * cos(angulo.get_value()), 3 * sin(angulo.get_value()), 0], color = PURPLE_A)#.scale(3)
+        
+
+        def tex_cos():
+            return MathTex(f"cos({int(angulo.get_value())})").shift(0.5 * UP)
+
+        def tex_sin():
+            return MathTex(f"sin({int(angulo.get_value())})").shift(0.5 * RIGHT)
+
+        graph = ImplicitFunction(lambda x, y: (x ** 2) +  (y ** 2) - 9,color = PURPLE_A)
+
+        v = always_redraw(get_scaled_vector)
+        point = always_redraw(get_point)
+        lineCos = always_redraw(get_line_x)
+        lineSin = always_redraw(get_line_y)
+        pointX = always_redraw(get_point_x)
+        pointY = always_redraw(get_point_y)
+        texCos = always_redraw(tex_cos)
+        texSin = always_redraw(tex_sin)
+        
+
+        self.play(Create(v), Create(graph), Create(texCos), Create(texSin), Create(point), Create(lineCos), Create(lineSin), Create(pointX), Create(pointY))
+        self.play(angulo.animate.set_value(120), run_time = 3)
+        self.wait()
+        self.play(angulo.animate.set_value(-60), run_time = 2)
+        self.wait()
+        self.play(angulo.animate.set_value(270), run_time = 3)        
+        
+
         
     def desc(self):
         v = [2,1]
