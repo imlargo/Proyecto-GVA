@@ -23,7 +23,6 @@ class PlaneScene(LinearTransformationScene):
         pass
         
     def desc(self):
-        
         v = [2,1]
         v_ort = ortogonal(v)
         
@@ -89,13 +88,13 @@ class PlaneScene(LinearTransformationScene):
         self.play(FadeOut(line))
         
         self.play(FadeOut(vector1), FadeOut(vector2))
-        
+        aux = pA.copy()
         self.play(ApplyMethod(pA.shift, pB.get_end()))
         self.wait(1)
-        self.play(ApplyMethod(pA.shift, ORIGIN))
+        self.play(Transform(pA, aux))
         self.wait()
         self.play(ApplyMethod(pB.shift, pA.get_end()))
-        
+       
 
         
     def sum_vectores(self, v1, v2):
