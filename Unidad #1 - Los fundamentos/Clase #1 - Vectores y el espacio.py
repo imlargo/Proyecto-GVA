@@ -1,23 +1,5 @@
 from manim import *
-
-
-def rot_vec(vector, angulo):
-    angle_radians = np.radians(angulo)
-    x, y = np.array(vector)
-    x_new = x * np.cos(angle_radians) - y * np.sin(angle_radians)
-    y_new = x * np.sin(angle_radians) + y * np.cos(angle_radians)
-    return np.array([x_new, y_new]).tolist()
-
-
-def proyect(vector_A, vector_B):
-    vector_A = np.array(vector_A)
-    vector_B = np.array(vector_B)
-    dot_product = np.dot(vector_A, vector_B)
-    magnitude_squared = np.dot(vector_B, vector_B)    
-    projection = (dot_product / magnitude_squared) * vector_B
-    return projection.tolist()
-
-
+from misc.All import *
 
 
 class PlaneScene(LinearTransformationScene):
@@ -109,7 +91,11 @@ class PlaneScene(LinearTransformationScene):
         self.play(FadeOut(vector1), FadeOut(vector2))
         
         self.play(ApplyMethod(pA.shift, pB.get_end()))
-                
+        self.wait(1)
+        self.play(ApplyMethod(pA.shift, ORIGIN))
+        self.wait()
+        self.play(ApplyMethod(vector2.shift, newVector1.get_end()))
+        
 
         
     def sum_vectores(self, v1, v2):
