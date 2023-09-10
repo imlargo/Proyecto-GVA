@@ -1,5 +1,15 @@
 import numpy as np
 
+def sum_v(v1, v2):
+    return [(v1[0] + v2[0]), (v1[1] + v2[1])]
+
+def res_v(v1, v2):
+    return [(v1[0] - v2[0]), (v1[1] - v2[1])]
+
+def escalar(v, n):
+    return [v[0] * n, v[1] * n]
+
+
 def sin(x):
     return np.sin(np.radians(x))
 
