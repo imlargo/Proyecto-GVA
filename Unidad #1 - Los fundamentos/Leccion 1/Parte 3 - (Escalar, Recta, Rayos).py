@@ -26,9 +26,7 @@ class PlaneScene(LinearTransformationScene):
         self.wait()
 
     def resaltar(self, objeto, tiempo, color):
-        enfasis = SurroundingRectangle(objeto, color = color, buff = 0.25)
-        self.play(Create(enfasis), run_time= tiempo/2)
-        self.play(FadeOut(enfasis), run_time= tiempo/2)
+        return ShowPassingFlash(SurroundingRectangle(objeto, color = color, buff = 0.25), run_time=tiempo, time_width=0.2)
 
     def escalando(self):
         
@@ -39,7 +37,6 @@ class PlaneScene(LinearTransformationScene):
         name = MathTex(r"n \cdot \vec{v}", color = RED_A)
         label = vector.coordinate_label(color = RED_A).to_corner(UP+LEFT)
 
-        
         # --- Escalamos el vector con una animacion continua ---
         #Definimos todas las variables
         graph = ImplicitFunction(lambda x, y: y - ((1/2) * x),color = PURPLE_A).set_stroke(opacity = 0.7, width=2) 
@@ -52,8 +49,10 @@ class PlaneScene(LinearTransformationScene):
         nameBefore = MathTex(r"n \cdot \vec{v}", color = RED_A).shift((vector.get_end() - vector.get_start()) / 2).shift(UP * 0.5)
         labelBefore = MathTex(r"n \cdot \begin{bmatrix} 2\\ 1\end{bmatrix}", color = RED_A).to_corner(UP+LEFT)
 
-        rectaGen = MathTex(r"L_{\vec{v}}\\ n \cdot \vec{v} \ | \ n \in \mathbb{R}").move_to(np.array([-3, 2, 0])).scale(1.25)
+        rectaGen = MathTex(r"L_{\vec{v}}").move_to(np.array([-3, 2, 0])).scale(1.25)
+        conjunto = MathTex(r"n \cdot \vec{v} \ | \ n \in \mathbb{R}").to_corner(DOWN + RIGHT)
         
+
         #Creamos el vector
         self.play(Create(vector), Create(punto), Create(nameBefore), Create(labelBefore))
         self.wait(1)
@@ -62,8 +61,8 @@ class PlaneScene(LinearTransformationScene):
         #Cambiando los valores de n
         self.play(n.animate.set_value(2), run_time = 3)
         self.wait(1)
-        self.play(n.animate.set_value(-1), Create(graph), Create(rectaGen), run_time = 2)
-        self.resaltar(rectaGen, 1, TEAL_C)
+        self.play(n.animate.set_value(-1), Create(graph), Create(rectaGen), Create(conjunto), run_time = 2)
+        self.play(self.resaltar(rectaGen, 1, TEAL_C),self.resaltar(conjunto, 1, TEAL_C) )
         self.play(n.animate.set_value(-3), run_time = 3)
         self.play(n.animate.set_value(2.5), run_time = 2)
 
@@ -78,7 +77,7 @@ class PlaneScene(LinearTransformationScene):
                 run_time=2,
                 time_width=0.2
             )))
-        self.play(FadeOut(graph), FadeOut(rectaGen)) 
+        self.play(FadeOut(graph), FadeOut(rectaGen), FadeOut(conjunto)) 
         pass
 
     def rayo_recta(self):
@@ -102,8 +101,10 @@ class PlaneScene(LinearTransformationScene):
         nameBefore = MathTex(r"n \cdot \vec{v}", color = RED_A).shift((vector.get_end() - vector.get_start()) / 2).shift(UP * 0.5)
         labelBefore = MathTex(r"n \cdot \begin{bmatrix} 2\\ 1\end{bmatrix}", color = RED_A).to_corner(UP+LEFT)
 
-        rayGen = MathTex(r"R_{\vec{v}}^{+}\\ n \cdot \vec{v} \ | \ n > 0").move_to(np.array([5, 1, 0])).scale(1.25)
-        raynegGen = MathTex(r"R_{\vec{v}}^{-}\\ n \cdot \vec{v} \ | \ n < 0 ").move_to(np.array([-2, -2.5, 0])).scale(1.25)
+        rayGen = MathTex(r"R_{\vec{v}}^{+}").move_to(np.array([5, 1, 0])).scale(1.25)
+        raynegGen = MathTex(r"R_{\vec{v}}^{-}").move_to(np.array([-2, -2.5, 0])).scale(1.25)
+        conjunto = MathTex(r"n \cdot \vec{v} \ | \ n > 0").next_to(rayGen, DOWN, buff = 0.5)
+        conjunto.add_background_rectangle(BLACK)
 
         #Creamos los objetos en el plano
         self.play(Create(vector), Create(punto), Create(nameBefore), Create(labelBefore))
@@ -111,8 +112,8 @@ class PlaneScene(LinearTransformationScene):
         self.play(FadeOut(labelBefore), FadeOut(nameBefore), Create(name), Create(vlabel))
 
         #... Rayo Positivo ...
-        self.play(n.animate.set_value(2), Create(rayPos), Create(rayGen), run_time = 3)
-        self.resaltar(rayGen, 1, TEAL_C)
+        self.play(n.animate.set_value(2), Create(rayPos), Create(rayGen), Create(conjunto), run_time = 3)
+        self.play(self.resaltar(rayGen, 1, TEAL_C), self.resaltar(conjunto, 1, TEAL_C))
         self.play(n.animate.set_value(0.5), run_time = 2)
         self.play(n.animate.set_value(0.25), run_time = 2)
         self.play(n.animate.set_value(3), run_time = 2)
@@ -122,11 +123,13 @@ class PlaneScene(LinearTransformationScene):
             (ShowPassingFlash((rayPos.copy().set_color(TEAL_C)), run_time=2, time_width=0.2)),
             (ShowPassingFlash(SurroundingRectangle(rayGen, color = TEAL_C, buff = 0.25), run_time=2, time_width=0.2))
             )
-        self.play(FadeOut(rayPos), FadeOut(rayGen)) 
+        self.play(FadeOut(rayPos), FadeOut(rayGen), FadeOut(conjunto))
         
         #... Rayo negativo ...
-        self.play(n.animate.set_value(-1), Create(rayNeg), Create(raynegGen), run_time = 3)
-        self.resaltar(raynegGen, 1, TEAL_C)
+        conjunto = MathTex(r"n \cdot \vec{v} \ | \ n < 0").next_to(raynegGen, DOWN, buff = 0.5)
+        conjunto.add_background_rectangle(BLACK)
+        self.play(n.animate.set_value(-1), Create(rayNeg), Create(raynegGen), Create(conjunto), run_time = 3)
+        self.play(self.resaltar(raynegGen, 1, TEAL_C), self.resaltar(conjunto, 1, TEAL_C))
         self.play(n.animate.set_value(-0.5), run_time = 2)
         self.play(n.animate.set_value(-0.25), run_time = 2)
         self.play(n.animate.set_value(-3), run_time = 2)
@@ -136,8 +139,8 @@ class PlaneScene(LinearTransformationScene):
             (ShowPassingFlash((rayNeg.copy().set_color(TEAL_C)), run_time=2, time_width=0.2)),
             (ShowPassingFlash(SurroundingRectangle(raynegGen, color = TEAL_C, buff = 0.25), run_time=2, time_width=0.2))
             )
-        self.play(FadeOut(rayNeg), FadeOut(raynegGen))
+        self.play(FadeOut(rayNeg), FadeOut(raynegGen), FadeOut(conjunto), FadeOut(vector))
         pass
     
-    def dependencia_lineal(self):
+    def escalar_longitud(self):
         pass
