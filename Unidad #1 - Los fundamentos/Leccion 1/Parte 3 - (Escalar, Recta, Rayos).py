@@ -68,7 +68,9 @@ class PlaneScene(LinearTransformationScene):
 
         #Resaltamos los datos importantes
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(vlabel))
-        self.play(self.resaltar(conjunto, 1, TEAL_C), (ShowPassingFlash(
+        self.play(
+            self.resaltar(conjunto, 1, TEAL_C),
+            (ShowPassingFlash(
                 ImplicitFunction(lambda x, y: y - ((1/2) * x),color = BLUE),
                 run_time=2,
                 time_width=0.2
@@ -139,7 +141,7 @@ class PlaneScene(LinearTransformationScene):
             (ShowPassingFlash((rayNeg.copy().set_color(TEAL_C)), run_time=2, time_width=0.2)),
             (ShowPassingFlash(SurroundingRectangle(raynegGen, color = TEAL_C, buff = 0.25), run_time=2, time_width=0.2))
             )
-        self.play(FadeOut(rayNeg), FadeOut(raynegGen), FadeOut(conjunto), FadeOut(vector))
+        self.play(FadeOut(rayNeg, raynegGen, conjunto, vector, punto, vlabel, name))
         pass
     
     def escalar_longitud(self):
