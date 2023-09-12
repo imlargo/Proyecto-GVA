@@ -62,13 +62,13 @@ class PlaneScene(LinearTransformationScene):
         self.play(n.animate.set_value(2), run_time = 3)
         self.wait(1)
         self.play(n.animate.set_value(-1), Create(graph), Create(rectaGen), Create(conjunto), run_time = 2)
-        self.play(self.resaltar(rectaGen, 1, TEAL_C),self.resaltar(conjunto, 1, TEAL_C) )
+        self.play(self.resaltar(rectaGen, 1, TEAL_C), self.resaltar(conjunto, 1, TEAL_C) )
         self.play(n.animate.set_value(-3), run_time = 3)
         self.play(n.animate.set_value(2.5), run_time = 2)
 
         #Resaltamos los datos importantes
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(vlabel))
-        self.play((ShowPassingFlash(
+        self.play(self.resaltar(conjunto, 1, TEAL_C), (ShowPassingFlash(
                 ImplicitFunction(lambda x, y: y - ((1/2) * x),color = BLUE),
                 run_time=2,
                 time_width=0.2
