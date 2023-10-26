@@ -1,2 +1,3 @@
-# Proyecto-GVA
-Serie de animaciones por clases
+# Proyecto Animaciones Geometria Vectorial
+
+...
