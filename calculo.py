@@ -9,8 +9,21 @@ def justifyTex(text):
 
 class MainnScene(Scene):
     def construct(self):
-        #self.intro()
+        self.intro()
+        self.clear()
+        
+        self.part1()
+        self.clear()
+        
+        self.part2()
+        self.clear()
+        
         self.part3()
+        self.clear()
+        
+        self.part4()
+        self.clear()
+        
         self.wait()
 
         pass
@@ -89,21 +102,24 @@ class MainnScene(Scene):
 
         # Calculos
         resultadoss = [148933, 1270607, 11078937, 98222287, 882206716]
+        cocientes = []
+
         # Calculo 2 x 10 a la 6, 7, 8
         for x in range(6, 11):
 
             resultF = (2 * (10 ** x)) / (x * log(10)) + log(2)
             resultPi = resultadoss[x - 6]
             resultDiv = round(resultPi / resultF, 5)
+            cocientes.append(resultDiv)
 
             stringPi = f"\\pi(2 \\cdot 10^{{{x}}}) = \\pi({2 * (10 ** x)}) = {resultPi}"
-            textPi = MathTex(stringPi).scale(0.8)
+            textPi = MathTex(stringPi).scale(0.7)
 
             stringLn = f"f(2 \\cdot 10^{{{x}}}) = \\frac{{2 \\cdot 10^{{{x}}}}}{{\\ln(2 \\cdot 10^{{{x}}})}} = \\frac{{{2 * (10 ** x)}}} {{ {x} \\cdot \\ln(10) + \\ln(2) }} = {resultF}"
-            textLn = MathTex(stringLn).scale(0.8).next_to(textPi, DOWN, buff=0.5)
+            textLn = MathTex(stringLn).scale(0.7).next_to(textPi, DOWN, buff=0.5)
             
             stringCociente = f"\\frac{{\\pi(2 \\cdot 10^{{{x}}})}}{{f(2 \\cdot 10^{{{x}}})}} = {resultDiv}"
-            textCociente = MathTex(stringCociente).scale(0.8).next_to(textLn, DOWN, buff=0.5)
+            textCociente = MathTex(stringCociente).scale(0.7).next_to(textLn, DOWN, buff=0.5)
 
             self.play(Create(textPi), Create(textLn), Create(textCociente))
             self.wait(3)
@@ -111,11 +127,25 @@ class MainnScene(Scene):
             grupo = VGroup(textPi, textLn, textCociente)
             self.play(FadeOut(grupo))
 
-        # Calculo 2 x 10 a la 10
+        # Comparar resultados y sacar conclusiones
+        grupo = VGroup()
+        prev = pregunta
+        buff = 0.6
+        for i, resultado in enumerate(cocientes):
+            stringCociente = f"\\frac{{\\pi(2 \\cdot 10^{{{i + 6}}})}}{{f(2 \\cdot 10^{{{i + 6}}})}} = {resultado}"
+            texCociente = MathTex(stringCociente).scale(0.7).next_to(prev, DOWN, aligned_edge=LEFT, buff=buff)
+            buff = 0.3
+            prev = texCociente
+            grupo.add(texCociente)
+            self.play(Create(texCociente))
+            pass
 
+        # Conclusion con limites
+        limitTex = MathTex(r"\lim_{x \to \infty} \frac{\pi(x)}{f(x)} \approx 1")
+        self.play(Create(limitTex))
 
-
-
+        #self.play(FadeOut(grupo))
+        
         pass
     
 
@@ -134,4 +164,37 @@ class MainnScene(Scene):
         self.play(titulo.animate.to_corner(UP + LEFT))
         self.play(Transform(pregunta, preguntaSimple))
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.5)
+
+        # Considerando que
+        #limitTex = MathTex(r"\lim_{x \to \infty} \frac{\pi(x)}{f(x)} \approx 1")
+        #self.play(Create(limitTex))
+
+        # Por lo tanto -> Para valores grandes de X:
+        #aproxTex = MathTex(r"\pi(x) \approx f(x)")
+        #self.play(Create(aproxTex))
+
+        # Cantidad de primos = f(x)
+
+        #functionF = MathTex(r"f(x) = \frac{x}{\ln(x)}")
+        #self.play(Create(functionF))
+
+        TeXs = [
+            MathTex(r"\frac{10^{1000}}{\ln(10^{1000})}"),
+            MathTex(r"\frac{10^{1000}}{1000 \cdot \ln(10)}"),
+            MathTex(r"\frac{ 10^{3} \cdot 10^{997} }{1000 \cdot \ln(10)}"),
+            MathTex(r"\frac{ 1000 \cdot 10^{997} }{1000 \cdot \ln(10)}"),
+            MathTex(r"\frac{10^{997}}{\ln(10)}"),
+            MathTex(r"\frac{10}{\ln(10)} \cdot 10^{996}"),
+            MathTex(f"\\frac{{{10}}}{{{round(log(10), 5)}}} \\cdot 10^{{{996}}}"),
+            MathTex(f"\\approx {round(10/log(10), 5)} \\cdot 10^{{{996}}}")
+        ]
+
+        init = TeXs[0]
+        self.wait(2)
+
+        for i in range(1, len(TeXs)):
+            self.play(Transform(init, TeXs[i]))
+            self.wait(2)
+
+        self.play(FadeOut(init))
         pass
