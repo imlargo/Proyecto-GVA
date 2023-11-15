@@ -4,26 +4,30 @@ from numpy import log
 myTemplate = TexTemplate()
 myTemplate.add_to_preamble(r"\usepackage{ragged2e}")
 
+
 def justifyTex(text):        
     return Tex(text, tex_template=myTemplate, tex_environment="justify")
 
 class MainnScene(Scene):
+    def resaltar(self, objeto, tiempo, color):
+        return ShowPassingFlash(SurroundingRectangle(objeto, color = color, buff = 0.25), run_time=tiempo, time_width=0.2)
+
+
     def construct(self):
-        self.intro()
-        self.clear()
-        
+        #self.intro()
+
         self.part1()
         self.clear()
-        
+#
         self.part2()
-        self.clear()
-        
-        self.part3()
-        self.clear()
-        
-        self.part4()
-        self.clear()
-        
+        #self.clear()
+#
+        #self.part3()
+        #self.clear()
+#
+        #self.part4()
+        #self.clear()
+#
         self.wait()
 
         pass
@@ -63,6 +67,15 @@ class MainnScene(Scene):
         self.play(titulo.animate.to_corner(UP + LEFT))
         self.play(Transform(pregunta, preguntaSimple))
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.5)
+
+        graph = ImageMobject("/content/foto1.png").scale(1.2)
+
+        valor1Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 100").scale(0.8).to_corner(DOWN)
+        self.play(Create(valor1Tex), FadeIn(graph))
+        self.play(self.resaltar(valor1Tex, 1, TEAL_C))
+
+        
+
         pass
     
     def part2(self):
@@ -80,6 +93,19 @@ class MainnScene(Scene):
         self.play(titulo.animate.to_corner(UP + LEFT))
         self.play(Transform(pregunta, preguntaSimple))
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.5)
+
+        valor1Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 100").scale(0.8).to_corner(DOWN)
+        valor2Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 1000").scale(0.8).to_corner(DOWN)
+
+        graph1 = ImageMobject("/content/foto2.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.5)
+        graph2 = ImageMobject("/content/foto3.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.5)
+
+        self.play(Create(valor1Tex), FadeIn(graph1))
+        self.play(self.resaltar(valor1Tex, 1, TEAL_C))
+        self.wait(3)
+        self.play(Transform(valor1Tex, valor2Tex), FadeOut(graph1), FadeIn(graph2)) 
+        self.play(self.resaltar(valor1Tex, 1, TEAL_C))
+        self.wait(3)
         pass
     
 
@@ -144,6 +170,9 @@ class MainnScene(Scene):
         limitTex = MathTex(r"\lim_{x \to \infty} \frac{\pi(x)}{f(x)} \approx 1")
         self.play(Create(limitTex))
 
+        self.play(self.resaltar(limitTex, 1, TEAL_C))
+        
+
         #self.play(FadeOut(grupo))
         
         pass
@@ -166,35 +195,47 @@ class MainnScene(Scene):
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.5)
 
         # Considerando que
-        #limitTex = MathTex(r"\lim_{x \to \infty} \frac{\pi(x)}{f(x)} \approx 1")
-        #self.play(Create(limitTex))
+        limitTex = MathTex(r"\lim_{x \to \infty} \frac{\pi(x)}{f(x)} \approx 1")
+        limitText = Tex("Considerando que:").scale(0.8).next_to(limitTex, UP, buff=0.5)
+        grupo1 = VGroup(limitTex, limitText)
 
-        # Por lo tanto -> Para valores grandes de X:
-        #aproxTex = MathTex(r"\pi(x) \approx f(x)")
-        #self.play(Create(aproxTex))
+        aproxTex = MathTex(r"\pi(x) \approx f(x)")
+        aproxText = Tex("Para valores grandes de x").scale(0.8).next_to(aproxTex, UP, buff=0.5)
+        grupo2 = VGroup(aproxText, aproxTex)
+        
+        functionF = MathTex(r"f(x) = \frac{x}{\ln(x)}")
+        functionText = Tex(r"Cantidad de primos $\approx$ $f(x)$").scale(0.8).next_to(functionF, UP, buff=0.5)
+        grupo3 = VGroup(functionText, functionF)
 
-        # Cantidad de primos = f(x)
+        self.play(Create(grupo1))
+        self.play(Transform(grupo1, grupo2))
+        self.play(Transform(grupo1, grupo3))
 
-        #functionF = MathTex(r"f(x) = \frac{x}{\ln(x)}")
-        #self.play(Create(functionF))
+        self.play(self.resaltar(grupo1, 1, TEAL_C))
+
+        self.play(FadeOut(grupo1))
 
         TeXs = [
-            MathTex(r"\frac{10^{1000}}{\ln(10^{1000})}"),
-            MathTex(r"\frac{10^{1000}}{1000 \cdot \ln(10)}"),
-            MathTex(r"\frac{ 10^{3} \cdot 10^{997} }{1000 \cdot \ln(10)}"),
-            MathTex(r"\frac{ 1000 \cdot 10^{997} }{1000 \cdot \ln(10)}"),
-            MathTex(r"\frac{10^{997}}{\ln(10)}"),
-            MathTex(r"\frac{10}{\ln(10)} \cdot 10^{996}"),
+            MathTex(r"f(10^{1000}) = \frac{10^{1000}}{\ln(10^{1000})}"),
+            MathTex(r"= \frac{10^{1000}}{1000 \cdot \ln(10)}"),
+            MathTex(r"= \frac{ 10^{3} \cdot 10^{997} }{1000 \cdot \ln(10)}"),
+            MathTex(r"= \frac{ 1000 \cdot 10^{997} }{1000 \cdot \ln(10)}"),
+            MathTex(r"= \frac{10^{997}}{\ln(10)}"),
+            MathTex(r"= \frac{10}{\ln(10)} \cdot 10^{996}"),
             MathTex(f"\\frac{{{10}}}{{{round(log(10), 5)}}} \\cdot 10^{{{996}}}"),
             MathTex(f"\\approx {round(10/log(10), 5)} \\cdot 10^{{{996}}}")
         ]
 
         init = TeXs[0]
-        self.wait(2)
 
+        self.play(Create(init))
+        self.play(self.resaltar(init, 1, TEAL_C))
+        self.wait(2)
         for i in range(1, len(TeXs)):
             self.play(Transform(init, TeXs[i]))
             self.wait(2)
+
+        self.play(self.resaltar(init, 1, TEAL_C))
 
         self.play(FadeOut(init))
         pass
