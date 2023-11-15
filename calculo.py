@@ -14,20 +14,20 @@ class MainnScene(Scene):
 
 
     def construct(self):
-        #self.intro()
+        self.intro()
 
         self.part1()
         self.clear()
-#
+
         self.part2()
-        #self.clear()
-#
-        #self.part3()
-        #self.clear()
-#
-        #self.part4()
-        #self.clear()
-#
+        self.clear()
+
+        self.part3()
+        self.clear()
+
+        self.part4()
+        self.clear()
+
         self.wait()
 
         pass
@@ -66,16 +66,14 @@ class MainnScene(Scene):
 
         self.play(titulo.animate.to_corner(UP + LEFT))
         self.play(Transform(pregunta, preguntaSimple))
-        self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.5)
+        self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.4)
 
-        graph = ImageMobject("/content/foto1.png").scale(1.2)
 
         valor1Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 100").scale(0.8).to_corner(DOWN)
+        graph = ImageMobject("/content/foto1.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
+
         self.play(Create(valor1Tex), FadeIn(graph))
         self.play(self.resaltar(valor1Tex, 1, TEAL_C))
-
-        
-
         pass
     
     def part2(self):
@@ -97,13 +95,15 @@ class MainnScene(Scene):
         valor1Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 100").scale(0.8).to_corner(DOWN)
         valor2Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 1000").scale(0.8).to_corner(DOWN)
 
-        graph1 = ImageMobject("/content/foto2.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.5)
-        graph2 = ImageMobject("/content/foto3.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.5)
+        graph1 = ImageMobject("/content/foto2.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
+        graph2 = ImageMobject("/content/foto3.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
 
         self.play(Create(valor1Tex), FadeIn(graph1))
         self.play(self.resaltar(valor1Tex, 1, TEAL_C))
         self.wait(3)
-        self.play(Transform(valor1Tex, valor2Tex), FadeOut(graph1), FadeIn(graph2)) 
+        self.play(FadeOut(graph1))
+        self.play(Transform(valor1Tex, valor2Tex)) 
+        self.play(FadeIn(graph2))
         self.play(self.resaltar(valor1Tex, 1, TEAL_C))
         self.wait(3)
         pass
