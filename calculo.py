@@ -14,19 +14,7 @@ class MainnScene(Scene):
 
 
     def construct(self):
-        self.intro()
-
-        self.part1()
-        self.clear()
-
-        self.part2()
-        self.clear()
-
-        self.part3()
-        self.clear()
-
-        self.part4()
-        self.clear()
+        self.outro()
 
         self.wait()
 
@@ -51,6 +39,19 @@ class MainnScene(Scene):
         self.wait()
         pass
     
+    def outro(self):
+
+        titulo = Tex("Animaciones creadas por Juan Carlos Largo :).")
+        titulo2 = Tex("Gracias!.")
+
+        self.play(Write(titulo), run_time = 1)
+        self.wait(0.5)
+        self.play(Transform(titulo, titulo2))
+        self.wait(3)
+        pass
+    
+
+
     def part1(self):
         titulo = Text("Punto #1").scale(0.7)
         
