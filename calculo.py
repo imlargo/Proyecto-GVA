@@ -44,7 +44,7 @@ class MainnScene(Scene):
         self.play(Write(titulo), run_time = 2)
         self.wait(1)
         self.play(Transform(titulo, titulo2), Create(sep), Write(aut), run_time = 2)
-        self.wait(3)
+        self.wait(4)
 
         self.play(FadeOut(sep),FadeOut(aut), run_time = 1)
         self.play(FadeOut(titulo), run_time = 1)
@@ -63,17 +63,19 @@ class MainnScene(Scene):
         self.play(Write(titulo))
         self.play(titulo.animate.next_to(pregunta, UP, buff=0.5))
         self.play(Create(pregunta))
-
         self.play(titulo.animate.to_corner(UP + LEFT))
+        self.wait(2)
         self.play(Transform(pregunta, preguntaSimple))
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.4)
-
 
         valor1Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 100").scale(0.8).to_corner(DOWN)
         graph = ImageMobject("/content/foto1.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
 
+        self.wait(2)
         self.play(Create(valor1Tex), FadeIn(graph))
+        self.wait(1)
         self.play(self.resaltar(valor1Tex, 1, TEAL_C))
+        
         pass
     
     def part2(self):
@@ -89,6 +91,7 @@ class MainnScene(Scene):
         self.play(Create(pregunta))
 
         self.play(titulo.animate.to_corner(UP + LEFT))
+        self.wait(3)
         self.play(Transform(pregunta, preguntaSimple))
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.5)
 
@@ -98,14 +101,16 @@ class MainnScene(Scene):
         graph1 = ImageMobject("/content/foto2.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
         graph2 = ImageMobject("/content/foto3.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
 
+        self.wait(1)
         self.play(Create(valor1Tex), FadeIn(graph1))
+        self.wait(2)
         self.play(self.resaltar(valor1Tex, 1, TEAL_C))
-        self.wait(3)
+        self.wait(4)
         self.play(FadeOut(graph1))
         self.play(Transform(valor1Tex, valor2Tex)) 
         self.play(FadeIn(graph2))
         self.play(self.resaltar(valor1Tex, 1, TEAL_C))
-        self.wait(3)
+        self.wait(4)
         pass
     
 
@@ -122,9 +127,10 @@ class MainnScene(Scene):
         self.play(Create(pregunta))
 
         self.play(titulo.animate.to_corner(UP + LEFT))
+        self.wait(3)
         self.play(Transform(pregunta, preguntaSimple))
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.5)
-
+        self.wait(3)
 
         # Calculos
         resultadoss = [148933, 1270607, 11078937, 98222287, 882206716]
@@ -148,7 +154,7 @@ class MainnScene(Scene):
             textCociente = MathTex(stringCociente).scale(0.7).next_to(textLn, DOWN, buff=0.5)
 
             self.play(Create(textPi), Create(textLn), Create(textCociente))
-            self.wait(3)
+            self.wait(2)
 
             grupo = VGroup(textPi, textLn, textCociente)
             self.play(FadeOut(grupo))
@@ -166,12 +172,14 @@ class MainnScene(Scene):
             self.play(Create(texCociente))
             pass
 
+        self.wait(2)
+
         # Conclusion con limites
         limitTex = MathTex(r"\lim_{x \to \infty} \frac{\pi(x)}{f(x)} \approx 1")
         self.play(Create(limitTex))
-
+        self.wait(3)
         self.play(self.resaltar(limitTex, 1, TEAL_C))
-        
+        self.wait(5)
 
         #self.play(FadeOut(grupo))
         
@@ -191,6 +199,7 @@ class MainnScene(Scene):
         self.play(Create(pregunta))
 
         self.play(titulo.animate.to_corner(UP + LEFT))
+        self.wait(3)
         self.play(Transform(pregunta, preguntaSimple))
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.5)
 
@@ -208,11 +217,13 @@ class MainnScene(Scene):
         grupo3 = VGroup(functionText, functionF)
 
         self.play(Create(grupo1))
+        self.wait(4)
         self.play(Transform(grupo1, grupo2))
+        self.wait(4)
         self.play(Transform(grupo1, grupo3))
-
+        self.wait(3)
         self.play(self.resaltar(grupo1, 1, TEAL_C))
-
+        self.wait(3)
         self.play(FadeOut(grupo1))
 
         TeXs = [
@@ -229,13 +240,14 @@ class MainnScene(Scene):
         init = TeXs[0]
 
         self.play(Create(init))
-        self.play(self.resaltar(init, 1, TEAL_C))
         self.wait(2)
+        self.play(self.resaltar(init, 1, TEAL_C))
+        self.wait(3)
         for i in range(1, len(TeXs)):
             self.play(Transform(init, TeXs[i]))
             self.wait(2)
 
         self.play(self.resaltar(init, 1, TEAL_C))
-
+        self.wait(5)
         self.play(FadeOut(init))
         pass
