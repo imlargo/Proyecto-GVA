@@ -42,9 +42,11 @@ Estas coordenadas se presentan en un orden específico, primero los pasos en el 
 
 > - [ ] Resaltar la palabra "punto"
 
-Pero, es importante destacar que un vector no es lo mismo que un punto. Un punto es simplemente una ubicación estática en el plano, mientras que un vector puede considerarse como una "flecha" que parte desde el origen y se extiende hasta un punto específico en el plano.
+Pero, es importante destacar que un vector no es lo mismo que un punto. Un punto es simplemente una ubicación estática en el plano, mientras que un vector puede considerarse como una "flecha" que sale desde el origen y se extiende hasta un punto específico en el plano.
 
-- Las componentes de un vector son los pasos que se dan en cada eje para llegar a un punto específico en el plano, por ejemplo, en este caso (2,1) la componente en X del vector es 2, y la componente en Y es 1.
+- Los vectores tienen su longitud y dirección (Hacia donde apunta). Por ejemplo el vector (2,1) parte desde el origen hasta el punto (2,1) y su direccion va en este sentido, es decir, hacia donde apunta
+
+- Las componentes de un vector son los pasos que se dan en cada eje para llegar a un punto específico en el plano, en este caso (2,1) la componente en X del vector es 2, y la componente en Y es 1.
 
 - Un punto importante es el origen y es el punto con coordenadas (0,0), es decir 0 pasos en X y 0 pasos en Y.
 
@@ -52,6 +54,10 @@ Pero, es importante destacar que un vector no es lo mismo que un punto. Un punto
 
 Un concepto fundamental en esta materia son los vectores. Los vectores son los objetos fundamentales con los que trabajaremos en este curso.
 
--**Aclaracion acerca de los vectores:**Un vector es un objeto matemático que tiene magnitud y dirección. En otras palabras, un vector es una flecha que tiene una longitud y una dirección específica, y se extiende desde un punto de origen hasta un punto final. lo q explico es una manera simplificada y facil de entender sin usar terminos matematicos.
+**Nota de aclaracion**: La manera en la que explico el concepto de vector es una manera muy intuitiva e intento evitar en terminos y conceptos formales matematicos. Si quieren una explicacion mas profunda, aqui hay un meme para explicarlo :D
 
 > - [ ] Meme vector es una flecha abstracta (100IQ)
+
+Eso ha sido todo por esta primera leccion, hasta luego
+
+> - [ ] Animacion Despedida

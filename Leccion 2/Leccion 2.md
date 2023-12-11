@@ -2,19 +2,33 @@
 
 Asi como se pueden realizar ciertas operaciones con los numeros, los vectores tambien tienen operaciones fundamentales. Una de estas operaciones es la multiplicación de un vector por un número real.
 
-## Escalar un vector
 
-### Multiplicación de vectores por un número real. (Y cómo afecta la magnitud)
+### Multiplicacion por un escalar.
+
+**Multiplicación de vectores por un número**
 
 A los números, ahora les diremos escalares, y a esta operacion se le llama multiplicación de un vector por un escalar.
 
-Podemos entender la multiplicación de un vector por un escalar como “estirar” ese vector según un número específico. Si el número es positivo, el vector se estira en la misma dirección, mientras que si es negativo, el vector se estira en dirección opuesta.
+> Convertir la palabra "número" en "escalar"
 
-En este caso cuando hablo de dirección me refiero a “hacia donde apunta” ese vector, como explique anteriormente, y cuando multiplicamos un vector por un número negativo, esta dirección se invierte.
+Podemos entender la multiplicación de un vector por un escalar como “estirar” ese vector según un número específico.
+
+> Convertir la palabra "escalar" en "estirar"
+
+Si el número es positivo, el vector se estira en la misma dirección que tiene, mientras que si es negativo, el vector se "estira" en dirección opuesta.
+
+> Estirar el vector de manera positiva y luego negativa
+
+En este caso cuando hablo de dirección me refiero a “hacia donde apunta” ese vector, recordemos que un vector se diferencia de un punto en el hecho de que el vector tiene una direccion, y esa direccion es la direccion en la que apunta el vector saliendo desde el origen hasta su punta,
+
+ como explique anteriormente, y cuando multiplicamos un vector por un número negativo, esta dirección se invierte.
+
+**Como afecta la longitud**
 
 Un aspecto fundamental a resaltar es que la multiplicación de un vector por un escalar tiene el efecto de multiplicar la longitud original del vector por ese mismo número. En otras palabras, si tenemos un vector de longitud 'n', la nueva longitud después de escalar será 'n \* m'. Por cierto, a esa longitud del vecto se le dice magnitud y se simboliza como ||v||
 
 Para multiplicar un escalar por un vector simplemente multiplicamos el escalar por cada componente del vector.
+
 
 ### Recta y rayos generados por un vector.
 
@@ -47,6 +61,11 @@ El producto cruzado se calcula …
 De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún n que satisfaga B = nA y B no es un múltiplo escalar de A.
 
 ## Suma de vectores.
+
+**Como se hace algebraicamente**
+
+
+**Como se ve**
 
 # Ideas
 
