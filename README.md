@@ -4,6 +4,8 @@
 
 ### Contenido
 
+- Lección 0: Introducción al curso
+
 - Lección 1: Vectores
 
 - Lección 2: Operaciones fundamentales con vectores y sus propiedades
