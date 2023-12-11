@@ -2,14 +2,14 @@
 
 ### Operaciones y propiedades de vectores 
 
-*** La recta numérica***
+**La recta numérica**
 
 > - [ ] Animación recta real, puntos en ella y punto q se mueve con flecha apuntando
 
 Imaginemos la recta de números reales como una serie de puntos en la que cada número representa una posición, podemos pensar en un número como una cierta cantidad de pasos en una dirección particular. En este caso teniendo al cero como referencia, por ejemplo, podemos imaginar un número como x pasos en cierta dirección ya sea a la derecha o izquierda del cero.
 
 
-*** El plano cartesiano. ***
+**El plano cartesiano.**
 
 > - [ ] Generamos el plano, escribimos R2, ponemos ejes y resaltamos el Origen
 
@@ -23,7 +23,7 @@ hacia la derecha; al eje vertical lo llamamos eje y y lo orientamos positivament
 
 ### Que es un vector?
 
-*** Puntos en el plano. ***
+**Puntos en el plano.**
 
 > - [ ] Representamos un punto y lo movemos
 
@@ -38,7 +38,7 @@ En el plano, representamos un punto como una "pareja ordenada de numeros", podem
 Estas coordenadas se presentan en un orden específico, primero los pasos en el eje X y luego los pasos en el eje Y, y se separan por una coma. Lo que representa esta pareja ordenada de números es lo que llamamos un punto en el plano.
 
 
-*** Vectores en el plano. ***
+**Vectores en el plano.**
 
 > - [ ] Resaltar la palabra "punto"
 
@@ -52,6 +52,6 @@ Pero, es importante destacar que un vector no es lo mismo que un punto. Un punto
 
 Un concepto fundamental en esta materia son los vectores. Los vectores son los objetos fundamentales con los que trabajaremos en este curso.
 
-- ***Aclaracion acerca de los vectores:*** Un vector es un objeto matemático que tiene magnitud y dirección. En otras palabras, un vector es una flecha que tiene una longitud y una dirección específica, y se extiende desde un punto de origen hasta un punto final. lo q explico es una manera simplificada y facil de entender sin usar terminos matematicos.
+-**Aclaracion acerca de los vectores:**Un vector es un objeto matemático que tiene magnitud y dirección. En otras palabras, un vector es una flecha que tiene una longitud y una dirección específica, y se extiende desde un punto de origen hasta un punto final. lo q explico es una manera simplificada y facil de entender sin usar terminos matematicos.
 
 > - [ ] Meme vector es una flecha abstracta (100IQ)
