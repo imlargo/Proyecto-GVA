@@ -4,7 +4,7 @@
 
 **La recta numérica**
 
-> - [ ] Animación recta real, puntos en ella y punto q se mueve con flecha apuntando
+> - [x] Animación recta real, puntos en ella y punto q se mueve con flecha apuntando
 
 Imaginemos la recta de números reales como una serie de puntos en la que cada número representa una posición, podemos pensar en un número como una cierta cantidad de pasos en una dirección particular. En este caso teniendo al cero como referencia, por ejemplo, podemos imaginar un número como x pasos en cierta dirección ya sea a la derecha o izquierda del cero.
 

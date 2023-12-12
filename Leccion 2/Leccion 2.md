@@ -21,44 +21,87 @@ Si el número es positivo, el vector se estira en la misma dirección que tiene,
 
 En este caso cuando hablo de dirección me refiero a “hacia donde apunta” ese vector, recordemos que un vector se diferencia de un punto en el hecho de que el vector tiene una direccion, y esa direccion es la direccion en la que apunta el vector saliendo desde el origen hasta su punta,
 
- como explique anteriormente, y cuando multiplicamos un vector por un número negativo, esta dirección se invierte.
+> Mostrar un vector y su direccion
 
-**Como afecta la longitud**
+**Como se escala algebraicamente**
 
-Un aspecto fundamental a resaltar es que la multiplicación de un vector por un escalar tiene el efecto de multiplicar la longitud original del vector por ese mismo número. En otras palabras, si tenemos un vector de longitud 'n', la nueva longitud después de escalar será 'n \* m'. Por cierto, a esa longitud del vecto se le dice magnitud y se simboliza como ||v||
+> Escalamos un vector y mostramos el proceso por componentes
 
 Para multiplicar un escalar por un vector simplemente multiplicamos el escalar por cada componente del vector.
 
+**Como afecta la longitud**
 
-### Recta y rayos generados por un vector.
+> Dibujar un vector, hacer corchetes con su longitud, y poner un n con su longitud
+
+Un aspecto fundamental a resaltar es que la multiplicación de un vector por un escalar tiene el efecto de multiplicar la longitud original del vector por ese mismo número.
+
+> Escalar el vector, y mostrar la nueva longitud
+
+En otras palabras, si tenemos un vector de longitud 'n', la nueva longitud después de escalar será 'n \* m'. 
+
+> Convertir la longitud en n veces la magnitud
+
+Por cierto, a esa longitud del vector se le dice magnitud y se simboliza como ||v||, pero hablaremos de ella mas adelante a fondo
+
+- La magnitud de un vector es la longitud del vector, es decir, la distancia entre el origen y la punta del vector.
+
+> **??? Demostracion de pq afecta la magnitud**
+
+
+### Recta y rayos generados.
+
+> Escalamos un vector y mostramos el proceso por componentes
 
 Como vimos anteriormente, multiplicar un vector por un escalar tiene el efecto de "estirar" ese vector.
-En este caso, si le damos a n la libertad de tomar el valor de cualquier numero real, entonces obtenemos esta recta, que es el conjunto de todos los vectores resultantes de multiplicar v por n (es decir, por cualquier numero real). A esta recta se le llama, la recta generada por V
 
-De igual forma, , si consideramos todos los posibles vectores resultantes de multiplicar nuestro vector v por un número n positivo entonces obtenemos el rayo positivo de v, son todos los vectores que se obtienen al multiplicar un vector por un escalar positivo
+**Recta generada**
 
-De igual forma, si consideramos todos los posibles vectores resultantes de multiplicar nuestro vector v por un número real n, pero con la restricción de que debe ser positivo, obtenemos el rayo positivo de v. Estos son todos los vectores que se obtienen al multiplicar un vector por un escalar positivo.
+> n E R
 
-Análogamente, si multiplicamos un vector por un escalar n negativo, obtenemos el rayo negativo de nuestro vector v, que es el conjunto de todos los vectores resultantes de multiplicar v por un escalar n negativo.
+En este caso, si le damos a n la libertad de tomar el valor de cualquier numero real, entonces obtenemos esta recta:
 
-El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación
+> Dibujamos una recta
 
-### Dependencia e Independencia lineal y sus diferentes significados
+Que es el conjunto de todos los vectores resultantes de multiplicar v por n (es decir, por cualquier numero real). A esta recta se le llama, la recta generada por V
 
-Como vimos anteriormente, cualquier vector A puede generar una recta, la recta generada por A, que es el conjunto de todos los vectores resultantes de escalar A por un número real.
+> Notacion matemtica
 
-Ahora, si un vector B es un múltiplo escalar de A (es decir, B = nA), entonces podemos decir que B y A son linealmente dependientes.
+**Rayos generados**
 
-Podemos comprender esto de varias maneras; dos vectores son linealmente dependientes si uno es un múltiplo escalar del otro, es decir, uno está en la recta generada dell otro.
+- Rayo positivo
 
-También es importante saber que si son linealmente dependientes, entonces B = nA, pero al mismo tiempo A = nB, por lo tanto B está en la recta generada por A, y al mismo tiempo A está en la recta generada por B, y tambien B es un múltiplo escalar de A…
+Ahora, si restringimos los valores de n y consideramos todos los posibles vectores resultantes de multiplicar nuestro vector v por un número n positivo entonces obtenemos el rayo positivo de v, son todos los vectores que se obtienen al multiplicar un vector por un escalar positivo, obtenemos el rayo positivo de v. Estos son todos los vectores que se obtienen al multiplicar un vector por un escalar positivo.
+
+- Rayo negativo
+
+Análogamente, si multiplicamos un vector por un escalar n negativo, obtenemos el rayo negativo de nuestro vector v, podemos ver que al multiplicar nuestro vector v por un escalar negativo obtenemos un vector que apunta en dirección opuesta a v, por lo tanto el rayo negativo que es el conjunto de todos los vectores resultantes de multiplicar v por un escalar n negativo, y apunta en direccion opuesra a nuestro anterior vector
+
+- El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación
+
+
+### Dependencia e Independencia lineal
+
+Como vimos anteriormente, cualquier vector tiene una recta generada, que es el conjunto de todos los vectores resultantes de escalar A por un número real.
+
+**Dependencia lineal**
+
+> Concepto de dependencia lineal
+
+- Ahora, si un vector B es un múltiplo escalar de A (es decir, nA = B ), entonces podemos decir que B y A son linealmente dependientes.
+
+Podemos comprender esto de varias maneras; dos vectores son linealmente dependientes si uno es un múltiplo escalar del otro, es decir, uno está en la recta generada del otro.
+
+También es importante saber que si son linealmente dependientes, entonces B = nA, pero al mismo tiempo A = nB, por lo tanto B está en la recta generada por A, y al mismo tiempo A está en la recta generada por B, y tambien B es un múltiplo escalar de A... ya q es la misma recta
+
+**Calculo algebraico**
 
 Todo esto se refiere a la dependencia lineal. Ahora bien, ¿cómo podemos saber algebraicamente si dos vectores son linealmente dependientes? Podríamos encontrar un número "n" que satisfaga que B = nA. Partiendo de esto, llegamos a la definición del producto cruzado (Del cual no hare la demostración de donde sale la formula)
 
 Dos vectores son linealmente dependientes si el producto cruzado entre ellos es cero (0).
-El producto cruzado se calcula …
+El producto cruzado se calcula multiplicando en cruz
 
 De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún n que satisfaga B = nA y B no es un múltiplo escalar de A.
+
 
 ## Suma de vectores.
 

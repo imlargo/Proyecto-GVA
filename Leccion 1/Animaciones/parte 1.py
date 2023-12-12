@@ -1,3 +1,6 @@
+from manim import *;
+import numpy as np;
+
 class LineScene(Scene):
     def construct(self):
         recta = NumberLine(
@@ -24,6 +27,7 @@ class LineScene(Scene):
         arrow = Arrow(start= UP, end= DOWN, color = PURPLE_A).scale(0.4, scale_tips=True)
         arrow.add_updater(updateArrow)
 
+        # // > Animación recta real, puntos en ella y punto q se mueve con flecha apuntando < //
         self.play(Create(recta), Create(punto), Create(arrow), Create(line)) 
         self.play(value.animate.set_value(-5), run_time = 3)
         self.wait()
