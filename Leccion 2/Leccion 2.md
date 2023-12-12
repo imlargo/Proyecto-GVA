@@ -9,62 +9,62 @@ Asi como se pueden realizar ciertas operaciones con los numeros, los vectores ta
 
 A los números, ahora les diremos escalares, y a esta operacion se le llama multiplicación de un vector por un escalar.
 
-> Convertir la palabra "número" en "escalar"
+> [ ] Convertir la palabra "número" en "escalar"
 
 Podemos entender la multiplicación de un vector por un escalar como “estirar” ese vector según un número específico.
 
-> Convertir la palabra "escalar" en "estirar"
+> [ ] Convertir la palabra "escalar" en "estirar"
 
 Si el número es positivo, el vector se estira en la misma dirección que tiene, mientras que si es negativo, el vector se "estira" en dirección opuesta.
 
-> Estirar el vector de manera positiva y luego negativa
+> [ ] Estirar el vector de manera positiva y luego negativa
 
 En este caso cuando hablo de dirección me refiero a “hacia donde apunta” ese vector, recordemos que un vector se diferencia de un punto en el hecho de que el vector tiene una direccion, y esa direccion es la direccion en la que apunta el vector saliendo desde el origen hasta su punta,
 
-> Mostrar un vector y su direccion
+> [ ] Mostrar un vector y su direccion
 
 **Como se escala algebraicamente**
 
-> Escalamos un vector y mostramos el proceso por componentes
+> [ ] Escalamos un vector y mostramos el proceso por componentes
 
 Para multiplicar un escalar por un vector simplemente multiplicamos el escalar por cada componente del vector.
 
 **Como afecta la longitud**
 
-> Dibujar un vector, hacer corchetes con su longitud, y poner un n con su longitud
+> [ ] Dibujar un vector, hacer corchetes con su longitud, y poner un n con su longitud
 
 Un aspecto fundamental a resaltar es que la multiplicación de un vector por un escalar tiene el efecto de multiplicar la longitud original del vector por ese mismo número.
 
-> Escalar el vector, y mostrar la nueva longitud
+> [ ] Escalar el vector, y mostrar la nueva longitud
 
 En otras palabras, si tenemos un vector de longitud 'n', la nueva longitud después de escalar será 'n \* m'. 
 
-> Convertir la longitud en n veces la magnitud
+> [ ] Convertir la longitud en n veces la magnitud
 
 Por cierto, a esa longitud del vector se le dice magnitud y se simboliza como ||v||, pero hablaremos de ella mas adelante a fondo
 
 - La magnitud de un vector es la longitud del vector, es decir, la distancia entre el origen y la punta del vector.
 
-> **??? Demostracion de pq afecta la magnitud**
+> [ ] **??? Demostracion de pq afecta la magnitud**
 
 
 ### Recta y rayos generados.
 
-> Escalamos un vector y mostramos el proceso por componentes
+> [ ] Escalamos un vector y mostramos el proceso por componentes
 
 Como vimos anteriormente, multiplicar un vector por un escalar tiene el efecto de "estirar" ese vector.
 
 **Recta generada**
 
-> n E R
+> [ ] n E R
 
 En este caso, si le damos a n la libertad de tomar el valor de cualquier numero real, entonces obtenemos esta recta:
 
-> Dibujamos una recta
+> [ ] Dibujamos una recta
 
 Que es el conjunto de todos los vectores resultantes de multiplicar v por n (es decir, por cualquier numero real). A esta recta se le llama, la recta generada por V
 
-> Notacion matemtica
+> [ ] Notacion matemtica
 
 **Rayos generados**
 
@@ -85,7 +85,7 @@ Como vimos anteriormente, cualquier vector tiene una recta generada, que es el c
 
 **Dependencia lineal**
 
-> Concepto de dependencia lineal
+> [ ] Concepto de dependencia lineal
 
 - Ahora, si un vector B es un múltiplo escalar de A (es decir, nA = B ), entonces podemos decir que B y A son linealmente dependientes.
 
@@ -131,4 +131,4 @@ Descomposición Canónica y Combinaciones lineales
 . . .
 Span of vectors, hallar escalares, cuando es posible y la excepción
 
-> - [ ] Aclarar que no todo es re técnico sino que se simplifican algunas cosas que pueden no ser del todo “fieles” a la explicación matemática.
+> [ ] - [ ] Aclarar que no todo es re técnico sino que se simplifican algunas cosas que pueden no ser del todo “fieles” a la explicación matemática.
