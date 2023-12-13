@@ -145,7 +145,21 @@ Ahora, si por alguna razon queremos encontrar ese n que satisface B = nA, simple
 
 ## Suma de vectores.
 
+Ahora que ya sabemos multiplicar un vector por un escalar, podemos pasar a la siguiente operacion fundamental con vectores, la suma de vectores.
+
 **Como se hace algebraicamente**
+
+> - [ ] Suma de vectores por componentes
+
+La suma de vectores se realiza sumando componente por componente, es decir, sumamos las componentes x de los vectores y las componentes y de los vectores por separado.
+
+> - [ ] ejemplo con vectores (1, 2) y (3, 4)
+
+Por ejemplo, si tenemos los vectores A = (1, 2) y B = (3, 4), entonces la suma de A y B es (1 + 3, 2 + 4) = (4, 6).
+
+> Dibujamos el nuevo vector
+
+Ahora me gustaria dar una explicacion de porque esto tiene sentido, por ejemplo, si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
 
 
 **Como se ve**
@@ -155,7 +169,6 @@ Ahora, si por alguna razon queremos encontrar ese n que satisface B = nA, simple
 Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 (Demostrar propiedades?)
 
-La suma de vectores se realiza sumando componente por componente
 
 Visualmente la podemos entender como tomar el segundo vector y colocarlo en la cabeza del segundo vector, de manera que el inicio del segundo vector sea la punta del primer vector
 
