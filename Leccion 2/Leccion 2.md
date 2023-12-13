@@ -45,7 +45,7 @@ Por cierto, a esa longitud del vector se le dice magnitud y se simboliza como ||
 
 - La magnitud de un vector es la longitud del vector, es decir, la distancia entre el origen y la punta del vector.
 
-> - [ ] **??? Demostracion de pq afecta la magnitud**
+> - [ ] **??? Demostracion de pq afecta la magnitud!!!**
 
 
 ### Recta y rayos generados.
@@ -62,7 +62,7 @@ En este caso, si le damos a n la libertad de tomar el valor de cualquier numero 
 
 > - [ ] Dibujamos una recta
 
-Que es el conjunto de todos los vectores resultantes de multiplicar v por n (es decir, por cualquier numero real). A esta recta se le llama, la recta generada por V
+Que es el conjunto de todos los vectores resultantes de multiplicar nuestro vector v por cualquier numero real. A esta recta se le llama, la recta generada por V.
 
 > - [ ] Notacion matemtica
 
@@ -70,37 +70,77 @@ Que es el conjunto de todos los vectores resultantes de multiplicar v por n (es 
 
 - Rayo positivo
 
-Ahora, si restringimos los valores de n y consideramos todos los posibles vectores resultantes de multiplicar nuestro vector v por un número n positivo entonces obtenemos el rayo positivo de v, son todos los vectores que se obtienen al multiplicar un vector por un escalar positivo, obtenemos el rayo positivo de v. Estos son todos los vectores que se obtienen al multiplicar un vector por un escalar positivo.
+> - [ ] Mostramos el rayo positivo
+
+Ahora, si restringimos los valores de n y consideramos todos los posibles vectores resultantes de multiplicar nuestro vector v por un número n positivo entonces obtenemos el rayo positivo de v, y nos damos cuenta que el rayo positivo sigue la misma direccion en la que apunta nuestro vector, lo cual tiene sentido pq como dije anteriormente, al multiplicar un vector por un escalar positivo, el vector se estira en la misma direccion que tiene.
 
 - Rayo negativo
 
-Análogamente, si multiplicamos un vector por un escalar n negativo, obtenemos el rayo negativo de nuestro vector v, podemos ver que al multiplicar nuestro vector v por un escalar negativo obtenemos un vector que apunta en dirección opuesta a v, por lo tanto el rayo negativo que es el conjunto de todos los vectores resultantes de multiplicar v por un escalar n negativo, y apunta en direccion opuesra a nuestro anterior vector
+> - [ ] Mostramos el rayo negativo
+
+Análogamente, si multiplicamos nuestro vector v por un escalar n negativo, obtenemos el rayo negativo de nuestro vector v, podemos ver que al multiplicar nuestro vector v por un escalar negativo obtenemos los vectores que apuntan en dirección opuesta a v.
 
 - El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación
 
 
 ### Dependencia e Independencia lineal
 
-Como vimos anteriormente, cualquier vector tiene una recta generada, que es el conjunto de todos los vectores resultantes de escalar A por un número real.
-
 **Dependencia lineal**
 
 > - [ ] Concepto de dependencia lineal
 
-- Ahora, si un vector B es un múltiplo escalar de A (es decir, nA = B ), entonces podemos decir que B y A son linealmente dependientes.
+Si un vector A es un múltiplo escalar de otro vector B (se denota A = nB ), entonces podemos decir que los vectores A y B son linealmente dependientes. Cuando dos vectores no son linealmente dependientes decimos que son linealmente independientes.
 
-Podemos comprender esto de varias maneras; dos vectores son linealmente dependientes si uno es un múltiplo escalar del otro, es decir, uno está en la recta generada del otro.
+> - [ ] Dibujar vectores (2, 4) y (1, 2) y sus etiquetas
 
-También es importante saber que si son linealmente dependientes, entonces B = nA, pero al mismo tiempo A = nB, por lo tanto B está en la recta generada por A, y al mismo tiempo A está en la recta generada por B, y tambien B es un múltiplo escalar de A... ya q es la misma recta
+- Por ejemplo los vectores A = (2, 4) y B = (1, 2) son linealmente dependientes, ya que A = 2B.
 
-**Calculo algebraico**
+> - [ ] Dibujar vectores (2, 4) y (1, 2) y mostrar que A = 2B
 
-Todo esto se refiere a la dependencia lineal. Ahora bien, ¿cómo podemos saber algebraicamente si dos vectores son linealmente dependientes? Podríamos encontrar un número "n" que satisfaga que B = nA. Partiendo de esto, llegamos a la definición del producto cruzado (Del cual no hare la demostración de donde sale la formula)
+Podemos comprender esto de varias maneras:
+- Dos vectores son linealmente dependientes si uno es un múltiplo escalar del otro, es decir
+- Uno está en la recta generada del otro.
 
-Dos vectores son linealmente dependientes si el producto cruzado entre ellos es cero (0).
-El producto cruzado se calcula multiplicando en cruz
+> - [ ] Multiplo escalar = en la recta generada
 
-De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún n que satisfaga B = nA y B no es un múltiplo escalar de A.
+También es importante saber que si son linealmente dependientes, entonces A = nB, pero al mismo tiempo B = rA, por lo tanto A está en la recta generada por B, y al mismo tiempo B está en la recta generada por A, ya que es la misma recta.
+
+> Resaltar las rectas generadas
+
+
+**Producto cruzado**
+
+Ahora bien, ¿cómo podemos determinar algebraicamente si dos vectores son linealmente dependientes? Una forma sería encontrar un número "n" que haga que A = nB, pero existe un método más rápido y sencillo.
+
+- Partiendo de esto, llegamos a la definición del producto cruzado
+
+> - [ ] Definicion producto cruzado
+
+El producto cruzado entre dos vectores A y B es una operacion que nos dice si dos vectores son linealmente dependientes o no.
+
+Nota: Esta operacion tambien tiene otras aplicaciones importantes, pero eso se vera mas adelante.
+
+> - [ ] Definicion producto cruzado algebraicamente, con 2 vectores (a, b) y (c, d)
+
+El producto cruzado se calcula multiplicando en cruz y restando, $a \cdot c - b \cdot d$.
+
+> - [ ] Dependencia lineal con el producto cruzado
+
+Sean A = (a, b) y B = (c, d) vectores del plano. A y B son linealmente dependientes si y sólo si ad − bc = 0
+
+> - [ ] Animacion producto cruzado por componentes
+
+Por ejemplo en nuestro caso, el producto cruzado entre A = (1, 2) y B = (2, 4) es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto A y B son linealmente dependientes.
+
+> - [ ] Animacion producto cruzado por componentes con numeros
+
+De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún n que satisfaga B = nA, es decir B no es un múltiplo escalar de A ni viceversa.
+
+Ahora, si por alguna razon queremos encontrar ese n que satisface B = nA, simplemente planteamos una ecuacion con las componentes de los vectores:
+
+> - [ ] Convertir a ecuaciones de componentes y despejar n
+
+- Como que escalar un vector implica multiplicar el escalar por cada una de sus componentes, entonces podemos expresar "esto" como "esto", y si encontramos ese n, entonces los vectores son linealmente dependientes, sino, son linealmente independientes.
 
 
 ## Suma de vectores.
