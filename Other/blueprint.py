@@ -3,7 +3,7 @@ from manim import *;
 import numpy as np;
 
 # Escena simple
-class LineScene(Scene):
+class baseScene(Scene):
     def construct(self):
         pass
 
