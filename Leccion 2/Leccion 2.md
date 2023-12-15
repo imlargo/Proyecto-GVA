@@ -159,29 +159,31 @@ Por ejemplo, si tenemos los vectores A = (1, 2) y B = (3, 4), entonces la suma d
 
 > Dibujamos el nuevo vector
 
-Ahora me gustaria dar una explicacion de porque esto tiene sentido, por ejemplo, si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
-
-
 **Como se ve**
 
-# Ideas
+Visualmente la podemos entender como tomar el segundo vector y colocarlo en la cabeza del segundo vector, de manera que el inicio del segundo vector sea la punta del primer vector
+
+mueve el segundo vector de manera que su cola se sitúe en la punta del primero. Luego, si dibujas un nuevo vector desde la cola del primero hasta donde ahora se encuentra la punta del segundo, ese nuevo vector es la suma de ambos.
+
+- Ahora me gustaria dar una explicacion de porque esto tiene sentido, por ejemplo, si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
+
+
+**Propiedades**
+
+- Una propiedad dice que la suma de vectores es conmutativa, es decir, A + B = B + A.
+
+> - [ ] Dibujar vectores (1, 2) y (3, 4) y mostrar que A + B = B + A
+
+Si lo vemos de forma visual, nos damos cuenta que es lo mismo, y tiene sentido con la definicion que di anteriormente
+
+
+De aqui sale la regla del paralelogramo (propiedades?)
+
+
+**Resta de vectores**
 
 Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 (Demostrar propiedades?)
 
-
-Visualmente la podemos entender como tomar el segundo vector y colocarlo en la cabeza del segundo vector, de manera que el inicio del segundo vector sea la punta del primer vector
-
-#Animación
-
-…
-
-Regla del paralelogramo y sus propiedades
-
-. . .
-Descomposición Canónica y Combinaciones lineales
-
-. . .
-Span of vectors, hallar escalares, cuando es posible y la excepción
 
 > - [ ] - [ ] Aclarar que no todo es re técnico sino que se simplifican algunas cosas que pueden no ser del todo “fieles” a la explicación matemática.

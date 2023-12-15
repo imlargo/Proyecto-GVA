@@ -14,17 +14,16 @@
 
 ### Leccion 2: Operaciones fundamentales con vectores y sus propiedades
 
-Multiplicación de vectores por un número real. (Y cómo afecta la magnitud) 
-Recta y rayos generados por un vector.
-Dependencia e independencia lineal y sus diferentes significados
+- Multiplicación de vectores por un número real. (Y cómo afecta la magnitud) 
+- Recta y rayos generados por un vector.
+- Dependencia e independencia lineal y sus diferentes significados
 
-Suma y resta de vectores. (Resta = suma * -1), diferentes maneras de hacerlo
-Regla del paralelogramo. y sus propiedades
+- Suma y resta de vectores. (Resta = suma * -1), diferentes maneras de hacerlo
+- Regla del paralelogramo. y sus propiedades
 
 
-Descomposición de un vector en sus canónicos
-Combinaciones lineales, span of vectors, hallar escalares, cuando es posible y la excepción
-
+- Descomposición de un vector en sus canónicos
+- Combinaciones lineales, span of vectors, hallar escalares, cuando es posible y la excepción
 
 ### Leccion 3: El producto punto
 
