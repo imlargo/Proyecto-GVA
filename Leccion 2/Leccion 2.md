@@ -2,11 +2,11 @@
 
 Asi como se pueden realizar ciertas operaciones con los numeros, los vectores tambien tienen operaciones fundamentales. Una de estas operaciones es la multiplicación de un vector por un número real.
 
-´´´
+´
 Requisitos:
 - Componentes
 - Direccion
-´´´
+´
 
 
 ### Multiplicacion por un escalar.
