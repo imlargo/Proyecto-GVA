@@ -1,8 +1,11 @@
+# Imports
 from manim import *;
 import numpy as np;
 
-class LineScene(Scene):
+# Escena simple
+class baseScene(Scene):
     def construct(self):
+        
         recta = NumberLine(
             x_range = [-10, 10, 1],
             unit_size = 0.6,
@@ -32,9 +35,12 @@ class LineScene(Scene):
         self.play(value.animate.set_value(-5), run_time = 3)
         self.wait()
 
+        pass
 
+# Escena en el plano
 class PlaneScene(LinearTransformationScene):
     def __init__(self):
+        # Configuracion del plano
         LinearTransformationScene.__init__(self,
             include_background_plane = True,
             include_foreground_plane = True,
@@ -42,9 +48,10 @@ class PlaneScene(LinearTransformationScene):
             show_basis_vectors = False,
             leave_ghost_vectors = False
             )
-        
+        pass
+
     def construct(self):
-        #Generamos el plano y destacamos el origen O
+            #Generamos el plano y destacamos el origen O
         O = MathTex(r"\vec{O}").shift((UP*0.5) + (RIGHT*0.5)).set_color(RED_A)
         self.play(Write(O))
         self.wait()
@@ -108,3 +115,5 @@ class PlaneScene(LinearTransformationScene):
             self.play(x.animate.set_value(v1), y.animate.set_value(v2), run_time = 2)
         
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(lineaX), FadeOut(lineaY))
+
+        pass
