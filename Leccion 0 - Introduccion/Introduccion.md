@@ -4,13 +4,11 @@
 
 **Yo**
 
-Hola, soy Juan Carlos Largo, y como iniciativa personal he decidido iniciar esta serie de videos, donde explicaré temas fundamentales acerca de la geometría vectorial y analítica mediante animaciones, ejemplos y conceptos.
+Hola, mi nombre es Juan Carlos Largo, y como iniciativa personal he decidido crear esta serie de videos, donde explicaré temas fundamentales acerca de la geometría vectorial mediante animaciones, ejemplos y conceptos.
 
-**Motivacion y metodologia**
+**Porque**
 
-Espero que esto sea util tanto para aprender, como para que les vaya bien en la materia :3
-
-Porque realmente si entienden el porque, sera mas sencillo aplicar lo que saben y resolver problemas
+La idea de este proyecto es que puedan aprender de una manera mas visual y sencilla ciertos temas, y que puedan comprender los conceptos de una manera mas intuitiva y profunda, y puedan resolver problemas con mayor facilidad. Siempre he pensado que la materia de geometría vectorial tiene mucho que ver con el analisis de los problemas y el saber como aplicar los conceptos. Porque realmente si entienden el porque, sera mas sencillo aplicar lo que saben y resolver problemas
 
 ### Acerca del curso
 
@@ -21,7 +19,3 @@ Mi objetivo es proporcionar una comprensión más profunda de por qué ocurren c
 > Animacion calculo computacional de una suma y el visual
 
 Y dejando de lado la parte de “computar y calcular” explicare el “porque” detrás de los conceptos para que no solo memorizar fórmulas, sino que también comprendan su lógica.
-
-**Tematicas**
-
-Tocare temas como:
