@@ -1,0 +1,93 @@
+body {
+    /* Dark mode */
+    /*
+    background-color: #010409;
+    color: #f0f6fc;
+    */
+
+    /* Light mode */
+    background-color: #ffffff;
+    color: #000000;
+
+    font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    font-kerning: normal;
+    font-size: 18px;
+
+}
+
+.video-container {
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.withe-hr {
+    border: 1px solid #ffffff;
+}
+
+/* Nav */
+.my-nav {
+    background-color: rgb(29, 21, 38);
+    color: #ffffff;
+}
+
+.my-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.my-nav a:hover {
+    color: #c175ff;
+}
+
+
+/* Estilos contenido */
+
+
+.header-badget {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(214, 179, 252);
+    border-radius: 999px;
+    display: inline;
+    font-family: Poppins, sans-serif;
+    font-size: 12.8px;
+    font-weight: 400;
+    height: auto;
+    line-height: 18.56px;
+
+    padding: 0.2rem 0.5rem;
+
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+}
+
+
+blockquote {
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin-block: calc(1em + 1ex);
+    margin-inline-start: 0;
+    padding-inline-start: calc(1em + 1ex);
+    position: relative;
+    color: var(--gray-2);
+}
+
+blockquote:before {
+    background-color: rgb(225, 198, 253);
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 100%;
+    inset-inline-start: 0;
+    position: absolute;
+    width: calc(0.25em + .25ex);
+}
+
+.my-contenido h3 {
+    text-align: center;
+}

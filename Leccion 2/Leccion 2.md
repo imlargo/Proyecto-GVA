@@ -1,4 +1,4 @@
-# Leccion 2: Operaciones fundamentales con vectores y sus propiedades
+# Operaciones fundamentales con vectores y sus propiedades
 
 Asi como se pueden realizar ciertas operaciones con los numeros, los vectores tambien tienen operaciones fundamentales. Una de estas operaciones es la multiplicación de un vector por un número real.
 
@@ -209,4 +209,4 @@ Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 (Demostrar propiedades?)
 
 
-> - [ ] - [ ] Aclarar que no todo es re técnico sino que se simplifican algunas cosas que pueden no ser del todo “fieles” a la explicación matemática.
+> - [ ] Aclarar que no todo es re técnico sino que se simplifican algunas cosas que pueden no ser del todo “fieles” a la explicación matemática.
