@@ -14,7 +14,7 @@ La idea de este proyecto es que puedan aprender de una manera mas visual y senci
 
 **Objetivo**
 
-Mi objetivo es proporcionar una comprensión más profunda de por qué ocurren ciertas cosas y ofrecer una explicación visual para facilitar la comprensión de los temas.
+Mi objetivo es proporcionar una comprensión más profunda de por qué ocurren ciertas cosas y ofrecer una explicación visual para facilitar la comprensión de los temas. y gracias a mis habilidades de programación puedo crear animaciones y videos que ayuden a comprender los conceptos.
 
 > Animacion calculo computacional de una suma y el visual
 

@@ -1,24 +1,20 @@
 # Leccion 1: Vectores
 
-### Operaciones y propiedades de vectores 
-
-**La recta numérica**
+### El plano
 
 > - [x] Animación recta real, puntos en ella y punto q se mueve con flecha apuntando
 
-Imaginemos la recta de números reales como una serie de puntos en la que cada número representa una posición, podemos pensar en un número como una cierta cantidad de pasos en una dirección particular. En este caso teniendo al cero como referencia, por ejemplo, podemos imaginar un número como x pasos en cierta dirección ya sea a la derecha o izquierda del cero.
-
+Imaginemos la recta de números reales como un conjunto de puntos donde cada número representa una posición. Podemos pensar en un **número** como una cierta cantidad de _pasos_ en una dirección particular, teniendo al cero como **referencia**. Por ejemplo, en este caso, podemos imaginar un número como x _pasos_ a la derecha o a la izquierda del cero.
 
 **El plano cartesiano.**
 
 > - [ ] Generamos el plano, escribimos R2, ponemos ejes y resaltamos el Origen
 
-Al extender este concepto a dos dimensiones, tenemos el plano, al cual se le llama **R2** y es una superficie plana dos rectas perpendiculares, las cuales se cruzan en el 0 del plano, al cual se le llama el Origen y se denota con la letra O.
-
+Cuando llevamos este concepto a dos dimensiones, obtenemos el **plano**, (también conocido como _R2_). El cual es simplemente una superficie plana dos ejes perpendiculares que se cruzan en el punto 0 del plano,al cual se le llama el Origen y se representa con la letra O. Al igual que en la recta real donde el 0 era nuestro punto de referencia, en el plano, el origen (representado por O) se convierte en nuestro punto de referencia.
+ 
 > - [ ] Les ponemos nombres a los ejes
 
-Uno de los ejes lo trazamos horizontalmente y el otro, verticalmente. Al eje horizontal lo llamamos eje X y lo orientamos positivamente
-hacia la derecha; al eje vertical lo llamamos eje y y lo orientamos positivamente hacia arriba. 
+Uno de los ejes lo trazamos horizontalmente y el otro, verticalmente. Al eje horizontal lo llamamos eje X y lo orientamos positivamente hacia la derecha al eje vertical lo llamamos eje Y y lo orientamos positivamente hacia arriba. 
 
 
 ### Que es un vector?
@@ -54,9 +50,10 @@ Pero, es importante destacar que un vector no es lo mismo que un punto. Un punto
 
 Un concepto fundamental en esta materia son los vectores. Los vectores son los objetos fundamentales con los que trabajaremos en este curso.
 
-**Nota de aclaracion**: La manera en la que explico el concepto de vector es una manera muy intuitiva e intento evitar en terminos y conceptos formales matematicos. Si quieren una explicacion mas profunda, aqui hay un meme para explicarlo :D
+> **Nota:** La manera en la que explico el concepto de vector es una manera muy intuitiva e intento evitar en terminos y conceptos formales matematicos. Si quieren una explicacion mas profunda, aqui hay un meme para explicarlo :D
 
-> - [ ] Meme vector es una flecha abstracta (100IQ)
+![Just a meme](../src/assets/meme-vector.jpg)
+
 
 Eso ha sido todo por esta primera leccion, hasta luego
 
