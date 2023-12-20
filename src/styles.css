@@ -132,3 +132,7 @@ blockquote:before {
 .my-contenido li {
     text-align: justify;
 }
+
+.my-contenido em {
+    color: #000000;
+}

@@ -16,11 +16,11 @@ A los números, ahora les diremos escalares, y a esta operacion se le llama mult
 
 <!-- Convertir la palabra "número" en "escalar" -->
 
-Podemos entender la multiplicación de un vector por un escalar como “estirar” ese vector en cierta cantidad.
+Podemos entender la multiplicación de un vector por un escalar como _"estirar"_ ese vector en cierta cantidad.
 
 <!-- Convertir la palabra "escalar" en "estirar?" -->
 
-Al multiplicar un vector por un escalar positivo, el vector se estira en la misma dirección que ya tiene, mientras que si el escalar es negativo, el vector se "estira" en dirección opuesta.
+Al multiplicar un vector por un escalar positivo, el vector se _estira_ en la misma _dirección_ que ya tiene, mientras que si el escalar es negativo, el vector se _estira_ en dirección opuesta.
 
 <!-- Estirar el vector de manera positiva y luego negativa -->
 
@@ -28,7 +28,7 @@ Al multiplicar un vector por un escalar positivo, el vector se estira en la mism
 
 - Y de la misma manera, si multiplicamos el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ por el escalar $-2$, entonces obtenemos el vector $\begin{bmatrix} -2 \\ -4 \end{bmatrix}$, que es el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ estirado en dirección opuesta.
 
-En este caso cuando hablo de dirección me refiero a “hacia donde apunta” ese vector, recordemos que un vector se diferencia de un punto en el hecho de que el vector tiene una direccion, y esa direccion es la direccion en la que apunta el vector saliendo desde el origen hasta su punta.
+En este caso cuando hablo de dirección me refiero a _"hacia donde apunta"_ ese vector, recordemos que un vector se diferencia de un punto en el hecho de que el vector tiene una direccion, y esa direccion es la direccion en la que apunta el vector saliendo desde el origen hasta su punta.
 
 <!-- Mostrar un vector y su direccion -->
 
@@ -36,7 +36,7 @@ En este caso cuando hablo de dirección me refiero a “hacia donde apunta” es
 
 <!-- Escalamos un vector -->
 
-Ahora, como se ve esto algebraicamente?, para multiplicar un escalar por un vector simplemente multiplicamos el escalar po
+Ahora, como se ve esto algebraicamente?, para multiplicar un escalar por un vector simplemente multiplicamos el escalar por las componentes del vector
 
 <!-- Hacemos la operacion mostrando por componentes -->
 
@@ -48,22 +48,20 @@ Un aspecto muy importante que me gustaria resaltar es que la multiplicación de 
 
 <!-- Escalar el vector, y mostrar la nueva longitud -->
 
-
-En otras palabras, si tenemos un vector de longitud 'n', la nueva longitud después de escalar será $n \cdot m$
+En otras palabras, si tenemos un vector de longitud **$m$**, la nueva longitud después de escalar será $m \cdot n$
 
 <!-- Animacion con el vector (3, 4) -->
 
-- Por ejemplo, si tenemos el vector (3, 4) que tiene longitud 5, y lo multiplicamos por el escalar 1.5, entonces obtenemos el vector (4.5, 6), que tiene longitud 7.5, es decir, 1.5 veces la longitud original.
+- Por ejemplo, si tenemos el vector $\begin{bmatrix} 3 \\ 4 \end{bmatrix}$ que tiene _longitud_ 5, y lo multiplicamos por el escalar 1.5, entonces obtenemos el vector $\begin{bmatrix} 4.5 \\ 6 \end{bmatrix}$, que tiene **longitud** $7.5$, es decir, 1.5 veces la longitud original.
 
 
 <!-- Convertir la longitud en n veces la magnitud -->
 
-Por cierto, a esa longitud del vector se le dice magnitud y se simboliza como ||v||, pero hablaremos de ella mas adelante a fondo
+Por cierto, a esa longitud del vector se le dice **magnitud** y se simboliza como **$|| \vec{v} ||$**, pero hablaremos de ella mas adelante a fondo
 
 - La magnitud de un vector es la longitud del vector, es decir, la distancia entre el origen y la punta del vector.
 
 <!-- **??? Demostracion de pq afecta la magnitud!!!** -->
-
 
 
 ### Recta y rayos generados.
@@ -71,17 +69,17 @@ Por cierto, a esa longitud del vector se le dice magnitud y se simboliza como ||
 
 <!-- Escalamos un vector y mostramos el proceso por componentes -->
 
-Como vimos anteriormente, multiplicar un vector por un escalar tiene el efecto de "estirar" ese vector.
+Como vimos anteriormente, multiplicar un vector por un escalar tiene el efecto de _estirar_ ese vector.
 
 **Recta generada**
 
 <!-- n E R -->
 
-En este caso, si le damos a nuestro escalar "(numero?)" n la libertad de tomar el valor de cualquier numero real, entonces obtenemos esta recta:
+En este caso, si le damos a nuestro escalar $n$ la libertad de tomar el valor de cualquier numero real, entonces obtenemos esta recta:
 
 <!-- Dibujamos una recta y n recorriendo todos los reales (Puntos sobre la recta como conjunto) -->
 
-Esta recta se le llama "la recta generada por V" y es el conjunto de todos los vectores resultantes de multiplicar nuestro vector v por cualquier numero real.
+Esta recta se le llama la _**recta generada por $\vec{v}$**_ y es el conjunto de todos los vectores resultantes de multiplicar nuestro vector $\vec{v}$ por cualquier numero real.
 
 <!-- Notacion matemtica -->
 
@@ -91,7 +89,7 @@ Esta recta se le llama "la recta generada por V" y es el conjunto de todos los v
 
 <!-- Mostramos el rayo positivo -->
 
-Ahora, si restringimos los valores de n y consideramos todos los posibles vectores resultantes de multiplicar nuestro vector v por un número n positivo entonces obtenemos el rayo positivo de v.
+Ahora, si restringimos los valores de $n$ y consideramos todos los posibles vectores resultantes de multiplicar nuestro vector $\vec{v}$ por un número n positivo entonces obtenemos el _**rayo positivo de $\vec{v}$**_.
 
 Y nos damos cuenta que el rayo positivo sigue la misma direccion en la que apunta nuestro vector.
 
@@ -99,9 +97,9 @@ Y nos damos cuenta que el rayo positivo sigue la misma direccion en la que apunt
 
 <!-- Mostramos el rayo negativo -->
 
-De igual manera, si multiplicamos nuestro vector v por un escalar n negativo, obtenemos el rayo negativo de nuestro vector v
+De igual manera, si multiplicamos nuestro vector $\vec{v}$ por un escalar $n$ negativo, obtenemos el _**rayo negativo de $\vec{v}$**_.
 
-Podemos ver que al multiplicar nuestro vector v por un escalar negativo obtenemos los vectores que apuntan en dirección opuesta a v.
+Podemos ver que al multiplicar nuestro vector $\vec{v}$ por un escalar negativo obtenemos los vectores que apuntan en dirección opuesta a $\vec{v}$.
 
 - El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación
 
@@ -113,13 +111,13 @@ Podemos ver que al multiplicar nuestro vector v por un escalar negativo obtenemo
 
 <!-- Concepto de dependencia lineal -->
 
-Ya sabemos que al escalar un vector obtenemos otro vector "estirado", si al vector resultante le llamamos $\vec{B}$ y al vector original le llamamos A, entonces podemos decir que $\vec{B}$ es un múltiplo escalar de $\vec{A}$, es decir $n \cdot \vec{A} = \vec{B}$ , donde n es el escalar que multiplicamos por $\vec{A}$ para obtener a $\vec{B}$.
+Ya sabemos que al escalar un vector obtenemos otro vector _estirado_, si al vector resultante le llamamos $\vec{B}$ y al vector original le llamamos $\vec{A}$, entonces podemos decir que $\vec{B}$ es un múltiplo escalar de $\vec{A}$, es decir $n \cdot \vec{A} = \vec{B}$, donde $n$ es el escalar que multiplicamos por $\vec{A}$ para obtener a $\vec{B}$.
 
-Cuando un vector es un multiplo escalar de otro, se dice que son linealmente dependientes, y no son linealmente dependientes decimos que son linealmente independientes.
+Cuando un vector es un multiplo escalar de otro, se dice que son **linealmente dependientes**, y no son linealmente dependientes decimos que son **linealmente independientes**.
 
 <!-- Dibujar vectores (2, 4) y (1, 2) y sus etiquetas -->
 
-- Por ejemplo los vectores $\vec{B}$ = (2, 4) y $\vec{A}$ = (1, 2) son linealmente dependientes, ya que $2 \cdot \vec{A} = \vec{B}$. Y por lo tanto $\vec{B}$ es un multiplo escalar de $\vec{A}$.
+- Por ejemplo los vectores $\vec{B} = \begin{bmatrix} 2 \\ 2 \end{bmatrix}$ y $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ son linealmente dependientes, ya que $2 \cdot \vec{A} = \vec{B}$. Y por lo tanto $\vec{B}$ es un multiplo escalar de $\vec{A}$.
 
 <!-- Dibujar vectores (2, 4) y (1, 2) y mostrar que $\vec{A} = 2 \cdot \vec{B}$ -->
 
@@ -137,13 +135,13 @@ También es importante saber que si son linealmente dependientes, entonces $\vec
 **Producto cruzado**
 
 Ahora bien, ¿cómo podemos determinar algebraicamente si dos vectores son linealmente dependientes? es decir, si uno es un multiplo escalar del otro?.
-Una forma sería encontrar un número "n" que haga que $n \cdot \vec{A} = \vec{B}$, pero existe un método más rápido y sencillo.
+Una forma sería encontrar un número **$n$** que haga que $n \cdot \vec{A} = \vec{B}$, pero existe un método más rápido y sencillo.
 
 - Partiendo de esto, llegamos a la definición del producto cruzado
 
 <!-- Definicion producto cruzado -->
 
-El producto cruzado entre dos vectores $\vec{A}$ y $\vec{B}$ es una operacion que nos dice si dos vectores son linealmente dependientes o no.
+> El producto cruzado entre dos vectores $\vec{A}$ y $\vec{B}$ es una operacion que nos dice si dos vectores son linealmente dependientes o no.
 
 <!-- Definicion producto cruzado algebraicamente, con 2 vectores $\begin{bmatrix} a \\ b \end{bmatrix} $ y $\begin{bmatrix} c \\ d \end{bmatrix}$ compontentes -->
 
@@ -153,21 +151,21 @@ Y listo, el resultado de esa operacion nos dice si los vectores son linealmente 
 
 <!-- Dependencia lineal con el producto cruzado -->
 
-Sean $\vec{A}$ = (a, b) y $\vec{B}$ = (c, d) vectores del plano. $\vec{A}$ y $\vec{B}$ son linealmente dependientes si y sólo si su producto cruzado es igual a cero, ad − bc = 0
+> Sean $\vec{A} = \begin{bmatrix} a \\ b \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} c \\ d \end{bmatrix}$ vectores del plano. $\vec{A}$ y $\vec{B}$ son linealmente dependientes **si y sólo si** su producto cruzado es igual a cero: **$a \cdot d - b \cdot c = 0$**.
 
 <!-- Animacion producto cruzado por componentes -->
 
-Por ejemplo en nuestro caso, el producto cruzado entre $\vec{A}$ = (1, 2) y $\vec{B}$ = (2, 4) es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto $\vec{A}$ y $\vec{B}$ son linealmente dependientes.
+Por ejemplo en nuestro caso, el producto cruzado entre $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$ es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto $\vec{A}$ y $\vec{B}$ son linealmente dependientes.
 
 <!-- Animacion producto cruzado por componentes con numeros -->
 
-De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún n que satisfaga nA = B, es decir $\vec{B}$ no es un múltiplo escalar de $\vec{A}$ ni viceversa.
+De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún **$n$** que satisfaga $n \cdot \vec{A} = \vec{B}$, es decir $\vec{B}$ no es un múltiplo escalar de $\vec{A}$ ni viceversa.
 
-Ahora, si por alguna razon queremos encontrar ese n que satisface nA = B, simplemente planteamos una ecuacion con las componentes de los vectores:
+Ahora, si por alguna razon queremos encontrar ese **$n$** que satisface $n \cdot \vec{A} = \vec{B}$, simplemente planteamos una ecuacion con las componentes de los vectores:
 
 <!-- Convertir a ecuaciones de componentes y despejar n -->
 
-- Como que escalar un vector implica multiplicar el escalar por cada una de sus componentes, entonces podemos expresar "esto" como "esto", y si encontramos ese n, entonces los vectores son linealmente dependientes, sino, son linealmente independientes.
+- Como que escalar un vector implica multiplicar el escalar por cada una de sus **componentes**, entonces podemos expresar "esto" como "esto", y si encontramos ese **$n$**, entonces los vectores son linealmente dependientes, sino, son linealmente independientes.
 
 
 ### Suma de vectores.
@@ -198,7 +196,7 @@ mueve el segundo vector de manera que su cola se sitúe en la punta del primero.
 
 **Propiedades**
 
-- Una propiedad dice que la suma de vectores es conmutativa, es decir, $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + A.
+- Una propiedad dice que la suma de vectores es conmutativa, es decir, $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + $\vec{A}$.
 
 <!-- Dibujar vectores (1, 2) y (3, 4) y mostrar que $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + A -->
 
