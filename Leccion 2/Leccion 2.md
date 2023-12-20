@@ -66,7 +66,7 @@ Por cierto, a esa longitud del vector se le dice magnitud y se simboliza como ||
 
 
 
-### Recta y rayos generados. (Por un vector)
+### Recta y rayos generados.
 ---
 
 <!-- Escalamos un vector y mostramos el proceso por componentes -->
