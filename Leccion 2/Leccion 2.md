@@ -3,9 +3,6 @@ Operaciones fundamentales con vectores y sus propiedades
 -->
 
 <!-- 
-Requisitos:
-- Componentes
-- Direccion
 - Vector: $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$
 -->
 
