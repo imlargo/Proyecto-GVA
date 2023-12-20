@@ -83,6 +83,7 @@ blockquote {
     margin-inline-start: 0;
     padding-inline-start: calc(1em + 1ex);
     position: relative;
+    text-align: justify;
 }
 
 blockquote:before {
@@ -126,4 +127,8 @@ blockquote:before {
 
 .my-contenido strong {
     color: rgb(117 32 167);
+}
+
+.my-contenido li {
+    text-align: justify;
 }
