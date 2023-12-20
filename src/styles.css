@@ -99,6 +99,7 @@ blockquote:before {
 
 .my-contenido h3 {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .my-contenido li::marker {

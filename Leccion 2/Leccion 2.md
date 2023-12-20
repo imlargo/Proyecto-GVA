@@ -181,7 +181,7 @@ La suma de vectores se realiza sumando componente por componente, es decir, suma
 
 <!-- ejemplo con vectores (1, 2) y (3, 4) -->
 
-Por ejemplo, si tenemos los vectores $\vec{A}$ = (1, 2) y $\vec{B}$ = (3, 4), entonces la suma de $\vec{A}$ y $\vec{B}$ es (1 + 3, 2 + 4) = (4, 6).
+Por ejemplo, si tenemos los vectores $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$, entonces la suma de $\vec{A}$ y $\vec{B}$ es $\begin{bmatrix} 1 + 3 \\ 2 + 3 \end{bmatrix} = \begin{bmatrix} 4 \\ 6 \end{bmatrix}$
 
 > Dibujamos el nuevo vector
 
@@ -191,12 +191,12 @@ Visualmente la podemos entender como tomar el segundo vector y colocarlo en la c
 
 mueve el segundo vector de manera que su cola se sitúe en la punta del primero. Luego, si dibujas un nuevo vector desde la cola del primero hasta donde ahora se encuentra la punta del segundo, ese nuevo vector es la suma de ambos.
 
-- Ahora me gustaria dar una explicacion de porque esto tiene sentido, por ejemplo, si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
+> Ahora me gustaria dar una explicacion de porque esto tiene sentido, por ejemplo, si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
 
 
 **Propiedades**
 
-- Una propiedad dice que la suma de vectores es conmutativa, es decir, $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + $\vec{A}$.
+- Una propiedad dice que la suma de vectores es conmutativa, es decir, $\vec{A} + \vec{B} = \vec{B} + \vec{A}$.
 
 <!-- Dibujar vectores (1, 2) y (3, 4) y mostrar que $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + A -->
 

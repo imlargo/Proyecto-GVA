@@ -8,11 +8,9 @@ fetch("../Leccion 2/Leccion 2.md").then(response => response.text()).then(conten
 
     document.getElementById("leccion").textContent = "Lección 2";
     document.getElementById("tittle").textContent = "Operaciones fundamentales con vectores y sus propiedades";
-
+    
     /*
     document.getElementById("leccion").textContent = "Lección 1";
     document.getElementById("tittle").textContent = "Vectores";
-
-    
     */
 });
