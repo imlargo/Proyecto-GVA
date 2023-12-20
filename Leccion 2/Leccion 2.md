@@ -1,4 +1,6 @@
-Asi como se pueden realizar ciertas operaciones con los numeros, los vectores tambien tienen operaciones fundamentales. Una de estas operaciones es la multiplicación de un vector por un número real.
+<!-- Titulo:
+Operaciones fundamentales con vectores y sus propiedades
+-->
 
 <!-- 
 Requisitos:
@@ -6,6 +8,8 @@ Requisitos:
 - Direccion
 - Vector: $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$
 -->
+
+Asi como se pueden realizar ciertas operaciones con los numeros, los vectores tambien tienen operaciones fundamentales. Una de estas operaciones es la multiplicación de un vector por un número real.
 
 ### Multiplicacion por un escalar.
 ---
