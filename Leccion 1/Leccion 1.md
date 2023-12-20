@@ -8,13 +8,13 @@ Imaginemos la recta de números reales como un conjunto de puntos donde cada nú
 
 **El plano cartesiano.**
 
-> - [ ] Generamos el plano, escribimos R2, ponemos ejes y resaltamos el Origen
+> - [ ] Generamos el plano, escribimos _$\mathbb{R}^{2}$_, ponemos ejes y resaltamos el Origen
 
-Cuando llevamos este concepto a dos dimensiones, obtenemos el **plano**, (también conocido como _R2_). El cual es simplemente una superficie plana dos ejes perpendiculares que se cruzan en el punto 0 del plano,al cual se le llama el Origen y se representa con la letra O. Al igual que en la recta real donde el 0 era nuestro punto de referencia, en el plano, el origen (representado por O) se convierte en nuestro punto de referencia.
+Cuando llevamos este concepto a dos dimensiones, obtenemos el **plano**, (también conocido como **$\mathbb{R}^{2}$**). El cual es simplemente una superficie plana dos ejes perpendiculares que se cruzan en el punto 0 del plano, al cual se le llama el Origen y se representa con la letra **$O$**. Al igual que en la recta real donde el 0 era nuestro punto de referencia, en el plano, el origen (representado por **$O$**) se convierte en nuestro punto de referencia.
  
 > - [ ] Les ponemos nombres a los ejes
 
-Uno de los ejes lo trazamos horizontalmente y el otro, verticalmente. Al eje horizontal lo llamamos eje X y lo orientamos positivamente hacia la derecha al eje vertical lo llamamos eje Y y lo orientamos positivamente hacia arriba. 
+Uno de los ejes lo trazamos horizontalmente y el otro, verticalmente. Al eje horizontal lo llamamos _**eje X**_ y lo orientamos positivamente hacia la derecha al eje vertical lo llamamos _**eje Y**_ y lo orientamos positivamente hacia arriba. 
 
 
 ### Que es un vector?
@@ -40,11 +40,12 @@ Estas coordenadas se presentan en un orden específico, primero los pasos en el 
 
 Pero, es importante destacar que un vector no es lo mismo que un punto. Un punto es simplemente una ubicación estática en el plano, mientras que un vector puede considerarse como una "flecha" que sale desde el origen y se extiende hasta un punto específico en el plano.
 
-- Los vectores tienen su longitud y dirección (Hacia donde apunta). Por ejemplo el vector (2,1) parte desde el origen hasta el punto (2,1) y su direccion va en este sentido, es decir, hacia donde apunta
+- Los vectores tienen su longitud y dirección (Hacia donde apunta). Por ejemplo el vector $\begin{bmatrix} 2 \\ 1 \end{bmatrix}$
+ parte desde el origen hasta el punto $\begin{pmatrix} 2 \\ 1 \end{pmatrix}$ y su direccion va en este sentido, es decir, hacia donde apunta
 
-- Las componentes de un vector son los pasos que se dan en cada eje para llegar a un punto específico en el plano, en este caso (2,1) la componente en X del vector es 2, y la componente en Y es 1.
+- Las componentes de un vector son los pasos que se dan en cada eje para llegar a un punto específico en el plano, en este caso $\begin{bmatrix} 2 \\ 1 \end{bmatrix}$ la componente en X del vector es 2, y la componente en Y es 1.
 
-- Un punto importante es el origen y es el punto con coordenadas (0,0), es decir 0 pasos en X y 0 pasos en Y.
+- Un punto importante es el origen y es el punto con coordenadas $\begin{bmatrix} 0 \\ 0 \end{bmatrix}$, es decir 0 pasos en X y 0 pasos en Y.
 
 > - [ ] Dibujar un vector
 

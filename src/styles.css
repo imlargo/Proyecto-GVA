@@ -63,7 +63,7 @@ body {
     display: inline;
     font-family: Poppins, sans-serif;
     font-size: 12.8px;
-    font-weight: 400;
+    font-weight: normal;
     height: auto;
     line-height: 18.56px;
 
@@ -72,6 +72,7 @@ body {
     text-align: center;
     vertical-align: middle;
     width: auto;
+
 }
 
 
@@ -121,4 +122,8 @@ blockquote:before {
     box-shadow: 0 0 10px rgb(213, 115, 255);
 
     width: 40rem;
+}
+
+.my-contenido strong {
+    color: rgb(117 32 167);
 }
