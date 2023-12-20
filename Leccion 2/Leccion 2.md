@@ -7,6 +7,7 @@ Requisitos:
 - Direccion
 
 ### Multiplicacion por un escalar.
+---
 
 **Multiplicación de vectores por un número**
 
@@ -65,6 +66,7 @@ Por cierto, a esa longitud del vector se le dice magnitud y se simboliza como ||
 
 
 ### Recta y rayos generados. (Por un vector)
+---
 
 > - [ ] Escalamos un vector y mostramos el proceso por componentes
 
@@ -104,6 +106,7 @@ Podemos ver que al multiplicar nuestro vector v por un escalar negativo obtenemo
 
 
 ### Dependencia e Independencia lineal
+---
 
 **Dependencia lineal**
 
@@ -166,7 +169,8 @@ Ahora, si por alguna razon queremos encontrar ese n que satisface nA = B, simple
 - Como que escalar un vector implica multiplicar el escalar por cada una de sus componentes, entonces podemos expresar "esto" como "esto", y si encontramos ese n, entonces los vectores son linealmente dependientes, sino, son linealmente independientes.
 
 
-## Suma de vectores.
+### Suma de vectores.
+---
 
 Ahora que ya sabemos multiplicar un vector por un escalar, podemos pasar a la siguiente operacion fundamental con vectores, la suma de vectores.
 
