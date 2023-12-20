@@ -5,6 +5,7 @@ Asi como se pueden realizar ciertas operaciones con los numeros, los vectores ta
 Requisitos:
 - Componentes
 - Direccion
+- Vector: $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$
 
 ### Multiplicacion por un escalar.
 ---
@@ -23,9 +24,9 @@ Al multiplicar un vector por un escalar positivo, el vector se estira en la mism
 
 > - [ ] Estirar el vector de manera positiva y luego negativa
 
-- Por ejemplo, si tenemos el vector (1, 2) y lo multiplicamos por el escalar 2, entonces obtenemos el vector (2, 4), que es el vector (1, 2) estirado en la misma dirección que ya tenía.
+- Por ejemplo, si tenemos el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y lo multiplicamos por el escalar $2$, entonces obtenemos el vector $\begin{bmatrix} 2 \\ 4 \end{bmatrix}$, que es el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ estirado en la misma dirección que ya tenía.
 
-- Y de la misma manera, si multiplicamos el vector (1, 2) por el escalar -2, entonces obtenemos el vector (-2, -4), que es el vector (1, 2) estirado en dirección opuesta.
+- Y de la misma manera, si multiplicamos el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ por el escalar $-2$, entonces obtenemos el vector $\begin{bmatrix} -2 \\ -4 \end{bmatrix}$, que es el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ estirado en dirección opuesta.
 
 En este caso cuando hablo de dirección me refiero a “hacia donde apunta” ese vector, recordemos que un vector se diferencia de un punto en el hecho de que el vector tiene una direccion, y esa direccion es la direccion en la que apunta el vector saliendo desde el origen hasta su punta.
 
@@ -48,7 +49,7 @@ Un aspecto muy importante que me gustaria resaltar es que la multiplicación de 
 > - [ ] Escalar el vector, y mostrar la nueva longitud
 
 
-En otras palabras, si tenemos un vector de longitud 'n', la nueva longitud después de escalar será 'n \* m'. 
+En otras palabras, si tenemos un vector de longitud 'n', la nueva longitud después de escalar será $n \cdot m$
 
 > - [ ] Animacion con el vector (3, 4)
 
@@ -112,15 +113,15 @@ Podemos ver que al multiplicar nuestro vector v por un escalar negativo obtenemo
 
 > - [ ] Concepto de dependencia lineal
 
-Ya sabemos que al escalar un vector obtenemos otro vector "estirado", si al vector resultante le llamamos B y al vector original le llamamos A, entonces podemos decir que B es un múltiplo escalar de A, es decir nA = B, donde n es el escalar que multiplicamos por A para obtener a B.
+Ya sabemos que al escalar un vector obtenemos otro vector "estirado", si al vector resultante le llamamos $\vec{B}$ y al vector original le llamamos A, entonces podemos decir que $\vec{B}$ es un múltiplo escalar de $\vec{A}$, es decir $n \cdot \vec{A} = \vec{B}$ , donde n es el escalar que multiplicamos por $\vec{A}$ para obtener a $\vec{B}$.
 
 Cuando un vector es un multiplo escalar de otro, se dice que son linealmente dependientes, y no son linealmente dependientes decimos que son linealmente independientes.
 
 > - [ ] Dibujar vectores (2, 4) y (1, 2) y sus etiquetas
 
-- Por ejemplo los vectores B = (2, 4) y A = (1, 2) son linealmente dependientes, ya que 2A = B. Y por lo tanto B es un multiplo escalar de A.
+- Por ejemplo los vectores $\vec{B}$ = (2, 4) y $\vec{A}$ = (1, 2) son linealmente dependientes, ya que $2 \cdot \vec{A} = \vec{B}$. Y por lo tanto $\vec{B}$ es un multiplo escalar de $\vec{A}$.
 
-> - [ ] Dibujar vectores (2, 4) y (1, 2) y mostrar que A = 2B
+> - [ ] Dibujar vectores (2, 4) y (1, 2) y mostrar que $\vec{A} = 2 \cdot \vec{B}$
 
 Podemos comprender el concepto de dependencia lineal de varias maneras:
 - Dos vectores son linealmente dependientes si uno es un múltiplo escalar del otro, es decir
@@ -128,7 +129,7 @@ Podemos comprender el concepto de dependencia lineal de varias maneras:
 
 > - [ ] Multiplo escalar = en la recta generada
 
-También es importante saber que si son linealmente dependientes, entonces A = nB, pero al mismo tiempo B = rA, por lo tanto A está en la recta generada por B, y al mismo tiempo B está en la recta generada por A, ya que es la misma recta.
+También es importante saber que si son linealmente dependientes, entonces $\vec{A} = n \cdot \vec{B}$, pero al mismo tiempo $\vec{B} = r \cdot \vec{A}$, por lo tanto $\vec{A}$ está en la recta generada por $\vec{B}$, y al mismo tiempo $\vec{B}$ está en la recta generada por $\vec{A}$, ya que es la misma recta.
 
 > Resaltar las rectas generadas
 
@@ -136,15 +137,15 @@ También es importante saber que si son linealmente dependientes, entonces A = n
 **Producto cruzado**
 
 Ahora bien, ¿cómo podemos determinar algebraicamente si dos vectores son linealmente dependientes? es decir, si uno es un multiplo escalar del otro?.
-Una forma sería encontrar un número "n" que haga que nA = B, pero existe un método más rápido y sencillo.
+Una forma sería encontrar un número "n" que haga que $n \cdot \vec{A} = \vec{B}$, pero existe un método más rápido y sencillo.
 
 - Partiendo de esto, llegamos a la definición del producto cruzado
 
 > - [ ] Definicion producto cruzado
 
-El producto cruzado entre dos vectores A y B es una operacion que nos dice si dos vectores son linealmente dependientes o no.
+El producto cruzado entre dos vectores $\vec{A}$ y $\vec{B}$ es una operacion que nos dice si dos vectores son linealmente dependientes o no.
 
-> - [ ] Definicion producto cruzado algebraicamente, con 2 vectores (a, b) y (c, d) compontentes
+> - [ ] Definicion producto cruzado algebraicamente, con 2 vectores $\begin{bmatrix} a \\ b \end{bmatrix}$ y $\begin{bmatrix} c \\ d \end{bmatrix}$ compontentes
 
 El producto cruzado se calcula multiplicando en cruz y restando, asi, $a \cdot d - b \cdot c$.
 
@@ -152,15 +153,15 @@ Y listo, el resultado de esa operacion nos dice si los vectores son linealmente 
 
 > - [ ] Dependencia lineal con el producto cruzado
 
-Sean A = (a, b) y B = (c, d) vectores del plano. A y B son linealmente dependientes si y sólo si su producto cruzado es igual a cero, ad − bc = 0
+Sean $\vec{A}$ = (a, b) y $\vec{B}$ = (c, d) vectores del plano. $\vec{A}$ y $\vec{B}$ son linealmente dependientes si y sólo si su producto cruzado es igual a cero, ad − bc = 0
 
 > - [ ] Animacion producto cruzado por componentes
 
-Por ejemplo en nuestro caso, el producto cruzado entre A = (1, 2) y B = (2, 4) es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto A y B son linealmente dependientes.
+Por ejemplo en nuestro caso, el producto cruzado entre $\vec{A}$ = (1, 2) y $\vec{B}$ = (2, 4) es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto $\vec{A}$ y $\vec{B}$ son linealmente dependientes.
 
 > - [ ] Animacion producto cruzado por componentes con numeros
 
-De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún n que satisfaga nA = B, es decir B no es un múltiplo escalar de A ni viceversa.
+De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún n que satisfaga nA = B, es decir $\vec{B}$ no es un múltiplo escalar de $\vec{A}$ ni viceversa.
 
 Ahora, si por alguna razon queremos encontrar ese n que satisface nA = B, simplemente planteamos una ecuacion con las componentes de los vectores:
 
@@ -182,7 +183,7 @@ La suma de vectores se realiza sumando componente por componente, es decir, suma
 
 > - [ ] ejemplo con vectores (1, 2) y (3, 4)
 
-Por ejemplo, si tenemos los vectores A = (1, 2) y B = (3, 4), entonces la suma de A y B es (1 + 3, 2 + 4) = (4, 6).
+Por ejemplo, si tenemos los vectores $\vec{A}$ = (1, 2) y $\vec{B}$ = (3, 4), entonces la suma de $\vec{A}$ y $\vec{B}$ es (1 + 3, 2 + 4) = (4, 6).
 
 > Dibujamos el nuevo vector
 
@@ -197,9 +198,9 @@ mueve el segundo vector de manera que su cola se sitúe en la punta del primero.
 
 **Propiedades**
 
-- Una propiedad dice que la suma de vectores es conmutativa, es decir, A + B = B + A.
+- Una propiedad dice que la suma de vectores es conmutativa, es decir, $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + A.
 
-> - [ ] Dibujar vectores (1, 2) y (3, 4) y mostrar que A + B = B + A
+> - [ ] Dibujar vectores (1, 2) y (3, 4) y mostrar que $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + A
 
 Si lo vemos de forma visual, nos damos cuenta que es lo mismo, y tiene sentido con la definicion que di anteriormente
 
