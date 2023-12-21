@@ -47,7 +47,7 @@ Y ahora el vector resultante tambien es el doble de _largo_, pero apunta en _dir
 
 En este caso cuando hablo de **dirección** me refiero a _"hacia donde apunta"_ ese vector, recordemos que los vectores siempre siguen la dirección _hacia donde apuntan_, es decir, hacia donde se extienden, yendo desde el origen hasta el punto donde terminan.
 
-**Como afecta la longitud.**
+**Como afecta la longitud.** {#lesson-magnitud}
 
 <!-- Dibujar un vector, hacer corchetes con su longitud, y poner un n con su longitud -->
 

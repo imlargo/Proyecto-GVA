@@ -124,6 +124,7 @@ blockquote:before {
     box-shadow: 0 0 10px rgb(213, 115, 255);
 
     width: 40rem;
+    border-radius: 0.3rem;
 }
 
 .my-contenido strong {
@@ -136,4 +137,21 @@ blockquote:before {
 
 .my-contenido em {
     color: #000000;
+}
+
+.up-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 999px;
+    background: #6767674b;
+    color: #db58ff;
+
+    min-width: 50px;
+    min-height: 50px;
+    margin: 20px 15px;
+
+    font-size: 1rem;
+    
+    transition: background .2s ease,color .2s ease,opacity .2s ease;
 }
