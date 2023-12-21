@@ -34,3 +34,4 @@ function concierto() {
     // Muestra el resultado
     document.getElementById("concierto").textContent = `Faltan ${dias} días, ${horas} horas y ${minutos} minutos hasta el 23 de febrero de 2024 a las 8:00 PM.`
 }
+concierto();
