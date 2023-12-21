@@ -6,6 +6,8 @@ import numpy as np;
 class baseScene(Scene):
     def construct(self):
         
+        # // > Animación recta real, puntos en ella y punto q se mueve con flecha apuntando < //
+
         recta = NumberLine(
             x_range = [-10, 10, 1],
             unit_size = 0.6,
@@ -51,12 +53,15 @@ class PlaneScene(LinearTransformationScene):
         pass
 
     def construct(self):
-            #Generamos el plano y destacamos el origen O
+        
+        # // > Generar el plano, escribimos _$\mathbb{R}^{2}$_, ponemos ejes y resaltamos el Origen < //
+        
+        #Generamos el plano y destacamos el origen O
         O = MathTex(r"\vec{O}").shift((UP*0.5) + (RIGHT*0.5)).set_color(RED_A)
         self.play(Write(O))
         self.wait()
 
-        #Les ponemos nombres a los ejes
+        # // > Les ponemos nombres a los ejes e indicamos su direccion < //
         ejeX = Tex("Eje X").shift(UP + RIGHT).scale(0.7).set_color(GREEN_C)
         ejeY = Tex("Eje Y").shift(UP + RIGHT).scale(0.7).set_color(RED_C)
         
@@ -68,7 +73,10 @@ class PlaneScene(LinearTransformationScene):
         self.play(ApplyMethod(ejeY.move_to, np.array([0.5, 3.5, 0])))
         self.wait()
 
-        #Representamos un punto, hacemos linea y pasos en X y en Y
+        # // > Representamos un punto en el plano y lo movemos al rededor < //
+
+        # // > Dejamos un punto y hacemos pasos en componentes X y Y. < //
+
         v = [3,2]
         punto = Dot(point = np.array([3,2,0]), color = YELLOW)
         self.play(Create(punto))
@@ -82,7 +90,7 @@ class PlaneScene(LinearTransformationScene):
         self.play(Create(lineaY))
         self.wait()
 
-        #Hacemos la pareja ordenada v = (1,2) como vector
+        # // > Indicamos la pareja ordenada (2, 1) y resaltamos sus coordenadas < //
         vector = Vector(v, color = TEAL_C)
         name = MathTex(r"\vec{v}", color = PURPLE_A)
         label = vector.coordinate_label(color = TEAL_C)
@@ -93,7 +101,8 @@ class PlaneScene(LinearTransformationScene):
         self.play(Create(label))
         self.wait()
 
-        #Vector aleatorio?
+        # // > Resaltar la palabra "punto" < //
+
         self.play(FadeOut(ejeX), FadeOut(ejeY))
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(label), FadeOut(lineaX), FadeOut(lineaY))
         self.wait()
@@ -115,5 +124,18 @@ class PlaneScene(LinearTransformationScene):
             self.play(x.animate.set_value(v1), y.animate.set_value(v2), run_time = 2)
         
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(lineaX), FadeOut(lineaY))
-
+        
+        # // > Convertir la palabra punto por vector, convertir el punto (2, 1) a vector, indicar direccion < //
+        
+        # // > Resaltar direccion con una flecha y passing light < //
+        
+        # // > Indicar el vector (2, 1), el punto (2, 1) y resaltar direccion < //
+        
+        # // > Indicar componentes y mostrar pasos < //
+        
+        # // > Limpiar plano, mostrar el origen como coordenadas, notacion y resaltar < //
+        
+        # // > Dibujar un vector nuevamente con componentes, direccion y resaltar < //
+        
+        # // > Mostrar meme < //
         pass

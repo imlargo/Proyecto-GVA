@@ -6,73 +6,75 @@ Operaciones fundamentales con vectores y sus propiedades
 - Vector: $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$
 -->
 
-Asi como se pueden realizar ciertas operaciones con los numeros, los vectores tambien tienen operaciones fundamentales. Una de estas operaciones es la multiplicación de un vector por un número real.
+Asi como se pueden hacer operaciones con números, los vectores también tienen operaciones fundamentales. Una de ellas es la _multiplicación_ de un vector por un número real.
 
 ### Multiplicacion por un escalar.
 ---
 
-**Multiplicación de vectores por un número**
-
-A los números, ahora les diremos escalares, y a esta operacion se le llama multiplicación de un vector por un escalar.
+<!-- **Multiplicación de vectores por un número** -->
 
 <!-- Convertir la palabra "número" en "escalar" -->
 
-Podemos entender la multiplicación de un vector por un escalar como _"estirar"_ ese vector en cierta cantidad.
+A los números ahora les llamaremos **escalares**, y a esta operación la llamaremos multiplicación de un vector por un escalar.
 
 <!-- Convertir la palabra "escalar" en "estirar?" -->
 
-Al multiplicar un vector por un escalar positivo, el vector se _estira_ en la misma _dirección_ que ya tiene, mientras que si el escalar es negativo, el vector se _estira_ en dirección opuesta.
-
 <!-- Estirar el vector de manera positiva y luego negativa -->
 
-- Por ejemplo, si tenemos el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y lo multiplicamos por el escalar $2$, entonces obtenemos el vector $\begin{bmatrix} 2 \\ 4 \end{bmatrix}$, que es el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ estirado en la misma dirección que ya tenía.
-
-- Y de la misma manera, si multiplicamos el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ por el escalar $-2$, entonces obtenemos el vector $\begin{bmatrix} -2 \\ -4 \end{bmatrix}$, que es el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ estirado en dirección opuesta.
-
-En este caso cuando hablo de dirección me refiero a _"hacia donde apunta"_ ese vector, recordemos que un vector se diferencia de un punto en el hecho de que el vector tiene una direccion, y esa direccion es la direccion en la que apunta el vector saliendo desde el origen hasta su punta.
+> Podemos entender la multiplicación de un vector por un escalar como _estirar_ ese vector en cierta cantidad. Al multiplicar un vector por un escalar positivo, el vector se _estira_ en la misma _dirección_ que ya tiene, mientras que si el escalar es negativo, el vector se _estira_ en dirección opuesta.
 
 <!-- Mostrar un vector y su direccion -->
 
-**Como se escala algebraicamente**
+<!-- **Como se escala algebraicamente** -->
 
 <!-- Escalamos un vector -->
 
-Ahora, como se ve esto algebraicamente?, para multiplicar un escalar por un vector simplemente multiplicamos el escalar por las componentes del vector
+Ahora, ¿cómo se representa esto algebraicamente? Para multiplicar un escalar por un vector, simplemente multiplicamos el escalar por cada una de las **componentes** del vector, de esta manera:
 
 <!-- Hacemos la operacion mostrando por componentes -->
 
-**Como afecta la longitud**
+- **$n$** $\cdot \vec{v} =$   **$n$** $\cdot \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} n \cdot x \\ n \cdot y \end{bmatrix}$
+
+Por ejemplo, si tenemos el vector **$\vec{v}$**, donde  $\vec{v} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y lo multiplicamos por el escalar $2$, entonces obtenemos:
+
+> $$ 2 \cdot \vec{v} = 2 \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 2 \cdot 1 \\ 2 \cdot 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$$
+
+Donde el vector resultante apunta en la misma direccion que ya tenia, pero ahora es el doble de _largo_ (más adelante explicaré el por qué). De igual manera manera, si multiplicamos el vector **$\vec{v}$** por -2, entonces obtenemos:
+
+> $$ -2 \cdot \vec{v} = -2 \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} -2 \cdot 1 \\ -2 \cdot 2 \end{bmatrix} = \begin{bmatrix} -2 \\ -4 \end{bmatrix}$$
+
+Y ahora el vector resultante tambien es el doble de _largo_, pero apunta en _dirección_ opuesta a la que tenia el vector inicial.
+
+En este caso cuando hablo de **dirección** me refiero a _"hacia donde apunta"_ ese vector, recordemos que los vectores siempre siguen la dirección _hacia donde apuntan_, es decir, hacia donde se extienden, yendo desde el origen hasta el punto donde terminan.
+
+**Como afecta la longitud.**
 
 <!-- Dibujar un vector, hacer corchetes con su longitud, y poner un n con su longitud -->
 
 Un aspecto muy importante que me gustaria resaltar es que la multiplicación de un vector por un escalar tiene el efecto de multiplicar la longitud original del vector por ese mismo número.
 
+> **Nota:** A la longitud de un vector se le llama su **magnitud**, se simboliza como **$|| \vec{v} ||$**, y es la distancia desde el origen hasta la punta del vector. Pero veremos ese tema en otra leccion mas adelante.
+
 <!-- Escalar el vector, y mostrar la nueva longitud -->
 
-En otras palabras, si tenemos un vector de longitud **$m$**, la nueva longitud después de escalar será $m \cdot n$
+En otras palabras, si tenemos un vector **$\vec{v}$** de longitud **$m$**, es decir $|| \vec{v} || = m$, la nueva longitud después de escalar el vector será $m \cdot n = || n \cdot \vec{v} || = n \cdot || \vec{v} || = n \cdot m $. Por ejemplo, si tenemos un vector **$\vec{v}$** de longitud 3, y lo multiplicamos por el escalar 2, entonces la longitud del vector resultante será $2 \cdot 3 = 6$.
 
 <!-- Animacion con el vector (3, 4) -->
 
-- Por ejemplo, si tenemos el vector $\begin{bmatrix} 3 \\ 4 \end{bmatrix}$ que tiene _longitud_ 5, y lo multiplicamos por el escalar 1.5, entonces obtenemos el vector $\begin{bmatrix} 4.5 \\ 6 \end{bmatrix}$, que tiene **longitud** $7.5$, es decir, 1.5 veces la longitud original.
+Por ejemplo, el vector $\vec{v} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$ tiene **magnitud** 5 ( $|| \vec{v} || = 5$ ), y lo multiplicamos por el escalar 1.5, entonces obtenemos el vector
 
+> $$ 1.5 \cdot \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} 1.5 \cdot 3 \\ 1.5 \cdot 4 \end{bmatrix} = \begin{bmatrix} 4.5 \\ 6 \end{bmatrix} \overset{Donde}{\rightarrow} || \begin{bmatrix} 4.5 \\ 6 \end{bmatrix} || = 7.5 = 1.5 \cdot || \vec{v} ||$$
 
-<!-- Convertir la longitud en n veces la magnitud -->
-
-Por cierto, a esa longitud del vector se le dice **magnitud** y se simboliza como **$|| \vec{v} ||$**, pero hablaremos de ella mas adelante a fondo
-
-- La magnitud de un vector es la longitud del vector, es decir, la distancia entre el origen y la punta del vector.
-
-<!-- **??? Demostracion de pq afecta la magnitud!!!** -->
-
+El cual tiene **magnitud** 7.5, es decir, 1.5 veces la _longitud_ original. A continuacion veremos algunas consecuencias de poder multiplicar un vector por un escalar.
 
 ### Recta y rayos generados.
 ---
 
+**Recta generada por un vector.**
+
 <!-- Escalamos un vector y mostramos el proceso por componentes -->
 
 Como vimos anteriormente, multiplicar un vector por un escalar tiene el efecto de _estirar_ ese vector.
-
-**Recta generada**
 
 <!-- n E R -->
 
@@ -80,7 +82,9 @@ En este caso, si le damos a nuestro escalar $n$ la libertad de tomar el valor de
 
 <!-- Dibujamos una recta y n recorriendo todos los reales (Puntos sobre la recta como conjunto) -->
 
-Esta recta se le llama la _**recta generada por $\vec{v}$**_ y es el conjunto de todos los vectores resultantes de multiplicar nuestro vector $\vec{v}$ por cualquier numero real.
+Esta recta se le llama la _**recta generada por $\vec{v}$**_, se simboliza $L_{\vec{v}}$ y es el conjunto de todos los vectores resultantes de multiplicar nuestro vector $\vec{v}$ por cualquier numero real.
+
+> $$L_{\vec{v}} = \{ \; \begin{bmatrix} x \\ y \end{bmatrix} \; : \; n \cdot \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}, \; n \in \mathbb{R} \; \}$$
 
 <!-- Notacion matemtica -->
 
