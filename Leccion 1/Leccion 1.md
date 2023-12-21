@@ -17,7 +17,7 @@ Cuando llevamos este concepto a dos dimensiones, obtenemos el **plano** (tambié
 Una de las rectas la trazamos horizontalmente y la otra verticalmente. La recta horizontal la llamamos _**eje X**_ y la orientamos positivamente hacia la _derecha_, a la recta vertical la llamamos _**eje Y**_ y la orientamos positivamente hacia _arriba_.
 
 
-### Que es un vector?
+### Que es un vector? {#lesson-vector}
 ---
 
 **Puntos en el plano.**

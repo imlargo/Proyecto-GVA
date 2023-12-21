@@ -47,7 +47,7 @@ Y ahora el vector resultante tambien es el doble de _largo_, pero apunta en _dir
 
 En este caso cuando hablo de **dirección** me refiero a _"hacia donde apunta"_ ese vector, recordemos que los vectores siempre siguen la dirección _hacia donde apuntan_, es decir, hacia donde se extienden, yendo desde el origen hasta el punto donde terminan.
 
-**Como afecta la longitud.** {#lesson-magnitud}
+**Como afecta la longitud.**
 
 <!-- Dibujar un vector, hacer corchetes con su longitud, y poner un n con su longitud -->
 
@@ -67,7 +67,7 @@ Por ejemplo, el vector $\vec{v} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$ tiene **
 
 El cual tiene **magnitud** 7.5, es decir, 1.5 veces la _longitud_ original. A continuacion veremos algunas consecuencias de poder multiplicar un vector por un escalar.
 
-### Recta y rayos generados.
+### Recta y rayos generados. {#lesson-recta-rayos}
 ---
 
 **Recta generada por un vector.**
@@ -101,7 +101,7 @@ De igual manera, si restringimos los valores de **$n$** solo a numeros negativos
 El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación.
 
 
-### Dependencia e Independencia lineal
+### Dependencia e Independencia lineal {#lesson-dependencia-lineal}
 ---
 
 **Dependencia lineal**
@@ -165,7 +165,7 @@ Ahora, si por alguna razon queremos encontrar ese **$n$** que satisface $n \cdot
 - Como que escalar un vector implica multiplicar el escalar por cada una de sus **componentes**, entonces podemos expresar "esto" como "esto", y si encontramos ese **$n$**, entonces los vectores son linealmente dependientes, sino, son linealmente independientes.
 
 
-### Suma de vectores.
+### Suma de vectores. {#lesson-suma}
 ---
 
 Ahora que ya sabemos multiplicar un vector por un escalar, podemos pasar a la siguiente operacion fundamental con vectores, la suma de vectores.
@@ -201,7 +201,7 @@ Si lo vemos de forma visual, nos damos cuenta que es lo mismo, y tiene sentido c
 
 De aqui sale la regla del paralelogramo (propiedades?)
 
-### Resta de vectores
+### Resta de vectores {#lesson-resta}
 ---
 
 Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
