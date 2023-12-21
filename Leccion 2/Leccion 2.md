@@ -88,9 +88,9 @@ Como vimos anteriormente, multiplicar un vector por un escalar tiene el efecto d
 <!-- Mostramos el rayo positivo -->
 Ahora, si limitamos los valores de **$n$** solo a números positivos, obtenemos el _**rayo positivo**_ de $\vec{v}$, se simboliza con $R_{\vec{v}}^{+}$ y es el conjunto de todos los vectores resultantes de multiplicar $\vec{v}$ por un escalar positivo.
 
-> $$R_{\vec{v}}^{+} = \{\begin{bmatrix} x \\ y \end{bmatrix} : n \cdot \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}, n > 0 \}$$
-
 - Además, podemos darnos cuenta de que el _rayo positivo_ de $\vec{v}$ es una "recta" que sigue la misma _dirección_ que $\vec{v}$. Esto tiene sentido, ya que al escalar $\vec{v}$ por un número positivo obtenemos otro vector que está _estirado_ en la misma dirección. Por lo tanto, el conjunto de puntos forma una _semirrecta_ que se extiende infinitamente en la misma dirección que $\vec{v}$.
+
+> $$R_{\vec{v}}^{+} = \{\begin{bmatrix} x \\ y \end{bmatrix} : n \cdot \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}, n > 0 \}$$
 
 <!-- Mostramos el rayo negativo -->
 
@@ -98,7 +98,7 @@ De igual manera, si restringimos los valores de **$n$** solo a numeros negativos
 
 > $$R_{\vec{v}}^{+} = \{\begin{bmatrix} x \\ y \end{bmatrix} : n \cdot \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}, n < 0 \}$$
 
-El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación
+El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación.
 
 
 ### Dependencia e Independencia lineal
