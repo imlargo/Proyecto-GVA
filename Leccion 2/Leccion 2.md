@@ -96,7 +96,7 @@ Ahora, si limitamos los valores de **$n$** solo a números positivos, obtenemos 
 
 De igual manera, si restringimos los valores de **$n$** solo a numeros negativos obtenemos el _**rayo negativo**_ de $\vec{v}$, se simboliza con $R_{\vec{v}}^{-}$ y es el conjunto de vectores resultantes forma una recta que se extiende en la dirección opuesta a la del vector $\vec{v}$
 
-> $$R_{\vec{v}}^{+} = \{\begin{bmatrix} x \\ y \end{bmatrix} : n \cdot \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}, n < 0 \}$$
+> $$R_{\vec{v}}^{-} = \{\begin{bmatrix} x \\ y \end{bmatrix} : n \cdot \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}, n < 0 \}$$
 
 El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación.
 
