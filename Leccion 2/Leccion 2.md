@@ -73,16 +73,11 @@ El cual tiene **magnitud** 7.5, es decir, 1.5 veces la _longitud_ original. A co
 **Recta generada por un vector.**
 
 <!-- Escalamos un vector y mostramos el proceso por componentes -->
-
-Como vimos anteriormente, multiplicar un vector por un escalar tiene el efecto de _estirar_ ese vector.
-
 <!-- n E R -->
 
-En este caso, si le damos a nuestro escalar $n$ la libertad de tomar el valor de cualquier numero real, entonces obtenemos esta recta:
+Como vimos anteriormente, multiplicar un vector por un escalar tiene el efecto de _estirar_ ese vector. Ahora, si le damos a nuestro escalar $n$ la libertad de tomar el valor de cualquier numero real, entonces obtenemos una recta. Esta recta se le llama la _**recta generada por $\vec{v}$**_, se simboliza $L_{\vec{v}}$ y es el conjunto de todos los multiplos escalares de nuestro vector $\vec{v}$, es decir, el conjunto de todos los vectores resultantes de multiplicar $\vec{v}$ por cualquier escalar.
 
 <!-- Dibujamos una recta y n recorriendo todos los reales (Puntos sobre la recta como conjunto) -->
-
-Esta recta se le llama la _**recta generada por $\vec{v}$**_, se simboliza $L_{\vec{v}}$ y es el conjunto de todos los vectores resultantes de multiplicar nuestro vector $\vec{v}$ por cualquier numero real.
 
 > $$L_{\vec{v}} = \{ \; \begin{bmatrix} x \\ y \end{bmatrix} \; : \; n \cdot \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}, \; n \in \mathbb{R} \; \}$$
 
@@ -91,11 +86,11 @@ Esta recta se le llama la _**recta generada por $\vec{v}$**_, se simboliza $L_{\
 **Rayos generados**
 
 <!-- Mostramos el rayo positivo -->
-- Ahora, si restringimos los valores de $n$ y consideramos todos los posibles vectores resultantes de multiplicar nuestro vector $\vec{v}$ por un número n positivo entonces obtenemos el _**rayo positivo de $\vec{v}$**_. Y nos damos cuenta que el rayo positivo sigue la misma direccion en la que apunta nuestro vector.
+Ahora, si limitamos los valores de $n$ a solo números positivos, obtenemos el _**rayo positivo de $\vec{v}$**_, que es el conjunto de todos los vectores resultantes de multiplicar $\vec{v}$ por un escalar positivo. Además, podemos darnos cuenta de que el _rayo positivo_ de $\vec{v}$ es una "recta" que sigue la misma _dirección_ que $\vec{v}$. Esto tiene sentido, ya que al escalar $\vec{v}$ por un número positivo obtenemos otro vector que está _estirado_ en la misma dirección. Por lo tanto, el conjunto de puntos forma una _semirrecta_ que se extiende infinitamente en la misma dirección que $\vec{v}$.
 
 <!-- Mostramos el rayo negativo -->
 
-- De igual manera, si multiplicamos nuestro vector $\vec{v}$ por un escalar $n$ negativo, obtenemos el _**rayo negativo de $\vec{v}$**_. Podemos ver que al multiplicar nuestro vector $\vec{v}$ por un escalar negativo obtenemos los vectores que apuntan en dirección opuesta a $\vec{v}$.
+- De igual manera, si restringimos los valores de **$n$** solo a numeros negativos obtenemos el _**rayo negativo de $\vec{v}$**_. Y en este caso, el conjunto de vectores resultantes forma una recta que se extiende en la dirección opuesta a la del vector $\vec{v}$
 
 El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación
 
@@ -200,7 +195,8 @@ Si lo vemos de forma visual, nos damos cuenta que es lo mismo, y tiene sentido c
 
 De aqui sale la regla del paralelogramo (propiedades?)
 
-**Resta de vectores**
+### Resta de vectores
+---
 
 Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 (Demostrar propiedades?)
