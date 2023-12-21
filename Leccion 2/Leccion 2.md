@@ -90,23 +90,14 @@ Esta recta se le llama la _**recta generada por $\vec{v}$**_, se simboliza $L_{\
 
 **Rayos generados**
 
-- Rayo positivo
-
 <!-- Mostramos el rayo positivo -->
-
-Ahora, si restringimos los valores de $n$ y consideramos todos los posibles vectores resultantes de multiplicar nuestro vector $\vec{v}$ por un número n positivo entonces obtenemos el _**rayo positivo de $\vec{v}$**_.
-
-Y nos damos cuenta que el rayo positivo sigue la misma direccion en la que apunta nuestro vector.
-
-- Rayo negativo
+- Ahora, si restringimos los valores de $n$ y consideramos todos los posibles vectores resultantes de multiplicar nuestro vector $\vec{v}$ por un número n positivo entonces obtenemos el _**rayo positivo de $\vec{v}$**_. Y nos damos cuenta que el rayo positivo sigue la misma direccion en la que apunta nuestro vector.
 
 <!-- Mostramos el rayo negativo -->
 
-De igual manera, si multiplicamos nuestro vector $\vec{v}$ por un escalar $n$ negativo, obtenemos el _**rayo negativo de $\vec{v}$**_.
+- De igual manera, si multiplicamos nuestro vector $\vec{v}$ por un escalar $n$ negativo, obtenemos el _**rayo negativo de $\vec{v}$**_. Podemos ver que al multiplicar nuestro vector $\vec{v}$ por un escalar negativo obtenemos los vectores que apuntan en dirección opuesta a $\vec{v}$.
 
-Podemos ver que al multiplicar nuestro vector $\vec{v}$ por un escalar negativo obtenemos los vectores que apuntan en dirección opuesta a $\vec{v}$.
-
-- El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación
+El concepto de recta generada por un vector tiene implicaciones importantes en el tema que veremos a continuación
 
 
 ### Dependencia e Independencia lineal
