@@ -8,7 +8,7 @@ Operaciones fundamentales con vectores y sus propiedades
 
 Asi como se pueden hacer operaciones con números, los vectores también tienen operaciones fundamentales. Una de ellas es la _multiplicación_ de un vector por un número real.
 
-### Multiplicacion por un escalar.
+### Multiplicacion por un escalar. {#lesson-escalar}
 ---
 
 <!-- **Multiplicación de vectores por un número** -->

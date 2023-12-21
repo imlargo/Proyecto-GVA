@@ -2,13 +2,29 @@ fetch("../Leccion 2/Leccion 2.md").then(response => response.text()).then(conten
     marked.use(
         markedKatex()
     );
+    // Custom id
+    marked.use(
+        {
+            renderer: {
+                heading(text, level, raw, slugger) {
+                    const headingIdRegex = /(?: +|^)\{#([a-z][\w-]*)\}(?: +|$)/i;
+                    const hasId = text.match(headingIdRegex);
+                    if (!hasId) {
+                        // fallback to original heading renderer
+                        return false;
+                    }
+                    return `<h${level} id="${hasId[1]}">${text.replace(headingIdRegex, '')}</h${level}>\n`;
+                }
+            }
+        }
+    );
 
     const contenedor = document.getElementById('rendered')
     contenedor.innerHTML = marked.parse(content);
 
     document.getElementById("leccion").textContent = "Lección 2";
     document.getElementById("tittle").textContent = "Operaciones fundamentales con vectores y sus propiedades";
-    
+
     /*
     document.getElementById("leccion").textContent = "Lección 1";
     document.getElementById("tittle").textContent = "Vectores";
