@@ -210,17 +210,14 @@ Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 ### Algunas propiedades de las operaciones
 ---
 
-**Propiedades de la multiplicacion por escalar**
-- $1 \cdot \vec{A} = \vec{A}$
-- $r \cdot (s \cdot \vec{A}) = (rs) \cdot \vec{A}$
-- $r \cdot (\vec{A} + \vec{B}) = r \cdot \vec{A} + r \cdot \vec{B} $
-- $(r + s) \cdot \vec{A} = r \cdot \vec{A} + s \cdot \vec{A}$
+| **Propiedades de la multiplicacion por escalar** | **Propiedades de la suma de vectores**|
+| :----:   | :----:   |
+| - $1 \cdot \vec{A} = \vec{A}$ | - $ \vec{A} + \vec{B} = \vec{B} + \vec{A} $ |
+| - $r \cdot (s \cdot \vec{A}) = (rs) \cdot \vec{A}$ | - $ (\vec{A} + \vec{B}) + Z = \vec{A} + (\vec{B} + Z) $ |
+| - $r \cdot (\vec{A} + \vec{B}) = r \cdot \vec{A} + r \cdot \vec{B} $ | - $ \vec{A} + O = \vec{A} = O + \vec{A} $ |
+| - $(r + s) \cdot \vec{A} = r \cdot \vec{A} + s \cdot \vec{A}$ | - $ \vec{A} - \vec{A} = 0 $ |
+| - prop | - $ \vec{A} - \vec{B} \neq \vec{B} - \vec{A}$ |
 
-**Propiedades de la suma de vectores**
-- $ \vec{A} + \vec{B} = \vec{B} + \vec{A} $
-- $ (\vec{A} + \vec{B}) + Z = \vec{A} + (\vec{B} + Z) $
-- $ \vec{A} + O = \vec{A} = O + \vec{A} $
-- $ \vec{A} - \vec{A} = 0 $
-- $ \vec{A} - \vec{B} \neq \vec{B} - \vec{A}$
+
 
 **Propiedades del producto cruz**
