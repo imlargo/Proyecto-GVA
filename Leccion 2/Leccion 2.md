@@ -156,8 +156,8 @@ De igual manera, dos vectores son linealmente independientes si el producto cruz
 Ahora, si por alguna razon queremos encontrar ese **$n$** que satisface $n \cdot \vec{A} = \vec{B}$, simplemente planteamos una ecuacion con las componentes de los vectores:
 
 > $$ n \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix} $$
-$$ \begin{bmatrix} n \cdot 1 \\ n \cdot 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix} $$
-$$ \begin{Bmatrix} 1n = 2 \\  2n = 4 \end{Bmatrix} $$
+$$ \begin{bmatrix} 1n \\ 2n \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix} $$
+$$1n = 2 \\  2n = 4$$
 
 
 <!-- Convertir a ecuaciones de componentes y despejar n -->
