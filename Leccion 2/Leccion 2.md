@@ -122,31 +122,28 @@ También notamos que el concepto de dependencia lineal implica que ambos vectore
 
 <!-- Multiplo escalar = en la recta generada -->
 
-> Si dos vectores son linealmente dependientes, entonces $\vec{A} = n \cdot \vec{B}$, pero al mismo tiempo $\vec{B} = r \cdot \vec{A}$, por lo tanto $\vec{A}$ está en la recta generada por $\vec{B}$, y al mismo tiempo $\vec{B}$ está en la recta generada por $\vec{A}$, ya que es la misma recta.
+> Si dos vectores son linealmente dependientes, entonces $n \cdot \vec{A} = \vec{B}$, pero al mismo tiempo $r \cdot \vec{B} = \vec{A}$, por lo tanto $\vec{A}$ está en la recta generada por $\vec{B}$, y al mismo tiempo $\vec{B}$ está en la recta generada por $\vec{A}$, ya que es la misma recta.
 
 <!-- Resaltar las rectas generadas -->
 
 
 **Producto cruzado**
 
-Ahora bien, ¿cómo podemos determinar algebraicamente si dos vectores son linealmente dependientes? es decir, si uno es un multiplo escalar del otro?.
-Una forma sería encontrar un número **$n$** que haga que $n \cdot \vec{A} = \vec{B}$, pero existe un método más rápido y sencillo.
-
-- Partiendo de esto, llegamos a la definición del producto cruzado
+Ahora bien, ¿cómo podemos determinar algebraicamente si dos vectores $\vec{A}$ y $\vec{B}$ son linealmente dependientes? es decir, si uno es un multiplo escalar del otro?. Una forma sería encontrar un número **$n$** que cumpla que $n \cdot \vec{A} = \vec{B}$, pero existe un método más rápido y sencillo, y partiendo de esto, llegamos a la definición del producto cruzado
 
 <!-- Definicion producto cruzado -->
 
-> El producto cruzado entre dos vectores $\vec{A}$ y $\vec{B}$ es una operacion que nos dice si dos vectores son linealmente dependientes o no.
+> El producto cruzado  entre dos vectores $\vec{A}$ y $\vec{B}$ ( $\vec{A}$ **$ \times$** $\vec{B}$ ) es una operacion que nos dice si dos vectores son linealmente dependientes o no.
 
 <!-- Definicion producto cruzado algebraicamente, con 2 vectores $\begin{bmatrix} a \\ b \end{bmatrix} $ y $\begin{bmatrix} c \\ d \end{bmatrix}$ compontentes -->
 
-El producto cruzado se calcula multiplicando en cruz y restando, asi, $a \cdot d - b \cdot c$.
+Se calcula multiplicando en cruz las componentes de los vectores y restando, el resultado de esa operacion nos dice si los vectores son linealmente dependientes o no.
 
-Y listo, el resultado de esa operacion nos dice si los vectores son linealmente dependientes o no.
+> $$ \vec{A} \times \vec{B} = \begin{bmatrix} a \\ b \end{bmatrix} \times \begin{bmatrix} c \\ d \end{bmatrix} = a \cdot d - b \cdot c $$
 
 <!-- Dependencia lineal con el producto cruzado -->
 
-> Sean $\vec{A} = \begin{bmatrix} a \\ b \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} c \\ d \end{bmatrix}$ vectores del plano. $\vec{A}$ y $\vec{B}$ son linealmente dependientes **si y sólo si** su producto cruzado es igual a cero: **$a \cdot d - b \cdot c = 0$**.
+> Sean $\vec{A} = \begin{bmatrix} a \\ b \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} c \\ d \end{bmatrix}$ vectores del plano. $\vec{A}$ y $\vec{B}$ son linealmente dependientes **si y sólo si** su producto cruzado es igual a cero: **$a \cdot d - b \cdot c = 0$**
 
 <!-- Animacion producto cruzado por componentes -->
 
@@ -157,6 +154,11 @@ Por ejemplo en nuestro caso, el producto cruzado entre $\vec{A} = \begin{bmatrix
 De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún **$n$** que satisfaga $n \cdot \vec{A} = \vec{B}$, es decir $\vec{B}$ no es un múltiplo escalar de $\vec{A}$ ni viceversa.
 
 Ahora, si por alguna razon queremos encontrar ese **$n$** que satisface $n \cdot \vec{A} = \vec{B}$, simplemente planteamos una ecuacion con las componentes de los vectores:
+
+> $$ n \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix} $$
+$$ \begin{bmatrix} n \cdot 1 \\ n \cdot 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix} $$
+$$ \begin{Bmatrix} 1n = 2 \\  2n = 4 \end{Bmatrix} $$
+
 
 <!-- Convertir a ecuaciones de componentes y despejar n -->
 
