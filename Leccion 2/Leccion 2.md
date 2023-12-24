@@ -147,17 +147,19 @@ Se calcula multiplicando en cruz y restando de esta manera:
 
 <!-- Animacion producto cruzado por componentes -->
 
-Por ejemplo en nuestro caso, el producto cruzado entre $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$ es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto $\vec{A}$ y $\vec{B}$ son linealmente dependientes, incluso podemos notar que $2 \cdot \vec{A} = \vec{B}$.
+Por ejemplo en nuestro caso, el producto cruzado entre $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$ es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto $\vec{A}$ y $\vec{B}$ son linealmente dependientes.
 
 <!-- Animacion producto cruzado por componentes con numeros -->
 
 De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún **$n$** que satisfaga $n \cdot \vec{A} = \vec{B}$, es decir $\vec{B}$ no es un múltiplo escalar de $\vec{A}$ ni viceversa.
 
-Ahora, si por alguna razon queremos encontrar ese **$n$** que satisface $n \cdot \vec{A} = \vec{B}$, simplemente planteamos una ecuacion con las componentes de los vectores:
+Ahora, si por alguna razon ya sabemos que los vectores son linealmente dependientes y queremos encontrar ese **$n$** que satisface $n \cdot \vec{A} = \vec{B}$, simplemente planteamos una ecuacion con las componentes de los vectores:
 
 <!-- Convertir a ecuaciones de componentes y despejar n -->
 
 - Como que escalar un vector implica multiplicar el escalar por cada una de sus **componentes**, entonces podemos expresar "esto" como "esto", y si encontramos ese **$n$**, entonces los vectores son linealmente dependientes, sino, son linealmente independientes.
+
+> **Nota:** en **$\mathbb{R}^{2}$** el producto cruzado se calcula de esta manera, pero mas adelante nos daremos cuenta que realmente tiene muchos otros significados mas complejos, por lo tanto en esta leccion explico el producto cruzado de manera superficial y presentando su utilidad en el caso de dependencia lineal
 
 
 ### Suma de vectores. {#lesson-suma}
@@ -203,3 +205,22 @@ Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 (Demostrar propiedades?)
 
 <!-- Aclarar que no todo es re técnico sino que se simplifican algunas cosas que pueden no ser del  todo “fieles” a la explicación matemática. -->
+
+
+### Algunas propiedades de las operaciones
+---
+
+**Propiedades de la multiplicacion por escalar**
+- $1 \cdot \vec{A} = \vec{A}$
+- $r \cdot (s \cdot \vec{A}) = (rs) \cdot \vec{A}$
+- $r \cdot (\vec{A} + \vec{B}) = r \cdot \vec{A} + r \cdot \vec{B} $
+- $(r + s) \cdot \vec{A} = r \cdot \vec{A} + s \cdot \vec{A}$
+
+**Propiedades de la suma de vectores**
+- $ \vec{A} + \vec{B} = \vec{B} + \vec{A} $
+- $ (\vec{A} + \vec{B}) + Z = \vec{A} + (\vec{B} + Z) $
+- $ \vec{A} + O = \vec{A} = O + \vec{A} $
+- $ \vec{A} - \vec{A} = 0 $
+- $ \vec{A} - \vec{B} \neq \vec{B} - \vec{A}$
+
+**Propiedades del producto cruz**
