@@ -110,7 +110,7 @@ El concepto de recta generada por un vector tiene implicaciones importantes en e
 
 Ya sabemos que al escalar un vector obtenemos otro vector _estirado_, si al vector resultante le llamamos $\vec{B}$ y al vector original le llamamos $\vec{A}$, es decir, $n \cdot \vec{A} = \vec{B}$, entonces podemos decir que $\vec{B}$ es un múltiplo escalar de $\vec{A}$, donde $n$ es el escalar que multiplicamos por $\vec{A}$ para obtener a $\vec{B}$.
 
-> Cuando un vector es un multiplo escalar de otro, se dice que son **linealmente dependientes**, y no son linealmente dependientes decimos que son **linealmente independientes**.
+> Cuando un vector es un multiplo escalar de otro, se dice que son **linealmente dependientes**, y cuando no son linealmente dependientes decimos que son **linealmente independientes**.
 
 <!-- Dibujar vectores (2, 4) y (1, 2) y sus etiquetas -->
 
@@ -129,15 +129,15 @@ También notamos que el concepto de dependencia lineal implica que ambos vectore
 
 **Producto cruzado**
 
-Ahora bien, ¿cómo podemos determinar algebraicamente si dos vectores $\vec{A}$ y $\vec{B}$ son linealmente dependientes? es decir, si uno es un multiplo escalar del otro?. Una forma sería encontrar un número **$n$** que cumpla que $n \cdot \vec{A} = \vec{B}$, pero existe un método más rápido y sencillo, y partiendo de esto, llegamos a la definición del producto cruzado
+Ahora bien, ¿cómo podemos determinar algebraicamente si dos vectores $\vec{A}$ y $\vec{B}$ son linealmente dependientes? es decir, si uno es un multiplo escalar del otro?. Una forma sería encontrar un número **$n$** que cumpla que $n \cdot \vec{A} = \vec{B}$, pero existe un método más rápido y sencillo, y partiendo de esto, llegamos a la definición del producto cruzado:
 
 <!-- Definicion producto cruzado -->
 
-> El producto cruzado  entre dos vectores $\vec{A}$ y $\vec{B}$ ( $\vec{A}$ **$ \times$** $\vec{B}$ ) es una operacion que nos dice si dos vectores son linealmente dependientes o no.
+> El producto cruzado  entre dos vectores $\vec{A}$ y $\vec{B}$ ( se simboliza $\vec{A}$ **$ \times$** $\vec{B}$ ) es una operación que se realiza entre dos vectores y nos da como resultado un numero, ademas ese numero nos dice si los vectores son linealmente dependientes o no.
 
 <!-- Definicion producto cruzado algebraicamente, con 2 vectores $\begin{bmatrix} a \\ b \end{bmatrix} $ y $\begin{bmatrix} c \\ d \end{bmatrix}$ compontentes -->
 
-Se calcula multiplicando en cruz las componentes de los vectores y restando, el resultado de esa operacion nos dice si los vectores son linealmente dependientes o no.
+Se calcula multiplicando en cruz y restando de esta manera:
 
 > $$ \vec{A} \times \vec{B} = \begin{bmatrix} a \\ b \end{bmatrix} \times \begin{bmatrix} c \\ d \end{bmatrix} = a \cdot d - b \cdot c $$
 
@@ -147,18 +147,13 @@ Se calcula multiplicando en cruz las componentes de los vectores y restando, el 
 
 <!-- Animacion producto cruzado por componentes -->
 
-Por ejemplo en nuestro caso, el producto cruzado entre $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$ es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto $\vec{A}$ y $\vec{B}$ son linealmente dependientes.
+Por ejemplo en nuestro caso, el producto cruzado entre $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$ es $1 \cdot 4 - 2 \cdot 2 = 0$, por lo tanto $\vec{A}$ y $\vec{B}$ son linealmente dependientes, incluso podemos notar que $2 \cdot \vec{A} = \vec{B}$.
 
 <!-- Animacion producto cruzado por componentes con numeros -->
 
 De igual manera, dos vectores son linealmente independientes si el producto cruzado entre ellos es distinto de cero, es decir, no existe ningún **$n$** que satisfaga $n \cdot \vec{A} = \vec{B}$, es decir $\vec{B}$ no es un múltiplo escalar de $\vec{A}$ ni viceversa.
 
 Ahora, si por alguna razon queremos encontrar ese **$n$** que satisface $n \cdot \vec{A} = \vec{B}$, simplemente planteamos una ecuacion con las componentes de los vectores:
-
-> $$ n \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix} $$
-$$ \begin{bmatrix} 1n \\ 2n \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix} $$
-$$1n = 2 \\  2n = 4$$
-
 
 <!-- Convertir a ecuaciones de componentes y despejar n -->
 
@@ -168,13 +163,13 @@ $$1n = 2 \\  2n = 4$$
 ### Suma de vectores. {#lesson-suma}
 ---
 
-Ahora que ya sabemos multiplicar un vector por un escalar, podemos pasar a la siguiente operacion fundamental con vectores, la suma de vectores.
+Ahora que ya sabemos multiplicar un vector por un escalar, podemos pasar a la siguiente operacion fundamental con vectores, la cual es la suma de vectores.
 
 **Como se hace algebraicamente**
 
 <!-- Suma de vectores por componentes -->
 
-La suma de vectores se realiza sumando componente por componente, es decir, sumamos las componentes x de los vectores y las componentes y de los vectores por separado.
+La suma de vectores se realiza sumando componente por componente, es decir, sumamos la componente _x_ de los vectores y la componentes _y_ de los vectores por separado.
 
 <!-- ejemplo con vectores (1, 2) y (3, 4) -->
 
