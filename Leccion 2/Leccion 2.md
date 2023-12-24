@@ -108,25 +108,23 @@ El concepto de recta generada por un vector tiene implicaciones importantes en e
 
 <!-- Concepto de dependencia lineal -->
 
-Ya sabemos que al escalar un vector obtenemos otro vector _estirado_, si al vector resultante le llamamos $\vec{B}$ y al vector original le llamamos $\vec{A}$, entonces podemos decir que $\vec{B}$ es un múltiplo escalar de $\vec{A}$, es decir $n \cdot \vec{A} = \vec{B}$, donde $n$ es el escalar que multiplicamos por $\vec{A}$ para obtener a $\vec{B}$.
+Ya sabemos que al escalar un vector obtenemos otro vector _estirado_, si al vector resultante le llamamos $\vec{B}$ y al vector original le llamamos $\vec{A}$, es decir, $n \cdot \vec{A} = \vec{B}$, entonces podemos decir que $\vec{B}$ es un múltiplo escalar de $\vec{A}$, donde $n$ es el escalar que multiplicamos por $\vec{A}$ para obtener a $\vec{B}$.
 
-Cuando un vector es un multiplo escalar de otro, se dice que son **linealmente dependientes**, y no son linealmente dependientes decimos que son **linealmente independientes**.
+> Cuando un vector es un multiplo escalar de otro, se dice que son **linealmente dependientes**, y no son linealmente dependientes decimos que son **linealmente independientes**.
 
 <!-- Dibujar vectores (2, 4) y (1, 2) y sus etiquetas -->
 
-- Por ejemplo los vectores $\vec{B} = \begin{bmatrix} 2 \\ 2 \end{bmatrix}$ y $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ son linealmente dependientes, ya que $2 \cdot \vec{A} = \vec{B}$. Y por lo tanto $\vec{B}$ es un multiplo escalar de $\vec{A}$.
+Por ejemplo: los vectores $\vec{B} = \begin{bmatrix} 2 \\ 2 \end{bmatrix}$ y $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ son linealmente dependientes, ya que $2 \cdot \vec{A} = \vec{B}$, es decir  $\vec{B}$ es un multiplo escalar de $\vec{A}$.
 
 <!-- Dibujar vectores (2, 4) y (1, 2) y mostrar que $\vec{A} = 2 \cdot \vec{B}$ -->
 
-Podemos comprender el concepto de dependencia lineal de varias maneras:
-- Dos vectores son linealmente dependientes si uno es un múltiplo escalar del otro, es decir
-- Uno está en la recta generada del otro.
+También notamos que el concepto de dependencia lineal implica que ambos vectores se encuentran en la misma recta generada, pero ¿por qué tiene sentido esto? Ya que uno de los vectores es simplemente una version escalada o _estirada_ del otro entonces esta en la recta generada del vector inicial, pero a su vez, la recta generada de cualquier vector y un multiplo escalar de el es la misma, por lo tanto estan en la misma recta generada, lo cual implica algo mas, y es que A es a su vez un multiplo escalar de B
 
 <!-- Multiplo escalar = en la recta generada -->
 
-También es importante saber que si son linealmente dependientes, entonces $\vec{A} = n \cdot \vec{B}$, pero al mismo tiempo $\vec{B} = r \cdot \vec{A}$, por lo tanto $\vec{A}$ está en la recta generada por $\vec{B}$, y al mismo tiempo $\vec{B}$ está en la recta generada por $\vec{A}$, ya que es la misma recta.
+> Si dos vectores son linealmente dependientes, entonces $\vec{A} = n \cdot \vec{B}$, pero al mismo tiempo $\vec{B} = r \cdot \vec{A}$, por lo tanto $\vec{A}$ está en la recta generada por $\vec{B}$, y al mismo tiempo $\vec{B}$ está en la recta generada por $\vec{A}$, ya que es la misma recta.
 
-> Resaltar las rectas generadas
+<!-- Resaltar las rectas generadas -->
 
 
 **Producto cruzado**
