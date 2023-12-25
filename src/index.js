@@ -1,4 +1,4 @@
-fetch("../Leccion 1/Leccion 1.md").then(response => response.text()).then(content => {
+fetch("../Leccion 2/Leccion 2.md").then(response => response.text()).then(content => {
     marked.use(
         markedKatex()
     );
@@ -23,7 +23,7 @@ fetch("../Leccion 1/Leccion 1.md").then(response => response.text()).then(conten
     contenedor.innerHTML = marked.parse(content);
 
     document.getElementById("leccion").textContent = "Lección 2";
-    document.getElementById("tittle").textContent = "Operaciones fundamentales con vectores y sus propiedades";
+    document.getElementById("tittle").textContent = "Operaciones fundamentales";
 
     /*
     document.getElementById("leccion").textContent = "Lección 1";
