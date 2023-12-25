@@ -99,6 +99,11 @@ body.dark {
     bottom: 2rem;
     font-size: 2rem;
     color: #ac45c9cc;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    color: #ac45c9;
 }
 
 .white-hr {
