@@ -1,21 +1,3 @@
-/* Nav */
-.my-nav {
-    
-    background-image: url('./header-image.png');
-    
-    color: #ffffff;
-}
-
-.my-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.my-nav a:hover {
-    color: #c175ff;
-}
-
 /* Estilos de la seccion de lecciones */
 
 .lesson {
@@ -29,6 +11,10 @@
     text-align: left;
     color: var(--color-content);
     transition: background .2s ease;
+}
+
+.lesson:hover {
+    background: var(--lesson-card-hover);
 }
 
 .lesson-card-image {
@@ -45,7 +31,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0.2rem;
 }
 
 .lesson-card-info {
@@ -82,9 +68,5 @@
 
     text-align: center;
     vertical-align: middle;
-    width: auto;   
-}
-
-.lesson:hover {
-    background: var(--lesson-card-hover);
+    width: auto;
 }
