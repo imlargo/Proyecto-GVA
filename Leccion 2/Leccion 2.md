@@ -33,15 +33,15 @@ Ahora, ¿cómo se representa esto algebraicamente? Para multiplicar un escalar p
 
 <!-- Hacemos la operacion mostrando por componentes -->
 
-$$n \cdot \vec{v} = n \cdot \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} n \cdot x \\ n \cdot y \end{bmatrix}$$
+> $$n \cdot \vec{v} = n \cdot \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} n \cdot x \\ n \cdot y \end{bmatrix}$$
 
 Por ejemplo, si tenemos el vector **$\vec{v}$**, donde  $\vec{v} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y lo multiplicamos por el escalar $2$, entonces obtenemos:
 
-> $$ 2 \cdot \vec{v} = 2 \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 2 \cdot 1 \\ 2 \cdot 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$$
+$$ 2 \cdot \vec{v} = 2 \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 2 \cdot 1 \\ 2 \cdot 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$$
 
 Donde el vector resultante apunta en la misma direccion que ya tenia, pero ahora es el doble de _largo_ (más adelante explicaré el por qué). De igual manera manera, si multiplicamos el vector **$\vec{v}$** por -2, entonces obtenemos:
 
-> $$ -2 \cdot \vec{v} = -2 \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} -2 \cdot 1 \\ -2 \cdot 2 \end{bmatrix} = \begin{bmatrix} -2 \\ -4 \end{bmatrix}$$
+$$ -2 \cdot \vec{v} = -2 \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} -2 \cdot 1 \\ -2 \cdot 2 \end{bmatrix} = \begin{bmatrix} -2 \\ -4 \end{bmatrix}$$
 
 Y ahora el vector resultante tambien es el doble de _largo_, pero apunta en _dirección_ opuesta a la que tenia el vector inicial.
 
