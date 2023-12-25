@@ -1,13 +1,15 @@
 function loadLesson(index) {
-    fetch("./src/lessons.json").then(res => res.json())
-    .then(lessons => renderLesson(
-        index,
-        lessons[index]
-    ))
+    fetch("../../src/lessons.json").then(res => res.json())
+    .then(lessons => {
+        renderLesson(
+            index,
+            lessons[index]
+        )
+    })
 }
 
 function renderLesson(index, lesson) {
-    const path = lesson.path;
+    const path = `../../lessons/lesson-${index}.md`;
 
     fetch(path).then(response => response.text()).then(content => {
         // Add latex

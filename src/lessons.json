@@ -1,17 +1,22 @@
 {
     "1": {
         "tittle": "Vectores",
-        "descripcion": "",
-        "path": "",
-        "img": "",
-        "video": ""
+        "descripcion": "Asi como se pueden hacer operaciones con números, los vectores también tienen operaciones fundamentales. Una de ellas es la multiplicación de un vector por un número real.",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
 
     "2": {
         "tittle": "Operaciones fundamentales",
-        "descripcion": "",
-        "path": "",
-        "img": "",
-        "video": ""
+        "descripcion": "Asi como se pueden hacer operaciones con números, los vectores también tienen operaciones fundamentales. Una de ellas es la multiplicación de un vector por un número real.",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+
+    "3": {
+        "tittle": "Combinaciones lineales",
+        "descripcion": "Asi como se pueden hacer operaciones con números, los vectores también tienen operaciones fundamentales. Una de ellas es la multiplicación de un vector por un número real.",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     }
 }
