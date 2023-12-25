@@ -217,6 +217,9 @@ blockquote:before {
 }
 
 .my-footer {
-    color: var(--color-content);
     font-family: "FreeMono", monospace;
+}
+
+.my-icon {
+    color: var(--color-content);
 }
