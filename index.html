@@ -24,17 +24,20 @@
 </head>
 
 <body>
-    <header>
+    <header class="background-header">
         <nav class="my-nav p-4 px-xl-5 d-flex justify-content-between align-content-center">
             <div>
-                <h3>imlargo</h3>
+                <h3 class="my-brand">
+                    <i class="bi bi-code-slash"></i>
+                    imlargo
+                </h3>
             </div>
 
             <div>
                 <a class="my-nav-pill mx-4" href="#">
                     <i class="bi bi-house"></i>
                     Inicio</a>
-                <a class="my-nav-pill mx-4" href="#">
+                <a class="my-nav-pill mx-4" href="./pages/main">
                     <i class="bi bi-bookmarks"></i>
                     Lecciones</a>
                 <a class="my-nav-pill mx-4" href="#">
@@ -42,9 +45,6 @@
                     Acerca de</a>
             </div>
         </nav>
-    </header>
-
-    <main>
         <!-- Seccion del video -->
         <section class="mb-5">
             <div class="video-container py-5">
@@ -63,12 +63,17 @@
                 </div>
             </div>
         </section>
+
+    </header>
+
+    <main>
+        
         <br>
 
         <!-- Seccion headers -->
         <section class="mb-5 mt-4">
             <div class="d-flex justify-content-center align-items-center leccion-headers gap-3">
-                <span id="leccion" class="header-badget mb-2">...</span>
+                <span id="leccion" class="header-badget mb-2"></span>
                 <h1 id="tittle">
                 </h1>
             </div>
