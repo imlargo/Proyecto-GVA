@@ -17,7 +17,7 @@
 ### Tools used
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=python,git,github,vscode&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,js,html,css,md,latex,firebase&theme=dark" />
 </a>
 
 ### Creado por:

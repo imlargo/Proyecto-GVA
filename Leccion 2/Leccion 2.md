@@ -6,7 +6,7 @@ Operaciones fundamentales con vectores y sus propiedades
 - Vector: $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$
 -->
 
-Asi como se pueden hacer operaciones con números, los vectores también tienen operaciones fundamentales. Una de ellas es la _multiplicación_ de un vector por un número real.
+Asi como se pueden hacer operaciones con números, los vectores también tienen _operaciones fundamentales_. Una de ellas es la _multiplicación_ de un vector por un número real.
 
 ### Multiplicacion por un escalar. {#lesson-escalar}
 ---
@@ -33,7 +33,7 @@ Ahora, ¿cómo se representa esto algebraicamente? Para multiplicar un escalar p
 
 <!-- Hacemos la operacion mostrando por componentes -->
 
-- **$n$** $\cdot \vec{v} =$   **$n$** $\cdot \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} n \cdot x \\ n \cdot y \end{bmatrix}$
+$$n \cdot \vec{v} = n \cdot \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} n \cdot x \\ n \cdot y \end{bmatrix}$$
 
 Por ejemplo, si tenemos el vector **$\vec{v}$**, donde  $\vec{v} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y lo multiplicamos por el escalar $2$, entonces obtenemos:
 
@@ -118,7 +118,7 @@ Por ejemplo: los vectores $\vec{B} = \begin{bmatrix} 2 \\ 2 \end{bmatrix}$ y $\v
 
 <!-- Dibujar vectores (2, 4) y (1, 2) y mostrar que $\vec{A} = 2 \cdot \vec{B}$ -->
 
-También notamos que el concepto de dependencia lineal implica que ambos vectores se encuentran en la misma recta generada, pero ¿por qué tiene sentido esto? Ya que uno de los vectores es simplemente una version escalada o _estirada_ del otro entonces esta en la recta generada del vector inicial, pero a su vez, la recta generada de cualquier vector y un multiplo escalar de el es la misma, por lo tanto estan en la misma recta generada, lo cual implica algo mas, y es que A es a su vez un multiplo escalar de B
+También notamos que el concepto de dependencia lineal implica que ambos vectores se encuentran en la misma recta generada, pero ¿por qué tiene sentido esto? Dado que uno de los vectores es simplemente una versión escalada o estirada del otro, entonces está en la recta generada del vector inicial. A su vez, la recta generada de cualquier vector y sus múltiplos escalares es la misma. Por lo tanto, están en la misma recta generada, lo cual significa tambien que ambos vectores son multiplos escalares del otro.
 
 <!-- Multiplo escalar = en la recta generada -->
 
@@ -133,15 +133,16 @@ Ahora bien, ¿cómo podemos determinar algebraicamente si dos vectores $\vec{A}$
 
 <!-- Definicion producto cruzado -->
 
-> El producto cruzado  entre dos vectores $\vec{A}$ y $\vec{B}$ ( se simboliza $\vec{A}$ **$ \times$** $\vec{B}$ ) es una operación que se realiza entre dos vectores y nos da como resultado un numero, ademas ese numero nos dice si los vectores son linealmente dependientes o no.
+> El producto cruzado  entre dos vectores $\vec{A}$ y $\vec{B}$ ( se simboliza $\vec{A}$ **$ \times$** $\vec{B}$ ) es una operación que se realiza entre dos vectores y nos da como resultado un numero, el cual nos dice si los vectores son linealmente dependientes o no.
 
 <!-- Definicion producto cruzado algebraicamente, con 2 vectores $\begin{bmatrix} a \\ b \end{bmatrix} $ y $\begin{bmatrix} c \\ d \end{bmatrix}$ compontentes -->
 
 Se calcula multiplicando en cruz y restando de esta manera:
 
-> $$ \vec{A} \times \vec{B} = \begin{bmatrix} a \\ b \end{bmatrix} \times \begin{bmatrix} c \\ d \end{bmatrix} = a \cdot d - b \cdot c $$
+$$ \vec{A} \times \vec{B} = \begin{bmatrix} a \\ b \end{bmatrix} \times \begin{bmatrix} c \\ d \end{bmatrix} = a \cdot d - b \cdot c $$
 
 <!-- Dependencia lineal con el producto cruzado -->
+Ahora, como vimos, ese resultado de realizar la operacion del producto cruzado $a \cdot d - b \cdot c$ nos da un numero, si el valor del producto cruzado es 0 entonces los vectores son **linealmente dependientes**, y si es distinto de cero ($\neq 0$) entonces son linealmente independientes
 
 > Sean $\vec{A} = \begin{bmatrix} a \\ b \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} c \\ d \end{bmatrix}$ vectores del plano. $\vec{A}$ y $\vec{B}$ son linealmente dependientes **si y sólo si** su producto cruzado es igual a cero: **$a \cdot d - b \cdot c = 0$**
 
