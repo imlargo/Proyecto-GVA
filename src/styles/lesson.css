@@ -1,0 +1,92 @@
+/* Contenedor video */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-tag {
+    color: #ffffff;
+}
+
+/* Estilos contenido */
+.header-badget {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(214, 179, 252);
+    border-radius: 999px;
+    display: inline;
+    font-family: Poppins, sans-serif;
+    font-size: 12.8px;
+    font-weight: normal;
+    height: auto;
+    line-height: 18.56px;
+
+    padding: 0.2rem 0.5rem;
+
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+
+}
+
+blockquote {
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin-block: calc(1em + 1ex);
+    margin-inline-start: 0;
+    padding-inline-start: calc(1em + 1ex);
+    position: relative;
+    text-align: justify;
+}
+
+blockquote:before {
+    background-color: var(--lesson-blockquote);
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 100%;
+    inset-inline-start: 0;
+    position: absolute;
+    width: calc(0.25em + .25ex);
+}
+
+.my-contenido h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.my-contenido li::marker {
+    color: var(--lesson-li);
+}
+
+.my-contenido hr {
+    border: 1px solid;
+    border-color: var(--lesson-hr);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-contenido p {
+    text-align: justify;
+}
+
+.my-contenido img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px var(--lesson-img);
+
+    width: 40rem;
+    border-radius: 0.3rem;
+}
+
+.my-contenido strong {
+    color: var(--lesson-strong);
+}
+
+.my-contenido li {
+    text-align: justify;
+}

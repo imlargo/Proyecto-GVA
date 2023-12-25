@@ -1,0 +1,96 @@
+:root {
+    /* Colores */
+    --color-bg: #ffffff;
+    --color-content: #000000;
+
+    /* Leccion vars */
+    --lesson-color: #000000;
+    --lesson-blockquote: rgb(225, 198, 253);
+
+    --lesson-li: rgb(213, 115, 255);
+    --lesson-hr: rgb(213, 115, 255);
+    --lesson-img: rgb(213, 115, 255);
+
+    --lesson-strong: rgb(117 32 167);
+    
+    --lesson-card-hover: #dcbcff90;
+}
+
+body {
+    /* Light mode */
+    background-color: var(--color-bg);
+    color: var(--color-content);
+
+    font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    font-kerning: normal;
+    font-size: 18px;
+}
+
+/* Dark mode */
+body.dark {
+
+    /* Colores */
+    --color-bg: #16161e;
+    --color-content: #ffffff;
+
+    /* Leccion vars */
+    --lesson-strong: rgb(215, 145, 255);
+    --lesson-blockquote: rgb(186, 121, 255);
+
+    --lesson-hr: rgb(229, 168, 255);
+    --lesson-li: rgb(229, 168, 255);
+    --lesson-img: rgb(229, 168, 255);
+
+    --lesson-card-hover: #da96ffd4;
+}
+
+.theme-button {
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    font-size: 2rem;
+    color: #ac45c9cc;
+}
+
+.my-brand {
+    color: #ffffff !important;
+    font-family: "FreeMono", monospace;
+}
+
+.my-background {
+    background-image: url('../assets/my-background.png');
+}
+
+.white-hr {
+    border: 1px solid #ffffff;
+}
+
+.pink-hr {
+    border: 1px solid rgb(213, 115, 255);
+}
+
+/* Nav */
+.my-nav {
+    color: #ffffff;
+}
+
+.my-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.my-nav a:hover {
+    color: #c175ff;
+}
+
+
+
+.my-footer {
+    font-family: "FreeMono", monospace;
+}
+
+.my-icon {
+    color: var(--color-content);
+}
