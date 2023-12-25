@@ -23,51 +23,53 @@
     <link rel="stylesheet" href="./src/styles.css">
 </head>
 
+
+<header class="background-header">
+    <nav class="my-nav p-4 px-xl-5 d-flex justify-content-between align-content-center">
+        <div>
+            <h3 class="my-brand">
+                <i class="bi bi-code-slash"></i>
+                imlargo
+            </h3>
+        </div>
+
+        <div>
+            <a class="my-nav-pill mx-4" href="#">
+                <i class="bi bi-house"></i>
+                Inicio</a>
+            <a class="my-nav-pill mx-4" href="./pages/main">
+                <i class="bi bi-bookmarks"></i>
+                Lecciones</a>
+            <a class="my-nav-pill mx-4" href="#">
+                <i class="bi bi-heart"></i>
+                Acerca de</a>
+        </div>
+    </nav>
+    <!-- Seccion del video -->
+    <section class="mb-5">
+        <div class="video-container py-5">
+            <div>
+                <span class="video-tag">
+                    <i class="bi bi-bookmark"></i>
+                    Video de la leccion
+                </span>
+                <hr class="pink-hr">
+
+                <iframe width="704" height="396"
+                    src="https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+                    title="Video de la leccion" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+</header>
+
 <body>
-    <header class="background-header">
-        <nav class="my-nav p-4 px-xl-5 d-flex justify-content-between align-content-center">
-            <div>
-                <h3 class="my-brand">
-                    <i class="bi bi-code-slash"></i>
-                    imlargo
-                </h3>
-            </div>
-
-            <div>
-                <a class="my-nav-pill mx-4" href="#">
-                    <i class="bi bi-house"></i>
-                    Inicio</a>
-                <a class="my-nav-pill mx-4" href="./pages/main">
-                    <i class="bi bi-bookmarks"></i>
-                    Lecciones</a>
-                <a class="my-nav-pill mx-4" href="#">
-                    <i class="bi bi-heart"></i>
-                    Acerca de</a>
-            </div>
-        </nav>
-        <!-- Seccion del video -->
-        <section class="mb-5">
-            <div class="video-container py-5">
-                <div>
-                    <span class="video-tag">
-                        <i class="bi bi-bookmark"></i>
-                        Video de la leccion
-                    </span>
-                    <hr class="pink-hr">
-
-                    <iframe width="704" height="396"
-                        src="https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
-                        title="Video de la leccion" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-
-    </header>
 
     <main>
-        
+
         <br>
 
         <!-- Seccion headers -->
@@ -90,7 +92,7 @@
 
         <!-- Seccion Referencias y redes -->
         <section>
-            
+
         </section>
         <br>
     </main>
@@ -100,25 +102,27 @@
         <p id="concierto"></p>
     </div>
 
+    <i class="bi bi-moon theme-button" onclick="changeMode(this)"></i>
+
     <footer class="container d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top gap-4">
-        <span class="text-muted">© Juan Carlos Largo</span>
+        <span class="">© Juan Carlos Largo</span>
         <div class="vr"></div>
 
-        <span class="text-muted mx-5">imlargo</span>
+        <span class=" mx-5">imlargo</span>
         <div class="vr"></div>
 
-        <a class="text-muted" href="https://www.instagram.com/imlargo" target="_blank">
-            <i class="bi bi-instagram text-muted"></i>
+        <a class="" href="https://www.instagram.com/imlargo" target="_blank">
+            <i class="bi bi-instagram text-white"></i>
         </a>
         <div class="vr"></div>
 
-        <a class="text-muted" href="https://github.com/imlargo" target="_blank">
-            <i class="bi bi-github"></i>
+        <a class="" href="https://github.com/imlargo" target="_blank">
+            <i class="bi bi-github text-white"></i>
         </a>
         <div class="vr"></div>
 
-        <a class="text-muted" href="https://www.linkedin.com/in/imlargo" target="_blank">
-            <i class="bi bi-linkedin"></i>
+        <a class="" href="https://www.linkedin.com/in/imlargo" target="_blank">
+            <i class="bi bi-linkedin text-white"></i>
         </a>
     </footer>
 

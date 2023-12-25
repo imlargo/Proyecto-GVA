@@ -12,14 +12,34 @@
 
     <!-- Scripts -->
     <script src="./src/index.js" defer></script>
+    <link rel="stylesheet" href="../../src/styles.css">
     <link rel="stylesheet" href="./src/style.css">
+
+
+    <script>
+        function changeMode(button) {
+            const body = document.body;
+            const isDark = body.classList.contains('dark');
+
+            if (isDark) {
+                body.classList.remove('dark');
+                button.classList = "bi bi-moon theme-button";
+            } else {
+                body.classList.add('dark');
+                button.classList = "bi bi-brightness-low theme-button";
+            }
+        }
+    </script>
 </head>
 
 
 <header>
     <nav class="my-nav p-4 px-xl-5 d-flex justify-content-between align-content-center">
         <div>
-            <h3>imlargo</h3>
+            <h3 class="my-brand">
+                <i class="bi bi-code-slash"></i>
+                imlargo
+            </h3>
         </div>
 
         <div>
@@ -40,7 +60,6 @@
 
     <main>
         <br>
-
         <!-- Seccion headers -->
         <section class="mb-5 mt-4">
             <div class="d-flex justify-content-center align-items-center leccion-headers gap-3">
@@ -122,6 +141,7 @@
         </a>
     </footer>
 
+    <i class="bi bi-moon theme-button" onclick="changeMode(this)"></i>
 </body>
 
 </html>

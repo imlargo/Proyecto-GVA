@@ -1,39 +1,85 @@
 :root {
-    color-scheme: light dark;
-    
     /* Colores */
     --color-bg: #ffffff;
+    --color-content: #000000;
 
-    /* Leccion */
+    /* Leccion vars */
     --lesson-color: #000000;
+    --lesson-blockquote: rgb(225, 198, 253);
+
+    --lesson-li: rgb(213, 115, 255);
+    --lesson-hr: rgb(213, 115, 255);
+    --lesson-img: rgb(213, 115, 255);
+
+    --lesson-strong: rgb(117 32 167);
+    
+    --lesson-card-hover: #dcbcff90;
 }
 
-body {
-    /* Dark mode */
-    /*
-    background-color: #010409;
-    color: #f0f6fc;
-    */
+/*
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #16161e;
+        --color-content: #ffffff;
 
+        --lesson-strong: rgb(215, 145, 255);
+        --lesson-blockquote: rgb(186, 121, 255);
+
+        --lesson-hr: rgb(229, 168, 255);
+        --lesson-li: rgb(229, 168, 255);
+        --lesson-img: rgb(229, 168, 255);
+    }
+}
+*/
+
+body {
     /* Light mode */
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--color-bg);
+    color: var(--color-content);
 
     font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-feature-settings: "kern", "liga", "clig", "calt";
     font-kerning: normal;
     font-size: 18px;
+}
 
+/* Dark mode */
+body.dark {
+
+    /* Colores */
+    --color-bg: #16161e;
+    --color-content: #ffffff;
+
+    /* Leccion vars */
+    --lesson-strong: rgb(215, 145, 255);
+    --lesson-blockquote: rgb(186, 121, 255);
+
+    --lesson-hr: rgb(229, 168, 255);
+    --lesson-li: rgb(229, 168, 255);
+    --lesson-img: rgb(229, 168, 255);
+
+    --lesson-card-hover: #da96ffd4;
+
+    
+}
+
+.theme-button {
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    font-size: 2rem;
+    color: #ac45c9cc;
 }
 
 .my-brand {
-    color: #ffffff;
+    color: #ffffff !important;
     font-family: "FreeMono", monospace;
 }
 
 .background-header {
     background-image: url('../pages/main/src/header-image.png');
 }
+
 .video-container {
     display: flex;
     justify-content: center;
@@ -103,7 +149,7 @@ blockquote {
 }
 
 blockquote:before {
-    background-color: rgb(225, 198, 253);
+    background-color: var(--lesson-blockquote);
     border-radius: 3px;
     content: "";
     display: block;
@@ -119,11 +165,12 @@ blockquote:before {
 }
 
 .my-contenido li::marker {
-    color: rgb(213, 115, 255);
+    color: var(--lesson-li);
 }
 
 .my-contenido hr {
-    border: 1px solid rgb(213, 115, 255);
+    border: 1px solid;
+    border-color: var(--lesson-hr);
     width: 30%;
     margin-left: auto;
     margin-right: auto;
@@ -137,23 +184,20 @@ blockquote:before {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px rgb(213, 115, 255);
+    box-shadow: 0 0 10px var(--lesson-img);
 
     width: 40rem;
     border-radius: 0.3rem;
 }
 
 .my-contenido strong {
-    color: rgb(117 32 167);
+    color: var(--lesson-strong);
 }
 
 .my-contenido li {
     text-align: justify;
 }
 
-.my-contenido em {
-    color: #000000;
-}
 
 .up-button {
     position: fixed;
@@ -168,6 +212,6 @@ blockquote:before {
     margin: 20px 15px;
 
     font-size: 1rem;
-    
-    transition: background .2s ease,color .2s ease,opacity .2s ease;
+
+    transition: background .2s ease, color .2s ease, opacity .2s ease;
 }
