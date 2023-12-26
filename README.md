@@ -19,6 +19,3 @@
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=python,js,html,css,firebase,bootstrap,md,latex&theme=dark" />
 </a>
-
-### Creado por:
-- imlargo
