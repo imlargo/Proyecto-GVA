@@ -56,4 +56,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: video
-          path: ./media/videos/${{ github.event.inputs.file }}/480p15/${{ github.event.inputs.scene }}.mp4
+          path: ./media/videos/${{ github.event.inputs.file }}/1080p60/${{ github.event.inputs.scene }}.mp4
