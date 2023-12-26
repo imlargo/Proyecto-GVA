@@ -25,10 +25,13 @@ class BaseScene(Scene):
         arrow.add_updater(updateArrow)
 
         # // > Animación recta real, puntos en ella y punto q se mueve con flecha apuntando < //
-        self.play(Create(recta), Create(punto), Create(arrow), Create(line)) 
         self.play(
-            delinear(recta, TEAL_C, 1)
+            Create(recta),
+            Create(punto),
+            Create(arrow),
+            Create(line)
         )
+        self.play(delinear(recta, TEAL_C, 1))
         self.play(numberValue.animate.set_value(-5), run_time = 3)
         self.wait()
         self.play(numberValue.animate.set_value(0), run_time = 3)
@@ -67,25 +70,27 @@ class PlaneScene(LinearTransformationScene):
         )
 
         # // > Les ponemos nombres a los ejes e indicamos su direccion < //
-        ejeX = Tex("Eje X").shift(UP + RIGHT).scale(0.7).set_color(GREEN_C)
-        ejeY = Tex("Eje Y").shift(UP + RIGHT).scale(0.7).set_color(RED_C)
+        lineX = Line(np.array([-5,0,0]), np.array([5,0,0]))
+        lineY = Line(np.array([0,-5,0]), np.array([0,5,0]))
+
+        tagX = Tex("eje X").move_to(np.array([6, 1, 0])).scale(0.7).set_color(GREEN_C)
+        tagY = Tex("eje Y").move_to(np.array([1, 3.5, 0])).scale(0.7).set_color(RED_C)
         
-        self.play(Write(ejeX))
-        self.play(ApplyMethod(ejeX.move_to, np.array([6, 0.5, 0])))
+        self.play(Write(tagX))
+        self.play(delinar(lineX, GREEN_C, 1))
         self.wait()
 
-        self.play(Write(ejeY))
-        self.play(ApplyMethod(ejeY.move_to, np.array([0.5, 3.5, 0])))
+        self.play(Write(tagY))
+        self.play(delinar(lineY, RED_C, 1))
         self.wait()
 
         # // > Representamos un punto en el plano y lo movemos al rededor < //
-
-        # // > Dejamos un punto y hacemos pasos en componentes X y Y. < //
-
         v = [3,2]
         punto = Dot(point = np.array([3,2,0]), color = YELLOW)
         self.play(Create(punto))
-        self.play(FadeOut(punto.copy()), FadeOut(origen))
+        self.play(FadeOut(origen, tagX, tagY))
+
+        # // > Dejamos un punto y hacemos pasos en componentes X y Y. < //
 
         #...Pasos...
         lineaX = Line(np.array([0,0,0]), np.array([3,0,0]), color = GREEN_C) 
@@ -96,6 +101,12 @@ class PlaneScene(LinearTransformationScene):
         self.wait()
 
         # // > Indicamos la pareja ordenada (2, 1) y resaltamos sus coordenadas < //
+        label = 1
+        cords = getVectorCordsT(v)
+        self.play(Write(cords))
+
+
+        """
         vector = Vector(v, color = TEAL_C)
         name = MathTex(r"\vec{v}", color = PURPLE_A)
         label = vector.coordinate_label(color = TEAL_C)
@@ -108,7 +119,7 @@ class PlaneScene(LinearTransformationScene):
 
         # // > Resaltar la palabra "punto" < //
 
-        self.play(FadeOut(ejeX), FadeOut(ejeY))
+        self.play(FadeOut(tagX), FadeOut(tagY))
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(label), FadeOut(lineaX), FadeOut(lineaY))
         self.wait()
 
@@ -129,7 +140,7 @@ class PlaneScene(LinearTransformationScene):
             self.play(x.animate.set_value(v1), y.animate.set_value(v2), run_time = 2)
         
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(lineaX), FadeOut(lineaY))
-        
+        """        
         # // > Convertir la palabra punto por vector, convertir el punto (2, 1) a vector, indicar direccion < //
         
         # // > Resaltar direccion con una flecha y passing light < //

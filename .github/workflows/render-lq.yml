@@ -6,7 +6,7 @@ on:
     inputs:
       file:
         description: "Archivo a renderizar"
-        default: "calculo"
+        default: "leccion-"
         required: true
         type: string
       
