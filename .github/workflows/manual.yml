@@ -1,11 +1,11 @@
-name: Renderizar con Manim
+name: Renderizar video con Manim
 
 on:
   workflow_dispatch:
     inputs:
       name:
-        description: "Person to greet"
-        default: "World"
+        description: "Archivo a renderizar"
+        default: "calculo"
         required: true
         type: string
 
@@ -36,10 +36,10 @@ jobs:
         run: pip install manim
 
       - name: Renderizar archivo
-        run: manim -p -ql -s animations/calculo.py MainnScene
+        run: manim -p -ql -s animations/${{ github.event.inputs.name }}.py MainnScene
 
       - name: Subir archivo de video
         uses: actions/upload-artifact@v2
         with:
           name: video
-          path: ./media/videos/calculo/480p15/MainnScene.mp4'
+          path: ./media/videos/${{ github.event.inputs.name }}/480p15/MainnScene.mp4

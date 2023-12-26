@@ -13,10 +13,13 @@ class MainnScene(Scene):
 
 
     def construct(self):
+        self.intro()
+        self.part1()
+        self.part2()
+        self.part3()
+        self.part4()
         self.outro()
-
         self.wait()
-
         pass
     
     def intro(self):
