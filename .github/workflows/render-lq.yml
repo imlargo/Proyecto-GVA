@@ -1,4 +1,4 @@
-name: Renderizar video con Manim
+name: LQ manim render
 
 on:
   workflow_dispatch:
