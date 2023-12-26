@@ -1,4 +1,4 @@
-# Proyecto Animaciones Geometria Vectorial
+# Proyecto Geometria Vectorial
 
 > Acerca de: Proyecto de animaciones y lecciones para un curso de Geometría Vectorial de la Universidad Nacional de Colombia, como iniciativa propia.
 
