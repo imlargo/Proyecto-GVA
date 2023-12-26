@@ -1,6 +1,6 @@
 # Imports
 from manim import *;
-from animations.misc.misc import *;
+from misc.misc import *;
 import numpy as np;
 
 # Escena simple
