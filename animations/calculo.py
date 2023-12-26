@@ -72,7 +72,7 @@ class MainnScene(Scene):
         self.play(pregunta.animate.next_to(titulo, DOWN, aligned_edge=LEFT), buff=0.4)
 
         valor1Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 100").scale(0.8).to_corner(DOWN)
-        graph = ImageMobject("/content/foto1.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
+        graph = Tex("Holi").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
 
         self.wait(2)
         self.play(Create(valor1Tex), FadeIn(graph))
@@ -101,8 +101,8 @@ class MainnScene(Scene):
         valor1Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 100").scale(0.8).to_corner(DOWN)
         valor2Tex = Tex(r"$f(x)$ y $\pi(x)$ para $x$ $\leq$ 1000").scale(0.8).to_corner(DOWN)
 
-        graph1 = ImageMobject("/content/foto2.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
-        graph2 = ImageMobject("/content/foto3.png").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
+        graph1 = Tex("Holi").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
+        graph2 = Tex("Holi").scale(1.2).next_to(valor1Tex, UP, buff = 0.2)
 
         self.wait(1)
         self.play(Create(valor1Tex), FadeIn(graph1))
