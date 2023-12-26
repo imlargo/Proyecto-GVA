@@ -1,19 +1,12 @@
 name: Renderizar con Manim
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
     inputs:
       name:
-        # Friendly description to be shown in the UI instead of 'name'
         description: "Person to greet"
-        # Default value if no value is explicitly provided
         default: "World"
-        # Input has to be provided for the workflow to run
         required: true
-        # The data type of the input
         type: string
 
 jobs:
@@ -43,4 +36,10 @@ jobs:
         run: pip install manim
 
       - name: Renderizar archivo
-        run: manim -p -ql animations/calculo.py MainnScene
+        run: manim -p -ql -s animations/calculo.py MainnScene
+
+      - name: Subir archivo de video
+        uses: actions/upload-artifact@v2
+        with:
+          name: video
+          path: ./media/videos/calculo/480p15/MainnScene.mp4'
