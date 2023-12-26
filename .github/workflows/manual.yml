@@ -43,11 +43,11 @@ jobs:
 
       # Renderizar el archivo 
       - name: Renderizar archivo
-        run: manim -ql animations/${{ github.event.inputs.name }}.py MainnScene
+        run: manim -ql animations/${{ github.event.inputs.name }}.py MainScene
 
       # Subir el archivo de video
       - name: Subir archivo de video
         uses: actions/upload-artifact@v2
         with:
           name: video
-          path: ./media/videos/${{ github.event.inputs.name }}/480p15/MainnScene.mp4
+          path: ./media/videos/${{ github.event.inputs.name }}/480p15/MainScene.mp4

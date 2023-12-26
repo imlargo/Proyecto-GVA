@@ -7,7 +7,7 @@ myTemplate.add_to_preamble(r"\usepackage{ragged2e}")
 def justifyTex(text):        
     return Tex(text, tex_template=myTemplate, tex_environment="justify")
 
-class MainnScene(Scene):
+class MainScene(Scene):
     def resaltar(self, objeto, tiempo, color):
         return ShowPassingFlash(SurroundingRectangle(objeto, color = color, buff = 0.25), run_time=tiempo, time_width=0.2)
 

@@ -1,5 +1,6 @@
 # Imports
 from manim import *;
+from animations.misc.misc import *;
 import numpy as np;
 
 # Escena simple
@@ -36,6 +37,7 @@ class baseScene(Scene):
         self.play(Create(recta), Create(punto), Create(arrow), Create(line)) 
         self.play(value.animate.set_value(-5), run_time = 3)
         self.wait()
+        self.clear()
 
         pass
 
@@ -138,4 +140,11 @@ class PlaneScene(LinearTransformationScene):
         # // > Dibujar un vector nuevamente con componentes, direccion y resaltar < //
         
         # // > Mostrar meme < //
+        self.clear()
+        pass
+    
+class MainScene(Scene):
+    def construct(self):
+        baseScene.construct()
+        PlaneScene.construct()
         pass
