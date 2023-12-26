@@ -28,6 +28,9 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Instalar archivos
+        run: sudo apt install libcairo2-dev ffmpeg texlive-fonts-extra texlive-latex-recommended texlive texlive-latex-extra texlive-science tipa libpango1.0-dev
+
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
@@ -35,3 +38,5 @@ jobs:
 
       - name: Renderizar archivo
         run: manim -p -ql animations/calculo.py MainnScene
+
+        
