@@ -2,14 +2,13 @@ name: HQ manim render
 
 on:
   workflow_dispatch:
-    # Toma de entrada el nombre del archivo a renderizar
     inputs:
       file:
         description: "Archivo a renderizar"
         default: "calculo"
         required: true
         type: string
-      
+
       scene:
         description: "Escena a renderizar"
         default: "MainScene"
@@ -19,41 +18,62 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: |
+          # Carga el repositorio
+          uses: actions/checkout@v2
+
+          # Configura python 3
+          uses: actions/setup-python@v2
+          with:
+            python-version: "3.x"
+
+  setup:
+    needs: build
+    runs-on: ubuntu-latest
 
     steps:
-      # Carga el repositorio
-      - uses: actions/checkout@v2
-
-      # Configura python 3
-      - name: Configurar Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.x"
-
-      # Actualizar lista de paquetes
-      - name: Actualizar lista de paquetes
-        run: sudo apt-get update
-
-      # Instala archivos y dependencias necesarias
-      - name: Instalar dependencias
-        run: sudo apt install libcairo2-dev ffmpeg texlive-fonts-extra texlive-latex-recommended texlive texlive-latex-extra texlive-science tipa libpango1.0-dev
-
-      # Actualizar pip e Instalar setuptools
-      - name: Actualizar pip e Instalar setuptools
+      - name: Setup
         run: |
+          # Actualizar lista de paquetes
+          sudo apt-get update
+
+          # Instala archivos y dependencias necesarias
+          sudo apt install libcairo2-dev ffmpeg texlive-fonts-extra texlive-latex-recommended texlive texlive-latex-extra texlive-science tipa libpango1.0-dev
+
+  install:
+    needs: setup
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install
+        run: |
+          # Actualizar pip e Instalar setuptools
           python -m pip install --upgrade pip
           pip install setuptools
-      # Instalar manim
-      - name: Instalar manim
-        run: pip install manim
 
-      # Renderizar el archivo 
-      - name: Renderizar archivo
-        run: manim -qh animations/${{ github.event.inputs.file }}.py ${{ github.event.inputs.scene }}
+          # Instalar manim
+          pip install manim
 
-      # Subir el archivo de video
-      - name: Subir archivo de video
+  render:
+    needs: install
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Render
+        run: |
+          # Renderizar el archivo 
+          manim -qh animations/${{ github.event.inputs.file }}.py ${{ github.event.inputs.scene }}
+
+  upload:
+    needs: render
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Upload
         uses: actions/upload-artifact@v2
         with:
+          # Subir el archivo de video
           name: video
           path: ./media/videos/${{ github.event.inputs.file }}/1080p60/${{ github.event.inputs.scene }}.mp4
