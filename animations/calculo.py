@@ -4,7 +4,6 @@ from numpy import log
 myTemplate = TexTemplate()
 myTemplate.add_to_preamble(r"\usepackage{ragged2e}")
 
-
 def justifyTex(text):        
     return Tex(text, tex_template=myTemplate, tex_environment="justify")
 
