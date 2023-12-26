@@ -28,7 +28,7 @@ Al igual que en la recta, en el plano tambien podemos ubicar un punto dependiend
 
 <!-- Dejamos un punto y hacemos pasos en componentes X y Y. -->
 
-En el plano, representamos un punto como una _pareja ordenada de numeros_, podemos entender esto como **coordenadas**, es decir, dos números que indican cuántos _pasos_ se dan en el eje X y en el eje Y. En este caso 2 _pasos_ a la derecha y 1 hacia arriba. El punto resultante se escribe con sus _coordenadas_ en orden de esta manera: $\begin{pmatrix} 2 \\ 1 \end{pmatrix}$
+En el plano, representamos un punto como una _pareja ordenada de numeros_, podemos entender esto como **coordenadas**, es decir, dos números que indican cuántos _pasos_ se dan en el eje X y en el eje Y. En este caso 2 _pasos_ a la derecha y 1 hacia arriba. El punto resultante se escribe con sus _coordenadas_ en orden de esta manera: $\begin{pmatrix} 3 \\ 2 \end{pmatrix}$
 
 <!-- Indicamos la pareja ordenada (2, 1) y resaltamos sus coordenadas -->
 
@@ -49,11 +49,11 @@ Un vector **no** lo mismo que un punto. Un punto simplemente representa una ubic
 
 <!-- Indicar el vector (2, 1), el punto (2, 1) y resaltar direccion -->
 
-- Por ejemplo el vector $\begin{bmatrix} 2 \\ 1 \end{bmatrix}$ parte desde el origen hasta el punto $\begin{pmatrix} 2 \\ 1 \end{pmatrix}$ y sigue esa direccion.
+- Por ejemplo el vector $\begin{bmatrix} 3 \\ 2 \end{bmatrix}$ parte desde el origen hasta el punto $\begin{pmatrix} 3 \\ 2 \end{pmatrix}$ y sigue esa direccion.
 
 <!-- Indicar componentes y mostrar pasos -->
 
-Las componentes de un vector son los pasos que se dan en cada eje para llegar a un punto específico en el plano, en este caso $\begin{bmatrix} 2 \\ 1 \end{bmatrix}$ la _componente_ en X del vector es 2, y la _componente_ en Y es 1.
+Las componentes de un vector son los pasos que se dan en cada eje para llegar a un punto específico en el plano, en este caso $\begin{bmatrix} 3 \\ 2 \end{bmatrix}$ la _componente_ en X del vector es 2, y la _componente_ en Y es 1.
 
 <!-- Limpiar plano, mostrar el origen como coordenadas, notacion y resaltar -->
 

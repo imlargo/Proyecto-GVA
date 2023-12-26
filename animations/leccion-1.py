@@ -66,7 +66,7 @@ class PlaneScene(LinearTransformationScene):
         # Resaltar el origen y ejes
         self.play(
             resaltar(origen, TEAL_C, 1),
-            delinar(r2, TEAL_C, 1)
+            delinear(r2, TEAL_C, 1)
         )
 
         # // > Les ponemos nombres a los ejes e indicamos su direccion < //
@@ -77,11 +77,11 @@ class PlaneScene(LinearTransformationScene):
         tagY = Tex("eje Y").move_to(np.array([1, 3.5, 0])).scale(0.7).set_color(RED_C)
         
         self.play(Write(tagX))
-        self.play(delinar(lineX, GREEN_C, 1))
+        self.play(delinear(lineX, GREEN_C, 1))
         self.wait()
 
         self.play(Write(tagY))
-        self.play(delinar(lineY, RED_C, 1))
+        self.play(delinear(lineY, RED_C, 1))
         self.wait()
 
         # // > Representamos un punto en el plano y lo movemos al rededor < //
@@ -100,25 +100,32 @@ class PlaneScene(LinearTransformationScene):
         self.play(Create(lineaY))
         self.wait()
 
-        # // > Indicamos la pareja ordenada (2, 1) y resaltamos sus coordenadas < //
-        label = 1
-        cords = getVectorCordsT(v)
-        self.play(Write(cords))
+        # // > Indicamos la pareja ordenada (3, 2) y resaltamos sus coordenadas < //
+        cords = MathTex(r"\begin{pmatrix} 3 \\ 2 \end{pmatrix}")
+        textPunto = Tex("Punto")
 
-
-        """
-        vector = Vector(v, color = TEAL_C)
-        name = MathTex(r"\vec{v}", color = PURPLE_A)
-        label = vector.coordinate_label(color = TEAL_C)
-        
-        self.play(Create(vector))
-        self.label_vector(vector, name)
-        self.wait(1)
-        self.play(Create(label))
-        self.wait()
+        self.play(Write(cords), Write(textPunto))
+        self.play(resaltar(cords))
 
         # // > Resaltar la palabra "punto" < //
+        self.play(resaltar(textPunto))
 
+        # // > Convertir la palabra punto por vector, convertir el punto (2, 1) a vector, indicar direccion < //
+        vector = Vector(v, color = TEAL_C)
+        name = MathTex(r"\vec{v}", color = PURPLE_A)
+
+        self.play(
+            Transform(textPunto, Tex("Vector")),
+            Transform(cords, MathTex(r"\begin{bmatrix} 3 \\ 2 \end{bmatrix}")),
+            Create(vector)
+        )
+        self.play(resaltar(textPunto))
+        self.wait()
+        self.play(delinear(vector, RED_C, 1))
+
+        # // > Resaltar direccion con una flecha y passing light < //
+
+        """
         self.play(FadeOut(tagX), FadeOut(tagY))
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(label), FadeOut(lineaX), FadeOut(lineaY))
         self.wait()
@@ -141,9 +148,7 @@ class PlaneScene(LinearTransformationScene):
         
         self.play(FadeOut(vector), FadeOut(punto), FadeOut(name), FadeOut(lineaX), FadeOut(lineaY))
         """        
-        # // > Convertir la palabra punto por vector, convertir el punto (2, 1) a vector, indicar direccion < //
         
-        # // > Resaltar direccion con una flecha y passing light < //
         
         # // > Indicar el vector (2, 1), el punto (2, 1) y resaltar direccion < //
         
