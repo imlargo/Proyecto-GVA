@@ -4,7 +4,7 @@ from misc.misc import *;
 import numpy as np;
 
 # Escena simple
-class baseScene(Scene):
+class BaseScene(Scene):
     def construct(self):
         
         # // > Animación recta real, puntos en ella y punto q se mueve con flecha apuntando < //
@@ -141,10 +141,4 @@ class PlaneScene(LinearTransformationScene):
         
         # // > Mostrar meme < //
         self.clear()
-        pass
-    
-class MainScene(Scene):
-    def construct(self):
-        baseScene.construct()
-        PlaneScene.construct()
         pass

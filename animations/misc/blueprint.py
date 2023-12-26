@@ -26,8 +26,3 @@ class PlaneScene(LinearTransformationScene):
         self.clear()
         pass
     
-class MainScene(Scene):
-    def construct(self):
-        BaseScene.construct()
-        PlaneScene.construct()
-        pass

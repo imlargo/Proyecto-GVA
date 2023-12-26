@@ -4,9 +4,15 @@ on:
   workflow_dispatch:
     # Toma de entrada el nombre del archivo a renderizar
     inputs:
-      name:
+      file:
         description: "Archivo a renderizar"
         default: "calculo"
+        required: true
+        type: string
+      
+      scene:
+        description: "Escena a renderizar"
+        default: "MainScene"
         required: true
         type: string
 
@@ -43,11 +49,11 @@ jobs:
 
       # Renderizar el archivo 
       - name: Renderizar archivo
-        run: manim -ql animations/${{ github.event.inputs.name }}.py MainScene
+        run: manim -ql animations/${{ github.event.inputs.file }}.py ${{ github.event.inputs.scene }}
 
       # Subir el archivo de video
       - name: Subir archivo de video
         uses: actions/upload-artifact@v2
         with:
           name: video
-          path: ./media/videos/${{ github.event.inputs.name }}/480p15/MainScene.mp4
+          path: ./media/videos/${{ github.event.inputs.file }}/480p15/${{ github.event.inputs.scene }}.mp4
