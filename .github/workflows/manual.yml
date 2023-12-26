@@ -28,34 +28,15 @@ jobs:
       - name: Actualizar lista de paquetes
         run: sudo apt-get update
 
-      # Cachear dependencias
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.cache/apt
-          key: ${{ runner.os }}-apt-${{ hashFiles('**/manual.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-apt-
-
-      - name: Cache apt packages
-        uses: actions/cache@v2
-        with:
-          path: /var/cache/apt/archives
-          key: ${{ runner.os }}-apt-${{ hashFiles('**/manual.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-apt-
-
+      # Instala archivos y dependencias necesarias
       - name: Instalar dependencias
-        run: |
-          sudo apt update
-          sudo apt install -y --no-install-recommends libcairo2-dev ffmpeg texlive-fonts-extra texlive-latex-recommended texlive texlive-latex-extra texlive-science tipa libpango1.0-dev    
+        run: sudo apt install libcairo2-dev ffmpeg texlive-fonts-extra texlive-latex-recommended texlive texlive-latex-extra texlive-science tipa libpango1.0-dev
 
       # Actualizar pip e Instalar setuptools
       - name: Actualizar pip e Instalar setuptools
         run: |
           python -m pip install --upgrade pip
           pip install setuptools
-
       # Instalar manim
       - name: Instalar manim
         run: pip install manim
