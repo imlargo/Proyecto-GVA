@@ -44,7 +44,7 @@ jobs:
 
       # Renderizar el archivo 
       - name: Renderizar archivo
-        run: manim -p -ql -s animations/${{ github.event.inputs.name }}.py MainnScene
+        run: manim -ql animations/${{ github.event.inputs.name }}.py MainnScene
 
       # Subir el archivo de video
       - name: Subir archivo de video
