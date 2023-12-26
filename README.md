@@ -10,7 +10,7 @@
 
 - Lección 2: Operaciones fundamentales con vectores y sus propiedades
 
-- Lección 3: ...
+- Lección 3: Combinaciones lineales
 
 - Lección 4: ...
 
