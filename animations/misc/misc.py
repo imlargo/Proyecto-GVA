@@ -33,14 +33,14 @@ def proyectar(vector_A, vector_B):
 
 # - - - Mobjects - - - 
 
-def resaltar(objeto, color, tiempo):
+def resaltar(objeto, color = TEAL_C, tiempo = 1):
     # Retorna la animacion q se debe mostrar con self.play()
     return ShowPassingFlash(
         SurroundingRectangle(objeto, color = color, buff = 0.25),
         run_time=tiempo, time_width=0.2
     )
 
-def delinear(objeto, color, tiempo):
+def delinear(objeto, color = TEAL_C, tiempo = 1):
     # Retorna la animacion q se debe mostrar con self.play()
     return ShowPassingFlash(
         objeto.copy().set_color(color),
@@ -54,8 +54,6 @@ def sin(x):
 
 def cos(x):
     return np.cos(np.radians(x))
-
-
 
 # - - - Generadores - - - 
 getVectorCordsM = lambda v: Matrix([[ v[0] ], [ v[1] ]])

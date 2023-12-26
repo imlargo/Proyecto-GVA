@@ -119,11 +119,18 @@ class PlaneScene(LinearTransformationScene):
             Transform(cords, MathTex(r"\begin{bmatrix} 3 \\ 2 \end{bmatrix}")),
             Create(vector)
         )
+
         self.play(resaltar(textPunto))
-        self.wait()
-        self.play(delinear(vector, RED_C, 1))
 
         # // > Resaltar direccion con una flecha y passing light < //
+        self.wait()
+        self.play(delinear(vector, RED_C, 1))
+        self.wait()
+
+        # // > Indicar el vector (2, 1), el punto (2, 1) y resaltar direccion < //
+        
+        # // > Indicar componentes y mostrar pasos < //
+        
 
         """
         self.play(FadeOut(tagX), FadeOut(tagY))
@@ -150,9 +157,6 @@ class PlaneScene(LinearTransformationScene):
         """        
         
         
-        # // > Indicar el vector (2, 1), el punto (2, 1) y resaltar direccion < //
-        
-        # // > Indicar componentes y mostrar pasos < //
         
         # // > Limpiar plano, mostrar el origen como coordenadas, notacion y resaltar < //
         
