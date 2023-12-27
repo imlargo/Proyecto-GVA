@@ -1,13 +1,14 @@
 ## Plan de negocio
 
-
 ## Musica:
-
+- Intro/Outro: Ylang Ylang
 - City girl - sunset
+- Anomalie - Bond
 
 ## Publicidad
 
 - Industry baby con entrada epica
+- Anomalie bond
 - Gva para gvas
 
 ## Web page
