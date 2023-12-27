@@ -5,7 +5,7 @@ Hola, mi nombre es Juan Carlos Largo, y como iniciativa personal he decidido cre
 
 La idea de este proyecto es que puedan aprender de una manera mas visual y sencilla ciertos temas, y que puedan comprender los conceptos de una manera mas intuitiva y profunda, y puedan resolver problemas con mayor facilidad. Siempre he pensado que la materia de geometría vectorial tiene mucho que ver con el analisis de los problemas y el saber como aplicar los conceptos. Porque realmente si entienden el porque, sera mas sencillo aplicar lo que saben y resolver problemas
 
-![Just a meme](../../lessons/images/l0-meme.jpg)
+![Just a meme](../../lessons/content/images/l0-meme.jpg)
 
 ### Acerca del curso
 ----

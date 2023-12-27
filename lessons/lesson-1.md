@@ -67,6 +67,6 @@ Los vectores son los objetos fundamentales con los que trabajaremos en este curs
 
 > **Nota:** La manera en la que intento explicar el concepto de vector es una manera muy intuitiva y trato de evitar el uso de términos y conceptos matemáticos formales. Así que si desean una definición más profunda, aquí tienen un meme que lo explica. :D
 
-![Just a meme](../../lessons/images/l1-meme-vector.jpg)
+![Just a meme](../../lessons/content/images/l1-meme-vector.jpg)
 
 <!-- Animacion Despedida -->

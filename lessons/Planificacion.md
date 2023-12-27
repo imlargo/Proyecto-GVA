@@ -20,3 +20,4 @@
         - Leccion 2
         - Leccion 3
         - Leccion 4
+    - About
