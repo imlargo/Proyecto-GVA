@@ -41,7 +41,7 @@ class BaseScene(Scene):
         pass
 
 # Escena en el plano
-class PlaneScene(LinearTransformationScene):
+class MainScene(LinearTransformationScene):
     def __init__(self):
         # Configuracion del plano
         LinearTransformationScene.__init__(self,
