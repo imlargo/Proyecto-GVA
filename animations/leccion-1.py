@@ -67,7 +67,7 @@ class PlaneScene(LinearTransformationScene):
         # Resaltar el origen y ejes
         self.play(
             resaltar(origen, TEAL_C, 1),
-            delinear(r2, RED_A, 1)
+            resaltar(r2, RED_A, 1)
         )
 
         # // > Les ponemos nombres a los ejes e indicamos su direccion < //
@@ -115,6 +115,7 @@ class PlaneScene(LinearTransformationScene):
 
         # // > Resaltar la palabra "punto" < //
         self.play(resaltar(textPunto))
+        self.play(FadeOut(lineaX, lineaY))
 
         # // > Convertir la palabra punto por vector, convertir el punto (2, 1) a vector, indicar direccion < //
         vector = Vector(v, color = TEAL_C)
@@ -148,6 +149,11 @@ class PlaneScene(LinearTransformationScene):
         self.play(Create(lineaY))
         self.wait()
         self.play(FadeOut(lineaX, lineaY))
+
+        self.wait()
+        self.play(delinear(vector, RED_A, 2))
+        self.wait()
+
         
         # // > Limpiar plano, mostrar el origen como coordenadas, notacion y resaltar < //
         
