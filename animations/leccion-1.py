@@ -121,8 +121,8 @@ class PlaneScene(LinearTransformationScene):
         name = MathTex(r"\vec{v}", color = PURPLE_A)
 
         self.play(
-            Transform(textPunto, Tex("Vector")),
-            Transform(cords, cordsMatrix(v)),
+            Transform(textPunto, Tex("Vector").next_to(cords, RIGHT, buff = 1)),
+            Transform(cords, cordsMatrix(v).scale(0.8).next_to(punto, RIGHT, buff = 0.5)),
             Create(vector)
         )
 
