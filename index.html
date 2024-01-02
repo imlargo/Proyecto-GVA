@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="./src/styles/global.css">
     <link rel="stylesheet" href="./src/styles/lesson.css">
 
+    <script defer>
+        document.getElementById("footer").innerHTML = '<object type="text/html" data="src/components/footer.html" ></object>';
+    </script>
+
 </head>
 
 
@@ -52,6 +56,8 @@
     <div class="text-white text-center">
         <h1>Curso vectorial</h1>
         <hr class="pink-hr">
+        <h3>Geometria vectorial for dummyes, fundamentos</h3>
+        <p>by: @imlargo</p>
         <div class="d-flex justify-content-center align-content-center" valign="bottom">
             <a class="bi bi-chevron-down text-white" href="#leccion"></a>
         </div>
@@ -85,29 +91,9 @@
         <br>
     </main>
 
-    <footer class="container d-flex flex-wrap justify-content-center align-items-center py-3 my-4 gap-4 my-footer">
-        <span class="">© Juan Carlos Largo</span>
-        <div class="vr"></div>
-
-        <span class=" mx-5">imlargo</span>
-        <div class="vr"></div>
-
-        <a class="" href="https://www.instagram.com/imlargo" target="_blank">
-            <i class="bi bi-instagram my-icon"></i>
-        </a>
-        <div class="vr"></div>
-
-        <a class="" href="https://github.com/imlargo" target="_blank">
-            <i class="bi bi-github my-icon"></i>
-        </a>
-        <div class="vr"></div>
-
-        <a class="" href="https://www.linkedin.com/in/imlargo" target="_blank">
-            <i class="bi bi-linkedin my-icon"></i>
-        </a>
-    </footer>
-
     <i class="bi bi-moon theme-button" onclick="changeMode(this)"></i>
+
+    <div id="footer"></div>
 
 </body>
 
