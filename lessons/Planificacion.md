@@ -1,5 +1,7 @@
 ## Plan de negocio
 
+- Recomendar geogebra, matesmike, 3blue1brown, etc
+
 ## Musica:
 - Intro/Outro: Ylang Ylang
 - City girl - sunset
@@ -21,6 +23,8 @@
         - Leccion 3
         - Leccion 4
     - About
+
+
 
 
 

@@ -1,0 +1,33 @@
+.banner-container {
+    text-align: center;
+    color: white;
+    font-family: "FreeMono", monospace;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    opacity: 0.5;
+}
+
+.banner-container h1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.banner-container hr {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-container h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;    
+}
+
+.banner-container p {
+    font-size: 1.2rem;
+    margin-top: 8rem;
+}

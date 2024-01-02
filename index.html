@@ -20,8 +20,9 @@
     <script src="./src/js/misc.js" defer></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="stylesheet" href="./src/styles/lesson.css">
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/lesson.css">
+    <link rel="stylesheet" href="src/styles/homepage.css">
 
     <link rel="shortcut icon" href="src/assets/my-background.png" type="image/png" />
 </head>
@@ -50,12 +51,14 @@
         </div>
     </nav>
 
-    <div class="text-white text-center container">
-        <h1>Curso vectorial</h1>
-        <hr class="pink-hr">
-        <h3>Geometria vectorial for dummyes, fundamentos</h3>
+    <div class="banner-container">
+        
+        <h1>Curso Geometria Vectorial</h1c>
+        <hr class="pink-hr mt-3">
+        <h3>fundamentos de la geometria vectorial made easy</h3>
         <p>by: @imlargo</p>
-        <div class="d-flex justify-content-center align-content-center" valign="bottom">
+
+        <div class="d-flex justify-content-center align-content-center down-arrow">
             <a class="bi bi-chevron-down text-white" href="#leccion"></a>
         </div>
     </div>
@@ -113,5 +116,33 @@
     <i class="bi bi-moon theme-button" onclick="changeMode(this)"></i>
 
 </body>
+
+
+<script>
+    fetch("lessons/homepage.md").then(response => response.text()).then(content => {
+        // Add latex
+        marked.use(markedKatex());
+
+        // Custom id
+        marked.use(
+            {
+                renderer: {
+                    heading(text, level, raw, slugger) {
+                        const headingIdRegex = /(?: +|^)\{#([a-z][\w-]*)\}(?: +|$)/i;
+                        const hasId = text.match(headingIdRegex);
+                        if (!hasId) {
+                            // fallback to original heading renderer
+                            return false;
+                        }
+                        return `<h${level} id="${hasId[1]}">${text.replace(headingIdRegex, '')}</h${level}>\n`;
+                    }
+                }
+            }
+        );
+        // Render content
+        const contenedor = document.getElementById('rendered')
+        contenedor.innerHTML = marked.parse(content);
+    });
+</script>
 
 </html>

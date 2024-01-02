@@ -1,4 +1,4 @@
-
+<!--
 ---
 
 # Nombre del curso
@@ -8,92 +8,39 @@
 ### By: imlargo
 
 --- 
+-->
 
-# Acerca del curso
+Hola, me llamo Juan Carlos Largo, y como iniciativa personal he decidido crear esta serie de lecciones con el objetivo explicar temas fundamentales sobre geometría vectorial mediante animaciones, ejemplos y conceptos. En lugar de enfocarme en la parte de _"computar y calcular"_, mi enfoque será explicar el **"porqué"** detrás de los conceptos, para que no solo memoricen fórmulas, sino que también comprendan su lógica. En particular, creo que la geometría vectorial es fundamental para analizar y resolver problemas, ya que entender el porqué facilita la aplicación de los conocimientos. 
 
-### Motivacion
+Siempre he pensado que la materia de geometría vectorial tiene mucho que ver con el analisis de los problemas y el saber como aplicar los conceptos. Porque realmente si entienden el porque, sera mas sencillo aplicar lo que saben y resolver problemas
 
-Hola, mi nombre es Juan Carlos Largo, y como iniciativa personal he decidido crear esta serie de videos, donde explicaré temas fundamentales acerca de la geometría vectorial mediante animaciones, ejemplos y conceptos. Y dejando de lado la parte de “computar y calcular” explicare el “porque” detrás de los conceptos para que no solo memorizar fórmulas, sino que también comprendan su lógica.
+## Acerca del curso
 
-Mi objetivo es proporcionar una comprensión más profunda de por qué ocurren ciertas cosas y ofrecer una explicación visual para facilitar la comprensión de los temas. y gracias a mis habilidades de programación puedo crear animaciones y videos que ayuden a comprender los conceptos.
+El curso tiene el objetivo de simplificar el aprendizaje mediante enfoques visuales, permitiendo una comprensión intuitiva y profunda de los conceptos a través de explicaciones y ejemplos visuales. Gracias a mis habilidades de programación, he creado las animaciones y videos para hacer más accesibles temas complejos. 
 
-### Presentacion del curso
+Aunque inicialmente diseñado para estudiantes de la Universidad Nacional sede Medellín, este curso está dirigido a cualquier persona interesada en comprender las bases de la geometría vectorial de manera visual y sencilla.
 
-**Acerca del curso**
+Enseñare temas fundamentales para dejar sus bases claras, mas abajo esta el plan de estudios, gracias a el hecho de que busco dejar claras las bases y fundamentos, esto te servira para entender y resolver problemas mas facilmente, ademas de usar los conocimientos adquiridos para aplicarlos y te aseguro que eso hara los problemas mucho mas sencillos tenendo una perspectvia visual
 
-La idea de este proyecto es que puedan aprender de una manera mas visual y sencilla ciertos temas, y que puedan comprender los conceptos de una manera mas intuitiva y profunda, y puedan resolver problemas con mayor facilidad. Siempre he pensado que la materia de geometría vectorial tiene mucho que ver con el analisis de los problemas y el saber como aplicar los conceptos. Porque realmente si entienden el porque, sera mas sencillo aplicar lo que saben y resolver problemas
+## ¿Qué hace que el curso sea diferente?
 
-a pesar de que inicialmente este curso fue pensado para los estudiantes de la universdiad nacional sede medellin, tambienesta enfocado a cualquier persona que desee aprender las bases y fundamentos de la geometria vectorial  que quieran comprender bien las bases y entender visualmente...
+El curso se compone de una serie de lecciones, que abarcan temas desde tin hasta tal Aprendizaje personalizado, el curso esta diseñado para Para q tenga sentido mas alla de los numeros, mejora tus habilidades para resolver problemas
 
-**¿Qué aprenderás?**
+Cada leccion esta diseñada para ser clara y consisa, y explicar de manera sencilla pero completa los conceptos, usando un apoyo visual para su entendimiento aprovechar las animaciones y explicar los temas de manera sencilla pero completa e interactiva, ademas puedes avanzar a tu ritmo y neesidades. Cada leccion se conforma de un video explicativo, donde se dicta la leccion, se explican conceptos y se usan animaciones para enseñar todo de manera detallada. ademas tambien se incluye una leccion escrita con el contenido del video por si deseas leerla o revisar en cualquier momento, la cual tambien cuenta con animaciones y ejemplos.
+
+<!-- Breve presentación del equipo docente, resaltando su experiencia y dedicación a la enseñanza de álgebra lineal. Resalta tus calificaciones y experiencia en la enseñanza del álgebra lineal, mostrando tu experiencia y construyendo confianza con posibles estudiantes.
+-->
+
+### Tematicas
+
+Proporciona un resumen detallado de los temas y objetivos de aprendizaje, habilidades que adquirirás.
+
 Breve esquema del plan de estudios, abordando temas clave como vectores, matrices, transformaciones lineales, eigenvalores y aplicaciones.
 Describe brevemente el plan de estudios del curso, mencionando temas clave como 
 vectores, matrices, transformaciones lineales, valores propios y aplicaciones.
 Desde vectores hasta aplicaciones del álgebra lineal, nuestro plan de estudios abarca transformaciones lineales, valores propios y más.
 
-Eso te servira para?
-
-
-### Porque elegirnos?
-
-Aprende a tu ritmo con conferencias en video, cuestionarios interactivos y proyectos que aplican conceptos en situaciones del mundo real.
-
-Propuesta única de venta: ¿Qué hace que tu curso sea diferente? 
-Enfócate en características como:
-- elementos interactivos
-- aprendizaje personalizado
-- apoyo comunitario o orientación profesional.
-
-
-Nuestra plataforma de aprendizaje adaptativo se ajusta a tu ritmo y necesidades, ofreciendo retroalimentación personalizada y tareas atractivas.
-
-Propuesta única de venta: "Nuestra plataforma de aprendizaje adaptativo ajusta el curso a tu ritmo y necesidades, ofreciendo retroalimentación personalizada y tareas atractivas."
-
-
-Breve presentación del equipo docente, resaltando su experiencia y dedicación a la enseñanza de álgebra lineal.
-
-Resalta tus calificaciones y experiencia en la enseñanza del álgebra lineal, mostrando tu experiencia y construyendo confianza con posibles estudiantes.
-
-Formato del curso: Describe los métodos de enseñanza (por ejemplo, conferencias en video, cuestionarios, ejercicios interactivos, proyectos).
-Propuesta única de venta: ¿Qué distingue tu curso de los demás? Enfócate en características como elementos interactivos, aprendizaje personalizado, apoyo comunitario o orientación profesional.
-
-Experimenta el álgebra lineal a través de una lente visual, haciéndolo más intuitivo y atractivo.
-
-Interactúa con visualizaciones 2D
-
-Principiantes ansiosos por explorar los fundamentos del álgebra lineal.
-Profesionales que buscan actualizar sus habilidades y ampliar oportunidades de carrera.
-Estudiantes en campos STEM que necesitan un sólido entendimiento del álgebra lineal para estudios 
-avanzados.
-
-Conferencias en video que desglosan conceptos complejos en porciones digeribles.
-Ejercicios interactivos y cuestionarios para consolidar tu comprensión.
-Ejemplos y proyectos del mundo real para unir teoría y práctica.
-Retroalimentación personalizada y aprendizaje adaptativo para adaptar la experiencia a tu ritmo.
-Foro comunitario vibrante para soporte, discusiones y compartir conocimientos.
-
-"¡Este curso fue un cambio de juego! Hizo que el álgebra lineal tuviera sentido para mí de una manera que las conferencias tradicionales nunca lo hicieron". - Maria S., Científica de Datos
-
-"Los ejercicios interactivos y ejemplos del mundo real hicieron que los conceptos cobraran vida. Ahora tengo confianza para aplicar el álgebra lineal en mi trabajo en aprendizaje automático". - David L., Ingeniero de Software
-
-Describe los métodos de enseñanza (por ejemplo, conferencias en video, cuestionarios, ejercicios interactivos, proyectos).
-
-, mejora tus habilidades para resolver problemas
-
-Enfócate en los beneficios y el valor que tu curso ofrece a los posibles estudiantes.
-
-"Nuestro curso interactivo en línea hace que el álgebra lineal sea divertida, accesible y aplicable a problemas del mundo real".
-
-adapta el curso a tu ritmo, lecciones disponibls todo el tiempo
-
-Formato del curso: Detalle de métodos de enseñanza como videoconferencias, cuestionarios, ejercicios interactivos y proyectos.
-
-### Plan de estudio
-
-Plan de estudios del curso: Proporciona un resumen detallado de los temas y objetivos de aprendizaje.
-
-Plan de estudios del curso:
-Sumérgete en un resumen detallado de los temas, objetivos y habilidades que adquirirás.
+<!-- 
 
 
 ### Prueba gratis?
@@ -169,3 +116,4 @@ Visuales: Usa iconos, ilustraciones o fragmentos de animación cortos para mejor
 
 Mantén el texto de la página de inicio conciso y escaneable. Apunta a una comunicación clara y destaca la propuesta de valor de tu curso.
 
+-->
