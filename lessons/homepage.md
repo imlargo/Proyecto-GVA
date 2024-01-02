@@ -10,25 +10,9 @@
 --- 
 -->
 
+<div class="Ok">
 Hola, me llamo Juan Carlos Largo, y como iniciativa personal he decidido crear esta serie de lecciones con el objetivo de explicar temas fundamentales sobre geometría vectorial mediante animaciones, ejemplos y conceptos. En lugar de enfocarme en la parte de _"computar y calcular"_, mi enfoque es explicar el **"porqué"** detrás de los conceptos. En particular, considero que es muy útil abordar la geometría vectorial desde una perspectiva visual, este enfoque facilita la comprensión de los conceptos y, sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
-
-<footer class="container d-flex flex-wrap justify-content-center align-items-center py-3 my-4 gap-4 my-footer">
-    <span class="">© Juan Carlos Largo</span>
-    <div class="vr"></div>
-    <span class=" mx-5">imlargo</span>
-    <div class="vr"></div>
-    <a class="" href="https://www.instagram.com/imlargo" target="_blank">
-        <i class="bi bi-instagram my-icon"></i>
-    </a>
-    <div class="vr"></div>
-    <a class="" href="https://github.com/imlargo" target="_blank">
-        <i class="bi bi-github my-icon"></i>
-    </a>
-    <div class="vr"></div>
-    <a class="" href="https://www.linkedin.com/in/imlargo" target="_blank">
-        <i class="bi bi-linkedin my-icon"></i>
-    </a>
-</footer>
+</div>
 
 ## Acerca del curso
 
