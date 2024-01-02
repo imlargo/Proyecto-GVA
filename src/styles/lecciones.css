@@ -4,13 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
     padding: 2rem;
     line-height: normal;
     text-decoration: none;
     text-align: left;
     color: var(--color-content);
-    transition: background .2s ease;
+    transition: background 0.4s ease;
 }
 
 .lesson:hover {
