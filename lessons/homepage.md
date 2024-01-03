@@ -10,17 +10,15 @@
 --- 
 -->
 
-<div class="Ok">
 Hola, me llamo Juan Carlos Largo, y como iniciativa personal he decidido crear esta serie de lecciones con el objetivo de explicar temas fundamentales sobre geometría vectorial mediante animaciones, ejemplos y conceptos. En lugar de enfocarme en la parte de _"computar y calcular"_, mi enfoque es explicar el **"porqué"** detrás de los conceptos. En particular, considero que es muy útil abordar la geometría vectorial desde una perspectiva visual, este enfoque facilita la comprensión de los conceptos y, sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
-</div>
+
+Este curso, originalmente diseñado para estudiantes de la Universidad Nacional sede Medellín, está pensado para cualquier persona interesada en comprender de manera visual y sencilla las bases de la geometría vectorial.
 
 ## Acerca del curso
 
-El curso tiene el objetivo de simplificar el aprendizaje mediante enfoques visuales, permitiendo una comprensión intuitiva y profunda de los conceptos a través de explicaciones y ejemplos visuales. Gracias a mis habilidades de programación, he creado las animaciones y videos para hacer más accesibles temas complejos. 
+El curso tiene el objetivo de simplificar el aprendizaje mediante un enfoque visual, permitiendo una comprensión de los temas de manera mas sencilla pero completa. Gracias a mis habilidades de programación, he creado explicaciones y ejemplos en forma de animaciones y videos, como una herramienta para facilitar la compresion de los conceptos.
 
-Aunque inicialmente diseñado para estudiantes de la Universidad Nacional sede Medellín, este curso está dirigido a cualquier persona interesada en comprender las bases de la geometría vectorial de manera visual y sencilla.
-
-Enseñare temas fundamentales para dejar sus bases claras, mas abajo esta el plan de estudios, gracias a el hecho de que busco dejar claras las bases y fundamentos, esto te servira para entender y resolver problemas mas facilmente, ademas de usar los conocimientos adquiridos para aplicarlos y te aseguro que eso hara los problemas mucho mas sencillos tenendo una perspectvia visual
+Durante las lecciones, abordaré temas fundamentales que te ayudarán a tener claridad en las bases de la geometria vectorial, los cuales son fundamentales. Al comprender y dominar estos fundamentos, no solo te beneficiarás en la resolución de problemas, sino que también adquirirás una perspectiva visual que hará que enfrentar nuevos desafíos sea mucho más fácil y gratificante. Únete a este curso para simplificar tu aprendizaje y destacar en geometría vectorial. ¡Espero verte pronto en clase!
 
 ## ¿Qué hace que el curso sea diferente?
 
@@ -35,9 +33,8 @@ Cada leccion esta diseñada para ser clara y consisa, y explicar de manera senci
 
 Proporciona un resumen detallado de los temas y objetivos de aprendizaje, habilidades que adquirirás.
 
-Breve esquema del plan de estudios, abordando temas clave como vectores, matrices, transformaciones lineales, eigenvalores y aplicaciones.
 Describe brevemente el plan de estudios del curso, mencionando temas clave como 
-vectores, matrices, transformaciones lineales, valores propios y aplicaciones.
+
 Desde vectores hasta aplicaciones del álgebra lineal, nuestro plan de estudios abarca transformaciones lineales, valores propios y más.
 
 <!-- 
