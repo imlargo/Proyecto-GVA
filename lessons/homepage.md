@@ -9,70 +9,27 @@
 --- 
 -->
 
-Hola, soy Juan Carlos Largo, y como proyecto personal creé estas lecciones con el objetivo de explicar de una manera más visual y sencilla conceptos fundamentales de geometría vectorial. Mi enfoque se centra en comprender el "porqué" detrás de los conceptos en lugar de simplemente computar o calcular. En particular, pienso que abordar la geometría vectorial desde una perspectiva visual facilita la comprensión de los temas y sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
+Hola, soy Juan Carlos Largo, y como proyecto personal, creé estas lecciones con el objetivo de explicar de una manera más visual y sencilla conceptos fundamentales de geometría vectorial. Mi enfoque se centra en comprender el "porqué" detrás de los conceptos en lugar de simplemente computar o calcular. En particular, pienso que abordar la geometría vectorial desde una perspectiva visual facilita la comprensión de los temas y, sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
 
 ## Acerca del curso
 
-> Este curso busca simplificar el aprendizaje a través de un enfoque visual, brindando una comprensión sencilla pero completa de los temas. Gracias a mis habilidades de programación, he creado animaciones y videos que facilitan la comprensión de los conceptos. Durante las lecciones, exploraremos temas fundamentales para establecer bases sólidas en geometría vectorial al igual que proporcionando una perspectiva visual que mejorará tu capacidad para resolver problemas.
+> Este curso busca simplificar el aprendizaje a través de un enfoque visual, brindando una comprensión sencilla pero completa de los temas. Gracias a mis habilidades de programación, he creado animaciones y videos que facilitan la comprensión de los conceptos. Durante las lecciones, exploraremos temas fundamentales para establecer bases sólidas en geometría vectorial, al igual que proporcionando una perspectiva visual que mejorará tu capacidad para resolver problemas.
 
-El curso se compone de una serie de lecciones. (puedes ver los temas q se abarcan mas abajo).
+El curso se compone de una serie de lecciones.
 
-- Cada lección consta de un video explicativo detallado donde abordo los temas, ademas de una versión escrita con animaciones y ejemplos. Esto proporciona flexibilidad para revisar los temas y estudiar en cualquier momento.
+- Cada lección consta de un video explicativo detallado donde abordo los temas, además de una versión escrita con animaciones y ejemplos. Esto proporciona flexibilidad para revisar los temas y estudiar en cualquier momento.
 
 - Todas las lecciones fueron redactadas por mí con el objetivo de ser claras y explicar de manera sencilla pero completa los conceptos.
 
-- Diseñado para ir más allá de los números utilizando apoyos visuales para garantizar una comprensión integral y mejora tus habilidades para resolver problemas
+- El curso está diseñado para ir más allá de los números, utilizando apoyos visuales para garantizar una comprensión integral y mejora tus habilidades para resolver problemas
 
-- Avanza a tu propio ritmo y según tus necesidades.
+- Avanza a tu propio ritmo y según tus necesidades, no requiere conocimientos previos.
 
 <!-- Breve presentación del equipo docente, resaltando su experiencia y dedicación a la enseñanza de álgebra lineal. Resalta tus calificaciones y experiencia en la enseñanza del álgebra lineal, mostrando tu experiencia y construyendo confianza con posibles estudiantes.
 -->
 
-### Tematicas
+¡Espero que esto te sea de ayuda! No dudes en preguntarme si tienes alguna duda o necesitas mas informacion
 <!-- 
-Proporciona un resumen detallado de los temas y objetivos de aprendizaje, habilidades que adquirirás.
-
-Describe brevemente el plan de estudios del curso, mencionando temas clave como 
-
-Desde vectores hasta aplicaciones del álgebra lineal, nuestro plan de estudios abarca transformaciones lineales, valores propios y más.
-
-
-
-
-### Prueba gratis?
-
-
-### Otros:
-
-**Preguntas Frecuentes (FAQ)**
-Aborda preocupaciones comunes sobre el formato del curso, nivel de dificultad, requisitos previos, etc.
-
-¡Espero que esto te sea de ayuda! No dudes en preguntar si tienes más preguntas o necesitas sugerencias más específicas para tu contenido."
-
-
-¿Tienes preguntas sobre el curso? Consulta nuestras respuestas a las preguntas más frecuentes.
-
-**Blog?**
-Comparte contenido atractivo relacionado con aplicaciones de álgebra lineal, noticias e historias inspiradoras.
-Publicaciones relacionadas con aplicaciones de álgebra lineal, noticias y experiencias inspiradoras.
-Explora nuestro blog para obtener contenido relacionado con aplicaciones de álgebra lineal, noticias y experiencias inspiradoras.
-
-**Testimonios**
-
-Incluye citas o videos cortos de estudiantes satisfechos elogiando la efectividad e impacto del curso.
-
-"Este curso transformó por completo mi comprensión del álgebra lineal. ¡Ahora puedo aplicarlo a mis proyectos de ciencia de datos con confianza!" - John Smith, Analista de Datos.
-
-
-
-
-
-
-
-
-
----
-
 ### Tips:
 
 - Utiliza un diseño limpio e intuitivo con colores y fuentes de marca consistentes. Al incorporar estos elementos en tu página de inicio, puedes crear una presencia en línea convincente e informativa para tu curso de álgebra lineal, atrayendo a posibles estudiantes y aumentando tus inscripciones.
@@ -90,26 +47,14 @@ Imagen/Video Destacado: Capta la atención con una imagen o video visualmente at
 ### Estructura
 
 **Llamado a la Acción:**
-Muestra de manera prominente un botón claro de llamado a la acción (CTA), como "Inscríbete Ahora", "Más Información" o "Obtén una Prueba Gratis". Utiliza colores contrastantes para que destaque.
-Considera ofrecer un descuento o bonificación por tiempo limitado para incentivar la acción inmediata.
-Contenido Adicional: Crea un sentido de urgencia y promueve la inscripción.
-
-Botón claro y prominente: Facilita a los usuarios inscribirse o obtener más información. Ejemplos: "¡Comienza tu prueba gratuita!", "¡Inscríbete ahora!" o "¡Obtén tu plan de estudios!".
-Oferta por tiempo limitado o descuento: Crea un sentido de urgencia y promueve la inscripción.
-¡Comienza tu prueba gratuita ahora y desbloquea el potencial del álgebra lineal en tu carrera!
-Inscríbete antes del [fecha] y obtén un [porcentaje] de descuento en la matrícula.
-
-**Módulo de vista previa gratuito:** Ofrece una muestra del contenido de tu curso con una lección gratuita o video de muestra.
+Muestra de manera prominente un botón claro de llamado a la acción (CTA), como "Inscríbete Ahora", "Más Información"
 
 Utiliza un lenguaje claro y conciso, evitando jerga técnica siempre que sea posible.
 Mantén la información atractiva y visualmente agradable.
 Enfócate en los beneficios y el valor que tu curso ofrece a los posibles estudiantes.
 Facilita a los usuarios tomar acción y obtener más información.
-Siguiendo esta estructura e incorporando un contenido convincente, puedes crear una página de inicio que atraiga eficazmente a posibles estudiantes a tu sitio web del curso de álgebra lineal.
 
-Viñetas claras y concisas: Enumera las características y beneficios clave de tu curso. Ejemplos: "Módulos de aprendizaje interactivos con explicaciones multimedia", "Rutas de aprendizaje personalizadas con cuestionarios adaptativos", "Conferencias en video lideradas por expertos y sesiones de preguntas y respuestas en vivo", "Estudios de casos del mundo real y aprendizaje basado en proyectos", "Orientación profesional y conexiones industriales."
 Visuales: Usa iconos, ilustraciones o fragmentos de animación cortos para mejorar la legibilidad y hacer que la información sea más atractiva.
 
 Mantén el texto de la página de inicio conciso y escaneable. Apunta a una comunicación clara y destaca la propuesta de valor de tu curso.
-
 -->
