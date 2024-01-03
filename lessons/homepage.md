@@ -21,7 +21,7 @@ El curso se compone de una serie de lecciones.
 
 - Todas las lecciones fueron redactadas por mí con el objetivo de ser claras y explicar de manera sencilla pero completa los conceptos.
 
-- El curso está diseñado para ir más allá de los números, utilizando apoyos visuales para garantizar una comprensión integral y mejora tus habilidades para resolver problemas
+- El curso está diseñado para ir más allá de los números, utilizando apoyos visuales para garantizar una comprensión integral y mejora tus habilidades para resolver problemas.
 
 - Avanza a tu propio ritmo y según tus necesidades, no requiere conocimientos previos.
 
