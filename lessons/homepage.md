@@ -13,19 +13,17 @@ Hola, soy Juan Carlos Largo, y como proyecto personal creé estas lecciones con 
 
 ## Acerca del curso
 
-Este curso busca simplificar el aprendizaje a través de un enfoque visual, brindando una comprensión sencilla pero completa de los temas. Gracias a mis habilidades de programación, he creado animaciones y videos que facilitan la comprensión de los conceptos. Durante las lecciones, exploraremos temas fundamentales para establecer bases sólidas en geometría vectorial al igual que proporcionando una perspectiva visual que mejorará tu capacidad para resolver problemas.
+> Este curso busca simplificar el aprendizaje a través de un enfoque visual, brindando una comprensión sencilla pero completa de los temas. Gracias a mis habilidades de programación, he creado animaciones y videos que facilitan la comprensión de los conceptos. Durante las lecciones, exploraremos temas fundamentales para establecer bases sólidas en geometría vectorial al igual que proporcionando una perspectiva visual que mejorará tu capacidad para resolver problemas.
 
-## ¿Qué hace que el curso sea diferente?
+El curso se compone de una serie de lecciones. (puedes ver los temas q se abarcan mas abajo).
 
-El curso se compone de una serie de lecciones, puedes ver los temas q se abarcan mas abajo.
+- Cada lección consta de un video explicativo detallado donde abordo los temas, ademas de una versión escrita con animaciones y ejemplos. Esto proporciona flexibilidad para revisar los temas y estudiar en cualquier momento.
 
-- Todas las lecciones fueron redactadas por mi para ser claras y explicar de manera sencilla pero completa los conceptos.
+- Todas las lecciones fueron redactadas por mí con el objetivo de ser claras y explicar de manera sencilla pero completa los conceptos.
 
-- El curso esta diseñado para para q tenga sentido mas alla de los numeros gracias a los apoyos visuales.
+- Diseñado para ir más allá de los números utilizando apoyos visuales para garantizar una comprensión integral y mejora tus habilidades para resolver problemas
 
-- Avanza a tu ritmo y necesidades y mejora tus habilidades para resolver problemas
-
-- Cada lección consta de un video explicativo detallado donde explico los temas y una versión escrita con animaciones y ejemplos, proporcionando flexibilidad para revisar y estudiar en cualquier momento.
+- Avanza a tu propio ritmo y según tus necesidades.
 
 <!-- Breve presentación del equipo docente, resaltando su experiencia y dedicación a la enseñanza de álgebra lineal. Resalta tus calificaciones y experiencia en la enseñanza del álgebra lineal, mostrando tu experiencia y construyendo confianza con posibles estudiantes.
 -->
