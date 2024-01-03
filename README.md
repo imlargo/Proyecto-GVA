@@ -55,17 +55,11 @@ Answer 1
 
 Answer 2
 
-## Feedback
+## Feedback and Contributing
 
-If you have any feedback, please reach out to us at fake@fake.com
-    
-## Contributing
+Si tienes alguna retroalimentación, duda, o sugerencia contactame al: fake@fake.com
 
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-Please adhere to this project's `code of conduct`.
+Contributions are always welcome! Si deseas realizar alguna corrección o encuentras algún error de escritura, no dudes en compartirlo conmigo <3
 
 ## Authors
 

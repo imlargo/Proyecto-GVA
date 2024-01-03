@@ -9,19 +9,23 @@
 --- 
 -->
 
-Hola, me llamo Juan Carlos Largo, y como iniciativa personal he decidido crear esta serie de lecciones con el objetivo de explicar temas fundamentales sobre geometría vectorial mediante animaciones, ejemplos y conceptos. En lugar de enfocarme en la parte de _"computar y calcular"_, mi enfoque es explicar el **"porqué"** detrás de los conceptos. En particular, considero que es muy útil abordar la geometría vectorial desde una perspectiva visual, este enfoque facilita la comprensión de los conceptos y, sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
+Hola, soy Juan Carlos Largo, y como proyecto personal creé estas lecciones con el objetivo de explicar de una manera más visual y sencilla conceptos fundamentales de geometría vectorial. Mi enfoque se centra en comprender el "porqué" detrás de los conceptos en lugar de simplemente computar o calcular. En particular, pienso que abordar la geometría vectorial desde una perspectiva visual facilita la comprensión de los temas y sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
 
 ## Acerca del curso
 
-El curso tiene el objetivo de simplificar el aprendizaje mediante un enfoque visual, permitiendo una comprensión de los temas de manera mas sencilla pero completa. Gracias a mis habilidades de programación, he creado explicaciones y ejemplos en forma de animaciones y videos, como una herramienta para facilitar la compresion de los conceptos.
-
-Durante las lecciones, abordaré temas fundamentales  que te ayudarán a tener claridad en las bases de la geometria vectorial y que te serviran para entender los conceptos mas facilmente, ademas ganarás una perspectiva visual que facilitará mejorar tu resolución de problemas.
+Este curso busca simplificar el aprendizaje a través de un enfoque visual, brindando una comprensión sencilla pero completa de los temas. Gracias a mis habilidades de programación, he creado animaciones y videos que facilitan la comprensión de los conceptos. Durante las lecciones, exploraremos temas fundamentales para establecer bases sólidas en geometría vectorial al igual que proporcionando una perspectiva visual que mejorará tu capacidad para resolver problemas.
 
 ## ¿Qué hace que el curso sea diferente?
 
-El curso se compone de una serie de lecciones, que abarcan temas desde tin hasta tal, Aprendizaje personalizado, el curso esta diseñado para Para q tenga sentido mas alla de los numeros, mejora tus habilidades para resolver problemas
+El curso se compone de una serie de lecciones, puedes ver los temas q se abarcan mas abajo.
 
-Cada leccion esta diseñada para ser clara y consisa, y explicar de manera sencilla pero completa los conceptos, usando un apoyo visual para su entendimiento aprovechar las animaciones y explicar los temas de manera sencilla pero completa e interactiva, ademas puedes avanzar a tu ritmo y necesidades. Cada leccion se conforma de un video explicativo, donde se dicta la leccion, se explican conceptos y se usan animaciones para enseñar todo de manera detallada. ademas tambien se incluye una leccion escrita con el contenido del video por si deseas leerla o revisar en cualquier momento, la cual tambien cuenta con animaciones y ejemplos.
+- Todas las lecciones fueron redactadas por mi para ser claras y explicar de manera sencilla pero completa los conceptos.
+
+- El curso esta diseñado para para q tenga sentido mas alla de los numeros gracias a los apoyos visuales.
+
+- Avanza a tu ritmo y necesidades y mejora tus habilidades para resolver problemas
+
+- Cada lección consta de un video explicativo detallado donde explico los temas y una versión escrita con animaciones y ejemplos, proporcionando flexibilidad para revisar y estudiar en cualquier momento.
 
 <!-- Breve presentación del equipo docente, resaltando su experiencia y dedicación a la enseñanza de álgebra lineal. Resalta tus calificaciones y experiencia en la enseñanza del álgebra lineal, mostrando tu experiencia y construyendo confianza con posibles estudiantes.
 -->
