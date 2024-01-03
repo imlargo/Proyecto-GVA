@@ -4,6 +4,12 @@
     font-family: "FreeMono", monospace;
 }
 
+.inscribir {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+}
+
 .down-arrow {
     position: absolute;
     bottom: 1rem;
@@ -27,18 +33,10 @@
     margin-top: 2rem;    
 }
 
-.banner-container p {
-    font-size: 1.2rem;
-    margin-top: 8rem;
-}
 
 /* */
 .spacing {
     height: 10rem;
-}
-
-p {
-    text-align: justify!important;
 }
 
 .container-intro {
@@ -53,9 +51,20 @@ p {
     object-fit: cover; /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
 }
 
+.container-about img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 15rem; /* Esto hará que la imagen se ajuste a la altura de su contenedor */
+    object-fit: cover; /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
+}
+
 .card-me h5 {
     font-weight: bold;
     text-align: center;
+}
+
+.card-me p {
+    text-align: justify;
 }
 
 .purple-bg {
@@ -71,4 +80,12 @@ p {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.container-temas li::marker {
+    color: rgb(213, 115, 255);
 }
