@@ -51,7 +51,6 @@ p {
     margin-right: auto;
     height: 20rem; /* Esto hará que la imagen se ajuste a la altura de su contenedor */
     object-fit: cover; /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
-
 }
 
 .card-me h5 {
@@ -61,4 +60,15 @@ p {
 
 .purple-bg {
     background-color: #faf5ff;
+}
+
+.container-beneficios h5 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-beneficios hr {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
