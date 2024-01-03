@@ -6,38 +6,35 @@
 ## Sumérgete en conferencias en video interactivas, aborda problemas desafiantes y construye una base sólida en el dominio de las matemáticas.
 
 ### By: imlargo
-
 --- 
 -->
 
 Hola, me llamo Juan Carlos Largo, y como iniciativa personal he decidido crear esta serie de lecciones con el objetivo de explicar temas fundamentales sobre geometría vectorial mediante animaciones, ejemplos y conceptos. En lugar de enfocarme en la parte de _"computar y calcular"_, mi enfoque es explicar el **"porqué"** detrás de los conceptos. En particular, considero que es muy útil abordar la geometría vectorial desde una perspectiva visual, este enfoque facilita la comprensión de los conceptos y, sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
 
-Este curso, originalmente diseñado para estudiantes de la Universidad Nacional sede Medellín, está pensado para cualquier persona interesada en comprender de manera visual y sencilla las bases de la geometría vectorial.
-
 ## Acerca del curso
 
 El curso tiene el objetivo de simplificar el aprendizaje mediante un enfoque visual, permitiendo una comprensión de los temas de manera mas sencilla pero completa. Gracias a mis habilidades de programación, he creado explicaciones y ejemplos en forma de animaciones y videos, como una herramienta para facilitar la compresion de los conceptos.
 
-Durante las lecciones, abordaré temas fundamentales que te ayudarán a tener claridad en las bases de la geometria vectorial, los cuales son fundamentales. Al comprender y dominar estos fundamentos, no solo te beneficiarás en la resolución de problemas, sino que también adquirirás una perspectiva visual que hará que enfrentar nuevos desafíos sea mucho más fácil y gratificante. Únete a este curso para simplificar tu aprendizaje y destacar en geometría vectorial. ¡Espero verte pronto en clase!
+Durante las lecciones, abordaré temas fundamentales  que te ayudarán a tener claridad en las bases de la geometria vectorial y que te serviran para entender los conceptos mas facilmente, ademas ganarás una perspectiva visual que facilitará mejorar tu resolución de problemas.
 
 ## ¿Qué hace que el curso sea diferente?
 
-El curso se compone de una serie de lecciones, que abarcan temas desde tin hasta tal Aprendizaje personalizado, el curso esta diseñado para Para q tenga sentido mas alla de los numeros, mejora tus habilidades para resolver problemas
+El curso se compone de una serie de lecciones, que abarcan temas desde tin hasta tal, Aprendizaje personalizado, el curso esta diseñado para Para q tenga sentido mas alla de los numeros, mejora tus habilidades para resolver problemas
 
-Cada leccion esta diseñada para ser clara y consisa, y explicar de manera sencilla pero completa los conceptos, usando un apoyo visual para su entendimiento aprovechar las animaciones y explicar los temas de manera sencilla pero completa e interactiva, ademas puedes avanzar a tu ritmo y neesidades. Cada leccion se conforma de un video explicativo, donde se dicta la leccion, se explican conceptos y se usan animaciones para enseñar todo de manera detallada. ademas tambien se incluye una leccion escrita con el contenido del video por si deseas leerla o revisar en cualquier momento, la cual tambien cuenta con animaciones y ejemplos.
+Cada leccion esta diseñada para ser clara y consisa, y explicar de manera sencilla pero completa los conceptos, usando un apoyo visual para su entendimiento aprovechar las animaciones y explicar los temas de manera sencilla pero completa e interactiva, ademas puedes avanzar a tu ritmo y necesidades. Cada leccion se conforma de un video explicativo, donde se dicta la leccion, se explican conceptos y se usan animaciones para enseñar todo de manera detallada. ademas tambien se incluye una leccion escrita con el contenido del video por si deseas leerla o revisar en cualquier momento, la cual tambien cuenta con animaciones y ejemplos.
 
 <!-- Breve presentación del equipo docente, resaltando su experiencia y dedicación a la enseñanza de álgebra lineal. Resalta tus calificaciones y experiencia en la enseñanza del álgebra lineal, mostrando tu experiencia y construyendo confianza con posibles estudiantes.
 -->
 
 ### Tematicas
-
+<!-- 
 Proporciona un resumen detallado de los temas y objetivos de aprendizaje, habilidades que adquirirás.
 
 Describe brevemente el plan de estudios del curso, mencionando temas clave como 
 
 Desde vectores hasta aplicaciones del álgebra lineal, nuestro plan de estudios abarca transformaciones lineales, valores propios y más.
 
-<!-- 
+
 
 
 ### Prueba gratis?
