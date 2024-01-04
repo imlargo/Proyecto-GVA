@@ -134,11 +134,11 @@ body h3 {
     font-weight: bold;
 }
 
-.card-me::before {
+.animation-delign::after {
     margin-left: auto;
 }
 
-.card-me::before {
+.animation-delign::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -147,6 +147,6 @@ body h3 {
     transition: 0.5s;
 }
 
-.card-me:hover::before {
+.animation-delign:hover::after {
     width: 100%;
 }
