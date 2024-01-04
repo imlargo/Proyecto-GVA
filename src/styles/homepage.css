@@ -66,7 +66,8 @@
 }
 
 .purple-bg {
-    background-color: #faf5ff;
+    
+    background-color: rgb(250, 245, 255);
 }
 
 .container-beneficios h3 {
@@ -159,7 +160,7 @@ body h3 {
     transition: .2s linear;
 }
 
-.star-animation:hover>i {
+.star-animation:hover > i {
     transform: scale(1.2);
     color: rgb(105, 44, 179);
 }
@@ -270,4 +271,22 @@ body h3 {
 body {
     font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"!important;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11"!important;
+}
+.card-important {
+    background: linear-gradient(90deg, rgba(111, 3, 244, 0.2), rgba(204, 57, 164, 0.2), rgba(255, 181, 210, 0.2));
+    box-shadow: inset 0px 0px 180px 5px #ffffff;
+}
+
+.box-shadown-button {
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+
+    border-radius: 1.625rem;   
+
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
 }
