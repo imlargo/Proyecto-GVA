@@ -151,47 +151,18 @@ body h3 {
     width: 100%;
 }
 
+/* star animation */
 .star-animation {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
-    position: relative;
-}
-
-.star-animation::after {
-    content: 'like';
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    font-size: 15px;
-    opacity: 0;
-    visibility: hidden;
-    transition: .2s linear;
-    top: 115%;
 }
 
 .star-animation i {
-    width: 30px;
-    height: 30px;
-    transition: .2s linear;
-}
-
-.star-animation i {
-    fill: white;
     transition: .2s linear;
 }
 
 .star-animation:hover > i {
     transform: scale(1.2);
-}
-
-.star-animation:hover > i path {
-    fill: rgb(177, 139, 189);
+    color: rgb(105, 44, 179);
 }
 
 .star-animation:hover::after {
