@@ -59,7 +59,6 @@
 
 .card-me h5 {
     font-weight: bold;
-    text-align: center;
 }
 
 .card-me p {
@@ -266,4 +265,9 @@ body h3 {
         -6px -6px 12px #ffffff;
 
     border-radius: 1.625rem;
+}
+
+body {
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"!important;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11"!important;
 }
