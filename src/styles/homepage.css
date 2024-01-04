@@ -134,31 +134,21 @@ body h3 {
     font-weight: bold;
 }
 
-body h3 {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    border: none;
-    background: none;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-}
-
-body h3::before {
+.card-me::before {
     margin-left: auto;
 }
 
-body h3::after,
-body h3::before {
+.card-me::after,
+.card-me::before {
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: rgb(149 119 235);
     display: block;
     transition: 0.5s;
 }
 
-body h3:hover::after,
-body h3:hover::before {
+.card-me:hover::after,
+.card-me:hover::before {
     width: 100%;
 }
