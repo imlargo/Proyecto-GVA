@@ -1,18 +1,10 @@
 # Proyecto Geometria Vectorial
 
-> Acerca de: Proyecto de animaciones y lecciones para un curso de Geometría Vectorial de la Universidad Nacional de Colombia, como iniciativa propia.
+> Este curso busca simplificar el aprendizaje a través de un enfoque visual, brindando una comprensión sencilla pero completa de los temas. Gracias a mis habilidades de programación, he creado animaciones y videos que facilitan la comprensión de los conceptos. Durante las lecciones, exploraremos temas fundamentales para establecer bases sólidas en geometría vectorial, al igual que proporcionando una perspectiva visual que mejorará tu capacidad para resolver problemas.
 
-### Contenido
+## Web page
 
-- Lección 0: Introducción al curso
-- Lección 1: Vectores
-- Lección 2: Operaciones fundamentales con vectores y sus propiedades
-- Lección 3: Combinaciones lineales
-- Lección 4: El producto punto
-
-## Demo
-
-Insert gif or link to demo
+https://imlargo-vectorial.vercel.app
 
 ## Features
 
@@ -22,13 +14,13 @@ Insert gif or link to demo
 
 ## Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+Hola, soy Juan Carlos Largo, y como proyecto personal, creé estas lecciones con el objetivo de explicar de una manera más visual y sencilla conceptos fundamentales de geometría vectorial. Mi enfoque se centra en comprender el "porqué" detrás de los conceptos en lugar de simplemente computar o calcular. En particular, pienso que abordar la geometría vectorial desde una perspectiva visual facilita la comprensión de los temas y, sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
 
 ## Related
 
-Here are some related projects
+Si te gustó el proyecto, échale un vistazo a mis demás creaciones!.
 
-[Awesome README](https://github.com/matiassingers/awesome-readme)
+[Mis repositorios](https://github.com/imlargo?tab=repositories)
 
 ## Screenshots
 
@@ -46,14 +38,6 @@ This project is used by the following companies:
 </a>
 
 ## FAQ
-
-#### Question 1
-
-Answer 1
-
-#### Question 2
-
-Answer 2
 
 ## Feedback and Contributing
 
