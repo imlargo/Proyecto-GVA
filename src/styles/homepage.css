@@ -71,8 +71,7 @@
     background-color: #faf5ff;
 }
 
-.container-beneficios h5 {
-    font-weight: bold;
+.container-beneficios h3 {
     text-align: center;
 }
 
@@ -92,4 +91,5 @@
 
 body h3 {
     font-weight: bold;
+    color: rgb(117 32 167)!important;
 }
