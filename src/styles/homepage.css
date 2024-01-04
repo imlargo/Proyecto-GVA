@@ -30,7 +30,7 @@
 
 .banner-container h3 {
     font-size: 1.5rem;
-    margin-top: 2rem;    
+    margin-top: 2rem;
 }
 
 
@@ -40,22 +40,27 @@
 }
 
 .container-intro {
-    height: auto; /* Esto permitirá que el contenedor se ajuste a la altura del contenido más grande */
+    height: auto;
+    /* Esto permitirá que el contenedor se ajuste a la altura del contenido más grande */
 
 }
 
 .container-intro img {
     margin-left: auto;
     margin-right: auto;
-    height: 20rem; /* Esto hará que la imagen se ajuste a la altura de su contenedor */
-    object-fit: cover; /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
+    height: 20rem;
+    /* Esto hará que la imagen se ajuste a la altura de su contenedor */
+    object-fit: cover;
+    /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
 }
 
 .container-about img {
     margin-left: auto;
     margin-right: auto;
-    height: 15rem; /* Esto hará que la imagen se ajuste a la altura de su contenedor */
-    object-fit: cover; /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
+    height: 15rem;
+    /* Esto hará que la imagen se ajuste a la altura de su contenedor */
+    object-fit: cover;
+    /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
 }
 
 .card-me h5 {
@@ -94,5 +99,40 @@ body h3 {
 }
 
 .purple-hr {
-    border: 1px solid rgb(149 119 235);
+    border: 2px solid rgb(149 119 235);
+}
+
+.inscribir {
+    display: inline-block;
+    
+    
+    
+    
+    border: 3px solid rgb(252, 70, 100);
+    
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+
+    overflow: hidden;
+    z-index: 1;
+}
+
+.inscribir::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 70, 100);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.inscribir:hover::before {
+    transform: translateX(0);
 }
