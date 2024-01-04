@@ -123,7 +123,11 @@ body h3 {
     z-index: -1;
 }
 
+.inscribir:hover{
+    text-decoration: none; 
+    color: black;
+}
+
 .inscribir:hover::before {
     transform: translateX(0);
-    color: black;
 }
