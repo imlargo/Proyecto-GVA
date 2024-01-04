@@ -99,7 +99,7 @@ body h3 {
 .inscribir {
     display: inline-block;
     
-    border: 3px solid #faf5ff;
+    border: 3px solid rgb(225, 198, 253);
     
     position: relative;
     background-color: transparent;
@@ -117,7 +117,7 @@ body h3 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #faf5ff;
+    background-color: rgb(225, 198, 253);
     transform: translateX(-100%);
     transition: all .3s;
     z-index: -1;
@@ -125,4 +125,5 @@ body h3 {
 
 .inscribir:hover::before {
     transform: translateX(0);
+    color: black;
 }
