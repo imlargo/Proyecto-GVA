@@ -89,3 +89,7 @@
 .container-temas li::marker {
     color: rgb(213, 115, 255);
 }
+
+body h3 {
+    font-weight: bold;
+}
