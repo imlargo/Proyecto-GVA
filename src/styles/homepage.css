@@ -138,7 +138,6 @@ body h3 {
     margin-left: auto;
 }
 
-.card-me::after,
 .card-me::before {
     content: '';
     width: 0%;
@@ -148,7 +147,6 @@ body h3 {
     transition: 0.5s;
 }
 
-.card-me:hover::after,
 .card-me:hover::before {
     width: 100%;
 }
