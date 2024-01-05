@@ -1,9 +1,9 @@
+/* Hero section */
 .banner-container {
     color: white;
 }
 
 .my-badget {
-    
     margin-top: 3.5rem;
     padding: 0.3rem 0.8rem;
     outline: none;
@@ -57,15 +57,10 @@
     opacity: 0.5;
 }
 
-/* */
-.spacing {
-    height: 10rem;
-}
+/* Main section */
 
 .container-intro {
     height: auto;
-    /* Esto permitirá que el contenedor se ajuste a la altura del contenido más grande */
-
 }
 
 .container-intro img {
@@ -99,10 +94,7 @@
     background-color: rgb(250, 245, 255);
 }
 
-.container-beneficios h3 {
-    text-align: center;
-}
-
+/* Section beneficios */
 .container-beneficios hr {
     width: 40%;
     margin-left: auto;
@@ -378,35 +370,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.wrapper-degradado {
+    background: linear-gradient(90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(255, 181, 210, 0.1));
+}
