@@ -211,7 +211,14 @@
         <section class="card-important py-5">
             <div class="container d-flex justify-content-between align-items-center">
                 <div>
-                    <h2 class="">Listo para iniciar?<br>Inscribete o mira las lecciones gratis.</h2>
+                    <h2 class="">
+                        Listo para iniciar?<br>
+                        Inscribete o mira las
+                        <a href="pages/lessons.html" target="_blank" class="free-lesson-link">
+                            lecciones gratis
+                            <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                    </h2>
                     <p class="lead">No dudes en preguntarme si tienes alguna duda o necesitas mas
                         informacion <i class="bi bi-whatsapp"></i></p>
                 </div>
@@ -224,28 +231,6 @@
                 </a>
             </div>
         </section>
-
-        <!-- Headers leccion 
-        <section class="mb-5 mt-4">
-            <div class="d-flex justify-content-center align-items-center leccion-headers gap-3">
-                <span id="leccion" class="header-badget mb-2">Hey!</span>
-                <h1 id="tittle">
-                    Introduccion
-                </h1>
-            </div>
-        </section>
-        -->
-
-        <!-- Contenido leccion 
-        <section class="container">
-            <hr class="pink-hr">
-
-            <div id="rendered" class="my-contenido">
-            </div>
-        </section>
-        -->
-
-
     </main>
 
     <footer class="container d-flex flex-wrap justify-content-center align-items-center py-3 my-4 gap-4 my-footer">
@@ -271,33 +256,5 @@
     </footer>
 
 </body>
-
-
-<script>
-    fetch("lessons/homepage.md").then(response => response.text()).then(content => {
-        // Add latex
-        marked.use(markedKatex());
-
-        // Custom id
-        marked.use(
-            {
-                renderer: {
-                    heading(text, level, raw, slugger) {
-                        const headingIdRegex = /(?: +|^)\{#([a-z][\w-]*)\}(?: +|$)/i;
-                        const hasId = text.match(headingIdRegex);
-                        if (!hasId) {
-                            // fallback to original heading renderer
-                            return false;
-                        }
-                        return `<h${level} id="${hasId[1]}">${text.replace(headingIdRegex, '')}</h${level}>\n`;
-                    }
-                }
-            }
-        );
-        // Render content
-        const contenedor = document.getElementById('rendered')
-        contenedor.innerHTML = marked.parse(content);
-    });
-</script>
 
 </html>

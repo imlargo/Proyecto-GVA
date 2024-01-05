@@ -367,3 +367,13 @@ body {
 .wrapper-degradado {
     background: linear-gradient(90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(255, 181, 210, 0.1));
 }
+
+
+.free-lesson-link {
+    color: rgb(165, 91, 255);
+    text-decoration: none;
+}
+
+.free-lesson-link:hover {
+    color: rgb(127, 56, 212);
+}
