@@ -28,6 +28,7 @@
 .hero-footer {
     color: white;
 }
+
 .my-badget:hover {
     --badget-color: rgb(165, 70, 229);
     color: var(--badget-color);
