@@ -9,12 +9,7 @@ https://imlargo-vectorial.vercel.app
 ## Features
 
 - Light/dark mode toggle
-- Fullscreen mode
-- Cross platform
-
-## Lessons Learned
-
-Hola, soy Juan Carlos Largo, y como proyecto personal, creé estas lecciones con el objetivo de explicar de una manera más visual y sencilla conceptos fundamentales de geometría vectorial. Mi enfoque se centra en comprender el "porqué" detrás de los conceptos en lugar de simplemente computar o calcular. En particular, pienso que abordar la geometría vectorial desde una perspectiva visual facilita la comprensión de los temas y, sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.
+- Google Auth
 
 ## Related
 
@@ -22,14 +17,9 @@ Si te gustó el proyecto, échale un vistazo a mis demás creaciones!.
 
 [Mis repositorios](https://github.com/imlargo?tab=repositories)
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 ## Used By
 
-This project is used by the following companies:
-- Company 1
+> Actualmente en uso como curso creado por mi!
 
 ### Tools used and Tech Stack
 
@@ -37,13 +27,11 @@ This project is used by the following companies:
   <img src="https://skillicons.dev/icons?i=python,js,html,css,firebase,bootstrap,md,latex&theme=dark" />
 </a>
 
-## FAQ
-
 ## Feedback and Contributing
 
 Si tienes alguna retroalimentación, duda, o sugerencia contactame al: fake@fake.com
 
-Contributions are always welcome! Si deseas realizar alguna corrección o encuentras algún error de escritura, no dudes en compartirlo conmigo <3
+Contributions are always welcome! Puedes corregir typos directamente en los archivos md, si deseas realizar alguna corrección o encuentras algún error de escritura, no dudes en compartirlo conmigo <3
 
 ## Authors
 
