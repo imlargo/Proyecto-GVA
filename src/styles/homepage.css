@@ -1,7 +1,53 @@
 .banner-container {
-    text-align: center;
     color: white;
-    font-family: "FreeMono", monospace;
+}
+
+.my-badget {
+    
+    margin-top: 3.5rem;
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    text-decoration: none;
+
+    --badget-color: rgb(165, 70, 229);
+    color: var(--badget-color);
+    border: 1px var(--badget-color) solid;
+    background-color: rgb(165, 70, 229, 0.1);
+
+    border-radius: 9999px;
+
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(79, 70, 229, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    box-sizing: content-box;
+    display: block;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+
+.my-badget:hover {
+    --badget-color: rgb(165, 70, 229);
+    color: var(--badget-color);
+}
+
+.banner-container h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.banner-container hr {
+    width: 40%;
+}
+
+.banner-container h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.banner-container p {
+    width: 55%;
+    text-align: justify;
+    color: rgba(239, 239, 239, 0.87);
 }
 
 .down-arrow {
@@ -10,23 +56,6 @@
     left: 50%;
     opacity: 0.5;
 }
-
-.banner-container h1 {
-    font-size: 3rem;
-    margin-top: 5rem;
-}
-
-.banner-container hr {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.banner-container h3 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-}
-
 
 /* */
 .spacing {
@@ -66,7 +95,7 @@
 }
 
 .purple-bg {
-    
+
     background-color: rgb(250, 245, 255);
 }
 
@@ -160,7 +189,7 @@ body h3 {
     transition: .2s linear;
 }
 
-.star-animation:hover > i {
+.star-animation:hover>i {
     transform: scale(1.2);
     color: rgb(105, 44, 179);
 }
@@ -269,9 +298,10 @@ body h3 {
 }
 
 body {
-    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"!important;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11"!important;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
 }
+
 .card-important {
     background: linear-gradient(90deg, rgba(111, 3, 244, 0.2), rgba(204, 57, 164, 0.2), rgba(255, 181, 210, 0.2));
     box-shadow: inset 0px 0px 180px 5px #ffffff;
@@ -279,9 +309,9 @@ body {
 
 .box-shadown-button {
     box-shadow: 6px 6px 12px #c5c5c5,
-    -6px -6px 12px #ffffff;
+        -6px -6px 12px #ffffff;
 
-    border-radius: 1.625rem;   
+    border-radius: 1.625rem;
 
     vertical-align: middle;
     text-decoration: none;
@@ -290,3 +320,93 @@ body {
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
 }
+
+/* Read more */
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta i {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.cta:hover i {
+    transform: translateX(0);
+}
+
+.cta:active i {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
