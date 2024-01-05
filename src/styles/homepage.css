@@ -368,7 +368,7 @@ body {
 
 
 .wrapper-degradado {
-    background: linear-gradient(90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(255, 181, 210, 0.1));
+    background: linear-gradient(90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(213, 61, 255, 0.1));
 }
 
 .free-lesson-link {
