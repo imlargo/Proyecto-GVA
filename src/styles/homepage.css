@@ -324,17 +324,16 @@ body {
 }
 
 .cta i {
-    transform: translateX(-8px);
     transition: all 0.3s ease;
     color: white;
 }
 
 .cta:hover i {
-    transform: translateX(0);
+    margin-left: 0.3rem;
 }
 
 .cta:active i {
-    transform: scale(0.9);
+    margin-left: 0.3rem;
 }
 
 .hover-underline-animation {
@@ -368,7 +367,6 @@ body {
     background: linear-gradient(90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(255, 181, 210, 0.1));
 }
 
-
 .free-lesson-link {
     color: rgb(165, 91, 255);
     text-decoration: none;
@@ -377,3 +375,19 @@ body {
 .free-lesson-link:hover {
     color: rgb(127, 56, 212);
 }
+.free-lesson-link:hover i {
+    margin-left: 0.3rem;
+    transition: all 0.3s ease;
+}
+
+
+.basic-link {
+    text-decoration: none;
+    color: black;
+}
+
+.basic-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+

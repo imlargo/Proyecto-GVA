@@ -18,6 +18,8 @@
 
 function newLessonElement(index, lesson) {
     const template = document.createElement('template');
+    const isFree = index == "1" || index == "2" ? '<span class="insignia-green">Gratis</span>' : '';
+
     template.innerHTML = `
     <a class="lesson container rounded-3" href="./lessons/lesson-${index}.html">
         <div class="lesson-card-image">
@@ -29,7 +31,8 @@ function newLessonElement(index, lesson) {
             ${lesson.descripcion}
             </span>
             <span>
-                <span class="lesson-card-lesson">Leccion ${index}</span>
+                <span class="insignia-purple">Leccion ${index}</span>
+                ${isFree}
             </span>
         </div>
     </a>`;
