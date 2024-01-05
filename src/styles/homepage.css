@@ -47,7 +47,6 @@
 .banner-container p {
     width: 55%;
     text-align: justify;
-    color: rgba(239, 239, 239, 0.87);
 }
 
 .down-arrow {
@@ -73,9 +72,7 @@
 }
 
 .container-about img {
-    margin-left: auto;
-    margin-right: auto;
-    height: 15rem;
+    height: 18rem;
     /* Esto hará que la imagen se ajuste a la altura de su contenedor */
     object-fit: cover;
     /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
@@ -323,10 +320,7 @@ body {
 
 .cta span {
     padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 14px;
     padding-right: 15px;
-    text-transform: uppercase;
 }
 
 .cta i {
