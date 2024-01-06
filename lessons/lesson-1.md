@@ -53,7 +53,7 @@ Un vector **no** lo mismo que un punto. Un punto simplemente representa una ubic
 
 <!-- Indicar componentes y mostrar pasos -->
 
-Las componentes de un vector son los pasos que se dan en cada eje para llegar a un punto específico en el plano, en este caso $\begin{bmatrix} 3 \\ 2 \end{bmatrix}$ la _componente_ en X del vector es 2, y la _componente_ en Y es 1.
+Las componentes de un vector son los pasos que se dan en cada eje desde el origen para llegar a un punto específico en el plano, en este caso $\begin{bmatrix} 3 \\ 2 \end{bmatrix}$ la _componente_ en X del vector es 2, y la _componente_ en Y es 1.
 
 <!-- Limpiar plano, mostrar el origen como coordenadas, notacion y resaltar -->
 

@@ -21,7 +21,7 @@ A los números ahora les llamaremos **escalares**, y a esta operación la llamar
 
 <!-- Estirar el vector de manera positiva y luego negativa -->
 
-> Podemos entender la multiplicación de un vector por un escalar como _estirar_ ese vector en cierta cantidad. Al multiplicar un vector por un escalar positivo, el vector se _estira_ en la misma _dirección_ que ya tiene, mientras que si el escalar es negativo, el vector se _estira_ en dirección opuesta.
+> Podemos entender la multiplicación de un vector por un escalar como _estirar_ ese vector en cierta cantidad y direccion. Al multiplicar un vector por un escalar positivo, el vector se _estira_ en la misma _dirección_ que ya tiene, mientras que si el escalar es negativo, el vector se _estira_ en dirección opuesta.
 
 <!-- Mostrar un vector y su direccion -->
 
@@ -39,11 +39,11 @@ Por ejemplo, si tenemos el vector **$\vec{v}$**, donde  $\vec{v} = \begin{bmatri
 
 $$ 2 \cdot \vec{v} = 2 \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 2 \cdot 1 \\ 2 \cdot 2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}$$
 
-Donde el vector resultante apunta en la misma direccion que ya tenia, pero ahora es el doble de _largo_ (más adelante explicaré el por qué). De igual manera manera, si multiplicamos el vector **$\vec{v}$** por -2, entonces obtenemos:
+Donde el vector resultante apunta en la misma direccion que ya tenia, pero ahora es el doble de _"largo"_ (más adelante explicaré el por qué). De igual manera manera, si multiplicamos el vector **$\vec{v}$** por -2, entonces obtenemos:
 
 $$ -2 \cdot \vec{v} = -2 \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} -2 \cdot 1 \\ -2 \cdot 2 \end{bmatrix} = \begin{bmatrix} -2 \\ -4 \end{bmatrix}$$
 
-Y ahora el vector resultante tambien es el doble de _largo_, pero apunta en _dirección_ opuesta a la que tenia el vector inicial.
+Y ahora el vector resultante tambien es el doble de _"largo"_, pero apunta en _dirección_ opuesta a la que tenia el vector inicial.
 
 En este caso cuando hablo de **dirección** me refiero a _"hacia donde apunta"_ ese vector, recordemos que los vectores siempre siguen la dirección _hacia donde apuntan_, es decir, hacia donde se extienden, yendo desde el origen hasta el punto donde terminan.
 
@@ -142,7 +142,7 @@ Se calcula multiplicando en cruz y restando de esta manera:
 $$ \vec{A} \times \vec{B} = \begin{bmatrix} a \\ b \end{bmatrix} \times \begin{bmatrix} c \\ d \end{bmatrix} = a \cdot d - b \cdot c $$
 
 <!-- Dependencia lineal con el producto cruzado -->
-Ahora, como vimos, ese resultado de realizar la operacion del producto cruzado $a \cdot d - b \cdot c$ nos da un numero, si el valor del producto cruzado es 0 entonces los vectores son **linealmente dependientes**, y si es distinto de cero ($\neq 0$) entonces son linealmente independientes
+Ahora, como vimos, ese resultado de realizar la operacion del producto cruzado $a \cdot d - b \cdot c$ nos da un numero, si el valor del producto cruzado es 0 entonces los vectores son **linealmente dependientes**, y si es distinto de cero ( $\neq 0$ ) entonces son linealmente independientes
 
 > Sean $\vec{A} = \begin{bmatrix} a \\ b \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} c \\ d \end{bmatrix}$ vectores del plano. $\vec{A}$ y $\vec{B}$ son linealmente dependientes **si y sólo si** su producto cruzado es igual a cero: **$a \cdot d - b \cdot c = 0$**
 
@@ -163,7 +163,7 @@ Ahora, si por alguna razon ya sabemos que los vectores son linealmente dependien
 > **Nota:** en **$\mathbb{R}^{2}$** el producto cruzado se calcula de esta manera, pero mas adelante nos daremos cuenta que realmente tiene muchos otros significados mas complejos, por lo tanto en esta leccion explico el producto cruzado de manera superficial y presentando su utilidad en el caso de dependencia lineal
 
 
-### Suma de vectores. {#lesson-suma}
+### Suma de vectores. 
 ---
 
 Ahora que ya sabemos multiplicar un vector por un escalar, podemos pasar a la siguiente operacion fundamental con vectores, la cual es la suma de vectores.
@@ -180,14 +180,13 @@ Por ejemplo, si tenemos los vectores $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmat
 
 > Dibujamos el nuevo vector
 
-**Como se ve**
+**Como se ve graficamente?**
 
-Visualmente la podemos entender como tomar el segundo vector y colocarlo en la cabeza del segundo vector, de manera que el inicio del segundo vector sea la punta del primer vector
+Visualmente, la podemos entender como tomar el segundo vector y colocar su cola en la punta del primero, de manera que el inicio del segundo vector sea la punta del primer vector. Luego, si dibujas un nuevo vector desde la cola del primero hasta donde ahora se encuentra la punta del segundo, ese nuevo vector es la suma de ambos.
 
-mueve el segundo vector de manera que su cola se sitúe en la punta del primero. Luego, si dibujas un nuevo vector desde la cola del primero hasta donde ahora se encuentra la punta del segundo, ese nuevo vector es la suma de ambos.
+> Ahora me gustaria dar una explicacion de porque esto tiene sentido.
 
-> Ahora me gustaria dar una explicacion de porque esto tiene sentido, por ejemplo, si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
-
+si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
 
 **Propiedades**
 
@@ -208,6 +207,8 @@ Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 <!-- Aclarar que no todo es re técnico sino que se simplifican algunas cosas que pueden no ser del  todo “fieles” a la explicación matemática. -->
 
 
+### Regla del paralelogramo.
+
 ### Algunas propiedades de las operaciones
 ---
 
@@ -225,3 +226,52 @@ Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 - $ \vec{A} - \vec{B} \neq \vec{B} - \vec{A}$
 
 **Propiedades del producto cruz**
+
+
+> Ahora me gustaria dar una explicacion de el significado de porque esto tiene sentido.
+
+Bueno, a mí me gusta pensarlo es que cada vector representa un "camino", una cantidad de pasos.
+
+Por ejemplo la suma de numeros reales, por ejemplo 3 + 2 = 5 la podemos entender como dar 3 pasos a la derecha hasta llegar al 3, y luego dar 2 pasos mas, hasta llegar al 5.
+
+
+
+si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
+
+
+Si das un paso a lo largo del primer vector, luego das un paso en la dirección y distancia descrita por el segundo vector, el efecto general es el mismo que si simplemente se moviera a lo largo de la suma de esos dos vectores.
+
+Podrías pensar en esto como una extensión de cómo pensamos acerca de la suma de números en una recta numérica. Una de las formas en que enseñamos a los niños a pensar en la suma, digamos
+5
+2+5, es pensar en moverse
+2pasos a la derecha, seguido de otro
+5pasos a la derecha. El efecto general es el mismo que si acabaras de tomar
+7pasos a la derecha para empezar.
+De hecho, veamos cómo se ve numéricamente la suma de vectores. El primer vector aquí tiene coordenadas.
+
+. Cuando tomas su suma vectorial usando este método de punta a cola, puedes pensar en un camino de cuatro pasos desde la cola del primero hasta la punta del segundo: Caminar
+1 1a la derecha, entonces
+2arriba, entonces
+3a la derecha, entonces
+1abajo.
+
+Reorganizando estos pasos para que primero hagas todo el movimiento hacia la derecha, luego todo el movimiento vertical, puedes leerlo como decir primer movimiento
+1
++
+3
+1+3a la derecha, luego muévete
+2
+−
+1
+2−1arriba. Entonces el nuevo vector tiene coordenadas
+1
++
+3
+1+3y
+2
++
+(
+−
+1
+)
+2+( -1 ) _.
