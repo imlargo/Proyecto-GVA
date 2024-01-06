@@ -182,11 +182,11 @@ Por ejemplo, si tenemos los vectores $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmat
 
 **Como se ve graficamente?**
 
-Visualmente, la podemos entender como tomar el segundo vector y colocar su cola en la punta del primero, de manera que el inicio del segundo vector sea la punta del primer vector. Luego, si dibujas un nuevo vector desde la cola del primero hasta donde ahora se encuentra la punta del segundo, ese nuevo vector es la suma de ambos.
+> Visualmente, la podemos entender como tomar el segundo vector y colocar su cola en la punta del primero, de manera que el inicio del segundo vector sea la punta del primer vector. Luego, si dibujas un nuevo vector desde la cola del primero hasta donde ahora se encuentra la punta del segundo, ese nuevo vector es la suma de ambos.
 
-> Ahora me gustaria dar una explicacion de porque esto tiene sentido.
+Me gustaria dar una explicacion de porque esto tiene sentido: la suma de vectores se puede entender como una extensión de la suma de números en una recta numérica. Por ejemplo, "3 + 2 = 5" significa dar 3 pasos a la derecha y luego 2 pasos mas hacia la derecha, hasta llegar al 5.
 
-si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
+De la misma manera, podemos pensar que cada vector representa un "camino" o una serie de pasos. Por ejemplo, el vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba. El vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba. La suma de estos dos vectores significa dar primero los pasos del primer vector y luego los pasos del segundo vector. En otras palabras, significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba, o visto de otra manera, dar 1 + 3 pasos a la derecha y luego 2 + 4 pasos hacia arriba
 
 **Propiedades**
 
@@ -226,52 +226,3 @@ Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 - $ \vec{A} - \vec{B} \neq \vec{B} - \vec{A}$
 
 **Propiedades del producto cruz**
-
-
-> Ahora me gustaria dar una explicacion de el significado de porque esto tiene sentido.
-
-Bueno, a mí me gusta pensarlo es que cada vector representa un "camino", una cantidad de pasos.
-
-Por ejemplo la suma de numeros reales, por ejemplo 3 + 2 = 5 la podemos entender como dar 3 pasos a la derecha hasta llegar al 3, y luego dar 2 pasos mas, hasta llegar al 5.
-
-
-
-si el primer vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba, y el segundo vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba, entonces la suma de estos dos vectores significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba.
-
-
-Si das un paso a lo largo del primer vector, luego das un paso en la dirección y distancia descrita por el segundo vector, el efecto general es el mismo que si simplemente se moviera a lo largo de la suma de esos dos vectores.
-
-Podrías pensar en esto como una extensión de cómo pensamos acerca de la suma de números en una recta numérica. Una de las formas en que enseñamos a los niños a pensar en la suma, digamos
-5
-2+5, es pensar en moverse
-2pasos a la derecha, seguido de otro
-5pasos a la derecha. El efecto general es el mismo que si acabaras de tomar
-7pasos a la derecha para empezar.
-De hecho, veamos cómo se ve numéricamente la suma de vectores. El primer vector aquí tiene coordenadas.
-
-. Cuando tomas su suma vectorial usando este método de punta a cola, puedes pensar en un camino de cuatro pasos desde la cola del primero hasta la punta del segundo: Caminar
-1 1a la derecha, entonces
-2arriba, entonces
-3a la derecha, entonces
-1abajo.
-
-Reorganizando estos pasos para que primero hagas todo el movimiento hacia la derecha, luego todo el movimiento vertical, puedes leerlo como decir primer movimiento
-1
-+
-3
-1+3a la derecha, luego muévete
-2
-−
-1
-2−1arriba. Entonces el nuevo vector tiene coordenadas
-1
-+
-3
-1+3y
-2
-+
-(
-−
-1
-)
-2+( -1 ) _.
