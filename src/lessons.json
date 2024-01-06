@@ -11,5 +11,12 @@
         "descripcion": "Exploraremos las operaciones clave entre vectores de una manera clara y sencilla. Abordaremos conceptos como escalar, dependencia e independencia lineal, así como rectas y rayos generados por vectores. Además, nos sumergiremos en las operaciones de suma y resta de vectores para comprender mejor su aplicación práctica.",
         "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+
+    "3": {
+        "tittle": "Combinaciones lineales",
+        "descripcion": "Aprenderemos acerca de las combinaciones lineales",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     }
 }
