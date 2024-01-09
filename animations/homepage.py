@@ -60,5 +60,13 @@ class MainScene(Scene):
         self.wait()
 
         for func in funcs:
-            self.play(vector_field.animate.become(ArrowVectorField(func)))
+            field = ArrowVectorField(func)
+            field.set_color(
+                getColor("#D2A6FF")
+            )
+            self.play(
+                vector_field.animate.become(
+                    field
+                )
+            )
             self.wait()
