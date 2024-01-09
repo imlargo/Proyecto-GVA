@@ -32,41 +32,32 @@ class MainScene(Scene):
             for b in range(-3, 4)
         ]
 
-        for recta in rectas:
+        """for recta in rectas:
             self.play(
                 delinear(recta, getColor("#D2A6FF"))
             )
-            self.wait(0.2)
+            self.wait(0.2)"""
 
         # > - Animacion onda vectores - <
         self.clear()
         self.vectorSpace()
 
     def vectorSpace(self):
-        initFunc = lambda pos: np.sin(pos[1]) * RIGHT + np.cos(pos[0]) * UP
-        funcs = [
-            VectorField.scale_func(initFunc, 0.5),
-            VectorField.scale_func(initFunc, 0.2),
-            VectorField.scale_func(initFunc, 0.1),
-            VectorField.scale_func(initFunc, 0.2),
-            VectorField.scale_func(initFunc, 0.5),
-        ]
-
-        vector_field = ArrowVectorField(initFunc)
-        vector_field.set_color(
-            getColor("#D2A6FF")
-        )
-        self.add(vector_field)
-        self.wait()
-
-        for func in funcs:
-            field = ArrowVectorField(func)
-            field.set_color(
-                getColor("#D2A6FF")
-            )
-            self.play(
-                vector_field.animate.become(
-                    field
+        tracker = ValueTracker(1)
+        
+        vectorField = always_redraw(
+            lambda: ArrowVectorField(
+                lambda pos: np.array(
+                    [
+                        pos[0] * tracker,
+                        pos[1] * tracker,
+                    ]
                 )
+                color = getColor("#D2A6FF"),
             )
-            self.wait()
+        )
+
+        self.add(vectorField)
+        self.wait()
+        self.play(tracker.animate.set_value(2))
+        self.play(tracker.animate.set_value(-1))
