@@ -8,7 +8,7 @@ class MainScene(Scene):
         # > - Crear grid del plano - <
         planeGrid = NumberPlane(
             background_line_style = {
-                "stroke_color": getColor("#e1c6fd"),
+                "stroke_color": getColor("#D2A6FF"),
             },
             axis_config = {
                 "color": getColor("#a546e5"),
