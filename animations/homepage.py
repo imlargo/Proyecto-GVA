@@ -15,6 +15,9 @@ class MainScene(Scene):
             }
         )
 
+        c = ManimColor.from_hex("#hex")
+
+
         self.add(planeGrid)
         self.play(
             Create(planeGrid, run_time=3, lag_ratio=0.1),

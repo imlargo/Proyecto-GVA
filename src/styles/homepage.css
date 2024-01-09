@@ -93,7 +93,7 @@ body h3 {
 
 /* Section about */
 
-.container-about img {
+.container-about video {
     height: 18rem;
     object-fit: cover;
 }
