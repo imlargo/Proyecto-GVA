@@ -59,3 +59,5 @@ def cos(x):
 cordsMatrix = lambda v: Matrix([[ v[0] ], [ v[1] ]])
 getVectorCordsT = lambda v: MathTex(r"\begin{bmatrix} {} & {} \\".format(v[0], v[1]) + r"\end{bmatrix}")
 getVectorName = lambda name: MathTex(f"\\vec{{{name}}}")
+
+getColor = lambda string: ManimColor.from_hex(string)
