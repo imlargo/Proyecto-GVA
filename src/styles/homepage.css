@@ -1,10 +1,25 @@
+body {
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
+}
+
+body h3 {
+    font-weight: bold;
+}
+
 /* Hero section */
 .banner-container {
     color: white;
 }
 
+/* Gradient hero */
+
+.wrapper-degradado {
+    background: linear-gradient(90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(213, 61, 255, 0.1));
+}
+
 .my-badget {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     padding: 0.3rem 0.8rem;
     outline: none;
     text-decoration: none;
@@ -49,7 +64,7 @@
 }
 
 .banner-container p {
-    width: 55%;
+    width: 50%;
     text-align: justify;
 }
 
@@ -60,8 +75,9 @@
     opacity: 0.5;
 }
 
-/* Main section */
+/* --- Main section --- */
 
+/* Intro */
 .container-intro {
     height: auto;
 }
@@ -70,16 +86,26 @@
     margin-left: auto;
     margin-right: auto;
     height: 20rem;
-    /* Esto hará que la imagen se ajuste a la altura de su contenedor */
     object-fit: cover;
-    /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
 }
+
+/* Section about */
 
 .container-about img {
     height: 18rem;
-    /* Esto hará que la imagen se ajuste a la altura de su contenedor */
     object-fit: cover;
-    /* Esto mantendrá las proporciones de la imagen mientras se ajusta a la altura */
+}
+
+.about-text {
+    color: rgb(105, 44, 179);
+    font-weight: bolder;
+}
+
+/* Section features */
+.card-me {
+    box-shadow: 6px 6px 10px rgba(160, 59, 255, 0.1),
+        -6px -6px 12px rgba(244, 194, 255, 0.2);
+
 }
 
 .card-me h5 {
@@ -90,87 +116,23 @@
     text-align: justify;
 }
 
-.purple-bg {
-
-    background-color: rgb(250, 245, 255);
+.card-important {
+    background: linear-gradient(90deg, rgba(111, 3, 244, 0.15), rgba(204, 57, 164, 0.15), rgba(255, 181, 210, 0.15));
+    box-shadow: inset 0px 0px 180px 5px #ffffff;
+    box-shadow: 6px 6px 10px rgba(160, 59, 255, 0.1),
+        -6px -6px 12px rgba(244, 194, 255, 0.2);
 }
 
-/* Section beneficios */
+
 .container-beneficios hr {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.justify {
-    text-align: justify;
-}
-
+/* Plan estudios */ 
 .container-temas li::marker {
     color: rgb(213, 115, 255);
-}
-
-
-.purple-hr {
-    border: 2px solid rgb(149 119 235);
-}
-
-.inscribir {
-    display: inline-block;
-
-    border: 3px solid rgb(225, 198, 253);
-
-    position: relative;
-    background-color: transparent;
-    text-decoration: none;
-    color: white;
-
-    overflow: hidden;
-    z-index: 1;
-}
-
-.inscribir::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(225, 198, 253);
-    transform: translateX(-100%);
-    transition: all .3s;
-    z-index: -1;
-}
-
-.inscribir:hover {
-    text-decoration: none;
-    color: black;
-}
-
-.inscribir:hover::before {
-    transform: translateX(0);
-}
-
-
-body h3 {
-    font-weight: bold;
-}
-
-.animation-delign::after {
-    margin-right: auto;
-}
-
-.animation-delign::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: rgb(149 119 235);
-    display: block;
-    transition: 0.5s;
-}
-
-.animation-delign:hover::after {
-    width: 100%;
 }
 
 /* star animation */
@@ -290,30 +252,6 @@ body h3 {
     border-radius: 1.625rem;
 }
 
-body {
-    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
-}
-
-.card-important {
-    background: linear-gradient(90deg, rgba(111, 3, 244, 0.2), rgba(204, 57, 164, 0.2), rgba(255, 181, 210, 0.2));
-    box-shadow: inset 0px 0px 180px 5px #ffffff;
-}
-
-.box-shadown-button {
-    box-shadow: 6px 6px 12px #c5c5c5,
-        -6px -6px 12px #ffffff;
-
-    border-radius: 1.625rem;
-
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-}
-
 /* Read more */
 .cta {
     border: none;
@@ -364,13 +302,7 @@ body {
     transform-origin: bottom left;
 }
 
-
-
-
-.wrapper-degradado {
-    background: linear-gradient(90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(213, 61, 255, 0.1));
-}
-
+/* Leccion gratis */
 .free-lesson-link {
     color: rgb(165, 91, 255);
     text-decoration: none;
@@ -385,14 +317,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.basic-link {
-    text-decoration: none;
-    color: black;
-}
-
-.basic-link:hover {
-    color: rgb(0, 0, 0);
-}
 
 
 /* lista-temas */
@@ -436,3 +360,100 @@ body {
     color: black;
     text-align: center;
 }
+
+/* Inscribir */
+
+.inscribir {
+    display: inline-block;
+
+    border: 3px solid rgb(225, 198, 253);
+
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+
+    overflow: hidden;
+    z-index: 1;
+}
+
+.inscribir::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(225, 198, 253);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.inscribir:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.inscribir:hover::before {
+    transform: translateX(0);
+}
+
+/* Animacion delinear */
+.animation-delign::after {
+    margin-right: auto;
+}
+
+.animation-delign::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(149 119 235);
+    display: block;
+    transition: 0.5s;
+}
+
+.animation-delign:hover::after {
+    width: 100%;
+}
+
+/* Other */
+.justify {
+    text-align: justify;
+}
+
+/* UI elements */
+.purple-bg {
+    background-color: rgb(250, 245, 255);
+}
+
+
+.box-shadown-button {
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+
+    border-radius: 1.625rem;
+
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+}
+
+.purple-hr {
+    border: 2px solid rgb(142, 77, 255);
+    opacity: 0.4!important;
+}
+
+.basic-link {
+    text-decoration: none;
+    color: black;
+}
+
+.basic-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+
