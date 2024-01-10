@@ -113,5 +113,6 @@ class MainScene(Scene):
 
         stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
 
+        self.add(stream_lines)
         stream_lines.start_animation(warm_up=False, flow_speed=1.5)
         self.wait(12)
