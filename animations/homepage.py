@@ -100,4 +100,4 @@ class MainScene(Scene):
         self.play(Create(vector_field))
 
         stream_lines.start_animation(warm_up=True, flow_speed=1.5)
-        self.play(v.animate.set_value(4 * PI), run_time = 12)
+        self.play(v.animate.set_value(3 * PI), run_time = 12)
