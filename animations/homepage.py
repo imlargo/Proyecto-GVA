@@ -79,7 +79,6 @@ class MainScene(Scene):
         self.play(Create(a))
         self.play(v.animate.set_value(3), run_time = 3)
 
-
     def vectorField(self):
         getColor = lambda string: ManimColor.from_hex(string)
         colors = [

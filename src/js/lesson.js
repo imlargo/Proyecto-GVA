@@ -1,6 +1,8 @@
 function loadLesson(index) {
     fetch("../../src/lessons.json").then(res => res.json())
     .then(lessons => {
+        console.log("Lecciones");
+        console.log(lessons),
         renderLesson(
             index,
             lessons[index]
