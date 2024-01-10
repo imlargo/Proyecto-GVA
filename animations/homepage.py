@@ -87,7 +87,7 @@ class MainScene(Scene):
         ]
         v = ValueTracker(0)
 
-        streamFunc = lambda pos: np.array([pos[1], pos[0], 0 ]), # X
+        streamFunc = lambda pos: np.array([pos[1], pos[0], 0 ]) # X
 
         stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
         vector_field = always_redraw(
