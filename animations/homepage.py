@@ -87,12 +87,12 @@ class MainScene(Scene):
         ]
         v = ValueTracker(0)
 
-        streamFunc = lambda pos: np.array([pos[1], pos[0], 0 ]) # X
+        streamFunc = lambda pos: np.array([np.sin(pos[0] / 2) - np.cos(pos[1] / 2), np.sin(pos[0] / 2), 0 ])
 
         stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
         vector_field = always_redraw(
             lambda: ArrowVectorField(
-                lambda pos: (0.5 * ((np.cos(2 * v.get_value())) + 1)) * np.array([pos[1], pos[0], 0 ]), 
+                lambda pos: (0.5 * ((np.cos(2 * v.get_value())) + 1)) * np.array([np.sin(pos[0] / 2) - np.cos(pos[1] / 2), np.sin(pos[0] / 2), 0 ]),
                 colors = colors
             )
         )
