@@ -5,7 +5,8 @@ import numpy as np;
 
 class MainScene(Scene):
     def construct(self):
-        self.vectorField()
+        self.camera.background_color = WHITE
+        self.streamlines()
 
     def plane(self):
         # > - Crear grid del plano - <
@@ -101,3 +102,16 @@ class MainScene(Scene):
 
         stream_lines.start_animation(warm_up=True, flow_speed=1.5)
         self.play(v.animate.set_value(3 * PI), run_time = 12)
+
+    def streamlines(self):
+        getColor = lambda string: ManimColor.from_hex(string)
+        colors = [
+            TEAL_C, RED_A, getColor("#BB52FF"), getColor("#B369FF"), getColor("#C184FF"), getColor("#D2A6FF")
+        ]
+
+        streamFunc = lambda pos: np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ])
+
+        stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
+
+        stream_lines.start_animation(warm_up=False, flow_speed=1.5)
+        self.wait(12)
