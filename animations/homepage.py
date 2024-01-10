@@ -6,7 +6,17 @@ import numpy as np;
 class MainScene(Scene):
     def construct(self):
         self.camera.background_color = WHITE
-        self.streamlines()
+        getColor = lambda string: ManimColor.from_hex(string)
+        colors = [
+            TEAL_C, RED_A, getColor("#BB52FF"), getColor("#B369FF"), getColor("#C184FF"), getColor("#D2A6FF")
+        ]
+
+        streamFunc = lambda pos: np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ])
+        stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
+
+        self.add(stream_lines)
+        stream_lines.start_animation(warm_up=False, flow_speed=1.5)
+        self.wait(12)
 
     def plane(self):
         # > - Crear grid del plano - <
@@ -48,9 +58,9 @@ class MainScene(Scene):
 
     def vectorSpace(self):
         funcs = [
-            lambda pos: np.array([pos[1], pos[0], 0 ]),
-            lambda pos: np.array([np.sin(pos[0] / 2) - np.cos(pos[1] / 2), np.sin(pos[0] / 2), 0 ]),
-            lambda pos: np.array([1, np.sin(pos[0]*pos[0] + pos[1]*pos[1]), 0 ]),
+            lambda pos: np.array([pos[1], pos[0], 0 ]), # X
+            lambda pos: np.array([np.sin(pos[0] / 2) - np.cos(pos[1] / 2), np.sin(pos[0] / 2), 0 ]), # Flow home
+            lambda pos: np.array([1, np.sin(pos[0]*pos[0] + pos[1]*pos[1]), 0 ]), # Waves circle
             lambda pos: np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ]),
         ]
         initFunc = funcs[-1]
@@ -110,9 +120,8 @@ class MainScene(Scene):
         ]
 
         streamFunc = lambda pos: np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ])
-
         stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
 
         self.add(stream_lines)
         stream_lines.start_animation(warm_up=False, flow_speed=1.5)
-        self.wait(12)
+        self.wait(3)
