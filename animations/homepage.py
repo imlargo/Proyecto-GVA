@@ -91,7 +91,7 @@ class MainScene(Scene):
         stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
         vector_field = always_redraw(
             lambda: ArrowVectorField(
-                lambda pos: (0.75 * ((np.cos(2 * v.get_value())) + 1)) * np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ]), 
+                lambda pos: (0.5 * ((np.cos(2 * v.get_value())) + 1)) * np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ]), 
                 colors = colors
             )
         )
@@ -100,4 +100,4 @@ class MainScene(Scene):
         self.play(Create(vector_field))
 
         stream_lines.start_animation(warm_up=True, flow_speed=1.5)
-        self.play(v.animate.set_value(3 * PI), run_time = 6)
+        self.play(v.animate.set_value(4 * PI), run_time = 12)
