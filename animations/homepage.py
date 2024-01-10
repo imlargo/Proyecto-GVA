@@ -5,18 +5,8 @@ import numpy as np;
 
 class MainScene(Scene):
     def construct(self):
-        self.camera.background_color = WHITE
-        getColor = lambda string: ManimColor.from_hex(string)
-        colors = [
-            TEAL_C, RED_A, getColor("#BB52FF"), getColor("#B369FF"), getColor("#C184FF"), getColor("#D2A6FF")
-        ]
-
-        streamFunc = lambda pos: np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ])
-        stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
-
-        self.add(stream_lines)
-        stream_lines.start_animation(warm_up=False, flow_speed=1.5)
-        self.wait(12)
+        self.vectorField()
+        pass
 
     def plane(self):
         # > - Crear grid del plano - <
@@ -97,12 +87,12 @@ class MainScene(Scene):
         ]
         v = ValueTracker(0)
 
-        streamFunc = lambda pos: np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ])
+        streamFunc = lambda pos: np.array([pos[1], pos[0], 0 ]), # X
 
         stream_lines = StreamLines(streamFunc, stroke_width=2, max_anchors_per_line=30, colors = colors)
         vector_field = always_redraw(
             lambda: ArrowVectorField(
-                lambda pos: (0.5 * ((np.cos(2 * v.get_value())) + 1)) * np.array([pos[1] - np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), np.cos((pos[0]*pos[0] + pos[1]*pos[1]) ** 0.5), 0 ]), 
+                lambda pos: (0.5 * ((np.cos(2 * v.get_value())) + 1)) * np.array([pos[1], pos[0], 0 ]), 
                 colors = colors
             )
         )
@@ -112,6 +102,7 @@ class MainScene(Scene):
 
         stream_lines.start_animation(warm_up=True, flow_speed=1.5)
         self.play(v.animate.set_value(3 * PI), run_time = 12)
+
 
     def streamlines(self):
         getColor = lambda string: ManimColor.from_hex(string)
