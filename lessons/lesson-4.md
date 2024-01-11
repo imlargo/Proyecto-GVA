@@ -24,23 +24,24 @@ mas adelante veremos q el coseno entre dos vectores es cos = A*B / |A||B|, si de
 Ahora, vemos q el coseno del angulo entre estos dos vectores es un numero mayor mientras mas pequeño es el angulo y es un numero mas pequeño cuando el angulo es mas grande, es decir, si los vectores apuntan en direcciones similares, el coseno da un valor mas grande,
 Ahora, la magnitud es la longitud de ese vector, pero la longitud es positiva siempre, por lo tanto esto siempre sera positivo
 
+---
+Si quieremos dividir por un vector, no podemos, solo existe la mult
+Como se calcula
+Propiedades del producto punto (Computacionales) (No existe división por un vector, repaso operaciones básicas)
+Que es el producto punto en sí, su relación con el coseno, explicación de la fórmula
+
+Vectores Ortogonales, de donde sale (Formula rotación)
+propiedades de la ortogonalidad,
+
+Magnitud de un vector. (Normalizar un vector)
+Descomponer la magnitud, sus propiedades, magnitud x escalar y derivaciones que conlleva
 
 
 Que es el producto punto en sí, su relación con el coseno, explicación de la fórmula
 
 Vectores Ortogonales. propiedades de la ortogonalidad, de donde sale (Formula rotación)
 
-
 Magnitud de un vector.
 Descomponer la magnitud, sus propiedades, magnitud x escalar y derivaciones que 
 conlleva
 (Normalizar un vector)
-
-Si elevamos la resta de la magnitud q pasa….
-Teorema de Pitágoras.
-Desigualdad de Cauchy-Schwarz.
-Desigualdad Triangular.
-
-Proyección Ortogonal, proyectar varios vectores X sobre A (y descomposición ortogonal)
-Todos los vectores cuya proyección sobre A es …
-Reflexión
