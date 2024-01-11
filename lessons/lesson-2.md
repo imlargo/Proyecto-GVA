@@ -183,7 +183,9 @@ La suma de vectores se realiza sumando componente por componente, es decir, suma
 
 <!-- ejemplo con vectores (1, 2) y (3, 4) -->
 
-Por ejemplo, si tenemos los vectores $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$, entonces la suma de $\vec{A}$ y $\vec{B}$ es $\begin{bmatrix} 1 + 3 \\ 2 + 3 \end{bmatrix} = \begin{bmatrix} 4 \\ 6 \end{bmatrix}$
+Por ejemplo, si tenemos los vectores $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ y $\vec{B} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$, entonces la suma de $\vec{A}$ y $\vec{B}$ es: 
+
+> $$\vec{A} + \vec{B} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} + \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} 1 + 3 \\ 2 + 4 \end{bmatrix} = \begin{bmatrix} 4 \\ 6 \end{bmatrix}$$
 
 > Dibujamos el nuevo vector
 
@@ -193,7 +195,10 @@ Por ejemplo, si tenemos los vectores $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmat
 
 Me gustaria dar una explicacion de porque esto tiene sentido: la suma de vectores se puede entender como una extensión de la suma de números en una recta numérica. Por ejemplo, "3 + 2 = 5" significa dar 3 pasos a la derecha y luego 2 pasos mas hacia la derecha, hasta llegar al 5.
 
-De la misma manera, podemos pensar que cada vector representa un "camino" o una serie de pasos. Por ejemplo, el vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba. El vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba. La suma de estos dos vectores significa dar primero los pasos del primer vector y luego los pasos del segundo vector. En otras palabras, significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba, o visto de otra manera, dar 1 + 3 pasos a la derecha y luego 2 + 4 pasos hacia arriba. Tambien demostramos instantaneamente que la suma de vectores es conmutativa ( **$ \vec{A} + \vec{B} = \vec{B} + \vec{A} $** )
+De la misma manera, la suma de vectores se puede pensar como la combinación de dos caminos. Por ejemplo, el vector $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ representa un camino que avanza 1 paso a la derecha y 2 pasos hacia arriba. El vector $\begin{bmatrix} 3 \\ 4 \end{bmatrix}$ representa un camino que avanza 3 pasos a la derecha y 4 pasos hacia arriba.
+
+La suma de estos dos vectores significa seguir primero el primer camino y luego el segundo. En otras palabras, significa avanzar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba. También se puede pensar como avanzar 4 pasos a la derecha y 6 pasos hacia arriba, o visto de otra manera, dar **"1 + 3 = 4"** pasos a la derecha y luego **"2 + 4 = 6"** pasos hacia arriba, para llegar al punto $\begin{bmatrix} 4 \\ 6 \end{bmatrix}$.
+Tambien demostramos instantaneamente que la suma de vectores es conmutativa ( **$ \vec{A} + \vec{B} = \vec{B} + \vec{A} $** )
 
 **Propiedades de la suma de vectores**
 - $ \vec{A} + \vec{B} = \vec{B} + \vec{A} $
@@ -202,12 +207,18 @@ De la misma manera, podemos pensar que cada vector representa un "camino" o una 
 
 <!-- Dibujar vectores (1, 2) y (3, 4) y mostrar que $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + A -->
 
-
 ### Resta de vectores {#lesson-resta}
 ---
 
-Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
-(Demostrar propiedades?)
+Al igual que podemos restar numeros reales, tambien podemos hacerlo con vectores notemos que $4 - 3$ es lo mismo que $4 + (-3)$, y este concepto o idea tambien se aplica a los vectores, un caso especial de un múltiplo escalar es $-1 \cdot \vec{v}$, que se escribe $\vec{-v}$ y se llama negativo de $\vec{v}$. Puede usársele para definir la resta vectorial: la diferencia de $\vec{A}$ y $\vec{B}$ es el vector $\vec{A} - \vec{B} = \vec{A} + -1 \cdot \vec{B}$
+
+La rests de vectores se realiza restando componente por componente, es decir, sumamos la restamos _x_ de los vectores y la componentes _y_ de los vectores por separado.
+
+> $$\vec{A} - \vec{B} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} - \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} 1 - 3 \\ 2 - 4 \end{bmatrix} = \begin{bmatrix} -2 \\ -2 \end{bmatrix}$$
+
+Ahora, los damos cuenta que la resta realmente es una suma, y podemos extender lo que sabemos de la suma a la resta, Visualmente es interesante, podemos verlo como voltear la direccion del vector original y sumarlos.
+
+> $$\vec{A} - \vec{B} = \vec{A} + (-1 \cdot \vec{B})$$
 
 **Propiedades de la resta de vectores**
 - $ \vec{A} - \vec{A} = 0 $
