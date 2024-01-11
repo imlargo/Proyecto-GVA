@@ -1,5 +1,9 @@
 # Combinaciones lineales
 
+Descomposición de un vector en sus canónicos
+Combinaciones lineales, span of vectors, hallar escalares, cuando es posible y la excepción
+
+
 **Que es una combinación lineal?**
 
 Una combinación lineal es una suma de vectores multiplicados por escalares.
