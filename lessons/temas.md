@@ -21,7 +21,6 @@
 - Descomposición de un vector en sus canónicos
 - span of vectors, hallar escalares, cuando es posible y la excepción
 
-
 ### El producto punto
 
 Si quieremos dividir por un vector, no podemos, solo existe la mult

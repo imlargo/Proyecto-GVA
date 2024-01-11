@@ -18,5 +18,55 @@
         "descripcion": "Aprenderemos acerca de las combinaciones lineales",
         "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+
+    "4": {
+        "tittle": "El producto punto",
+        "descripcion": "Aprenderemos acerca el producto punto",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+    
+    "5": {
+        "tittle": "Teoremas e implicaciones del producto punto",
+        "descripcion": "Aprenderemos acerca de teoremas",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+
+    "6": {
+        "tittle": "Proyecciones y reflexiones",
+        "descripcion": "Aprenderemos acerca de las proyecciones y reflexiones",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+
+    "7": {
+        "tittle": "Vectores libres",
+        "descripcion": "Aprenderemos acerca de los vectores libres",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+
+    "8": {
+        "tittle": "Angulos",
+        "descripcion": "Aprenderemos acerca de Angulos en el contexto vectorial",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+
+    "9": {
+        "tittle": "Tips y recomendaciones",
+        "descripcion": "Aprenderemos algunos tips y recomendaciones para ejercicios y parciales",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
+    },
+
+    "10": {
+        "tittle": "Ejercicios",
+        "descripcion": "Recopilacion de algunos ejercicios interesantes",
+        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
+        "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     }
+
 }
