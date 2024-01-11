@@ -15,7 +15,7 @@ function renderLesson(index, lesson) {
 
     fetch(path).then(response => response.text()).then(content => {
         // Add latex
-        marked.use(markedKatex());
+        // marked.use(markedKatex());
 
         // Custom id
         marked.use(
