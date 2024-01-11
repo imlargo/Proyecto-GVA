@@ -65,7 +65,14 @@ Por ejemplo, el vector $\vec{v} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$ tiene **
 
 > $$ 1.5 \cdot \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} 1.5 \cdot 3 \\ 1.5 \cdot 4 \end{bmatrix} = \begin{bmatrix} 4.5 \\ 6 \end{bmatrix} \overset{Donde}{\rightarrow} || \begin{bmatrix} 4.5 \\ 6 \end{bmatrix} || = 7.5 = 1.5 \cdot || \vec{v} ||$$
 
-El cual tiene **magnitud** 7.5, es decir, 1.5 veces la _longitud_ original. A continuacion veremos algunas consecuencias de poder multiplicar un vector por un escalar.
+El cual tiene **magnitud** 7.5, es decir, 1.5 veces la _longitud_ original. A continuacion veremos las propiedades y algunas consecuencias de poder multiplicar un vector por un escalar.
+
+**Propiedades de la multiplicacion por escalar**
+- $1 \cdot \vec{A} = \vec{A}$
+- $r \cdot (s \cdot \vec{A}) = (rs) \cdot \vec{A}$
+- $r \cdot (\vec{A} + \vec{B}) = r \cdot \vec{A} + r \cdot \vec{B} $
+- $(r + s) \cdot \vec{A} = r \cdot \vec{A} + s \cdot \vec{A}$
+
 
 ### Recta y rayos generados. {#lesson-recta-rayos}
 ---
@@ -186,17 +193,15 @@ Por ejemplo, si tenemos los vectores $\vec{A} = \begin{bmatrix} 1 \\ 2 \end{bmat
 
 Me gustaria dar una explicacion de porque esto tiene sentido: la suma de vectores se puede entender como una extensión de la suma de números en una recta numérica. Por ejemplo, "3 + 2 = 5" significa dar 3 pasos a la derecha y luego 2 pasos mas hacia la derecha, hasta llegar al 5.
 
-De la misma manera, podemos pensar que cada vector representa un "camino" o una serie de pasos. Por ejemplo, el vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba. El vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba. La suma de estos dos vectores significa dar primero los pasos del primer vector y luego los pasos del segundo vector. En otras palabras, significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba, o visto de otra manera, dar 1 + 3 pasos a la derecha y luego 2 + 4 pasos hacia arriba
+De la misma manera, podemos pensar que cada vector representa un "camino" o una serie de pasos. Por ejemplo, el vector (1, 2) significa dar 1 paso a la derecha y 2 pasos hacia arriba. El vector (3, 4) significa dar 3 pasos a la derecha y 4 pasos hacia arriba. La suma de estos dos vectores significa dar primero los pasos del primer vector y luego los pasos del segundo vector. En otras palabras, significa dar 1 paso a la derecha, luego 2 pasos hacia arriba, y luego 3 pasos a la derecha y 4 pasos hacia arriba, o visto de otra manera, dar 1 + 3 pasos a la derecha y luego 2 + 4 pasos hacia arriba. Tambien demostramos instantaneamente que la suma de vectores es conmutativa ( **$ \vec{A} + \vec{B} = \vec{B} + \vec{A} $** )
 
-**Propiedades**
-
-- Una propiedad dice que la suma de vectores es conmutativa, es decir, $\vec{A} + \vec{B} = \vec{B} + \vec{A}$.
+**Propiedades de la suma de vectores**
+- $ \vec{A} + \vec{B} = \vec{B} + \vec{A} $
+- $ (\vec{A} + \vec{B}) + Z = \vec{A} + (\vec{B} + Z) $
+- $ \vec{A} + O = \vec{A} = O + \vec{A} $
 
 <!-- Dibujar vectores (1, 2) y (3, 4) y mostrar que $\vec{A}$ + $\vec{B}$ = $\vec{B}$ + A -->
 
-Si lo vemos de forma visual, nos damos cuenta que es lo mismo, y tiene sentido con la definicion que di anteriormente
-
-De aqui sale la regla del paralelogramo (propiedades?)
 
 ### Resta de vectores {#lesson-resta}
 ---
@@ -204,25 +209,14 @@ De aqui sale la regla del paralelogramo (propiedades?)
 Suma y resta de vectores. (Resta = suma \* -1), diferentes maneras de hacerlo
 (Demostrar propiedades?)
 
-<!-- Aclarar que no todo es re técnico sino que se simplifican algunas cosas que pueden no ser del  todo “fieles” a la explicación matemática. -->
-
-
-### Regla del paralelogramo.
-
-### Algunas propiedades de las operaciones
----
-
-**Propiedades de la multiplicacion por escalar**
-- $1 \cdot \vec{A} = \vec{A}$
-- $r \cdot (s \cdot \vec{A}) = (rs) \cdot \vec{A}$
-- $r \cdot (\vec{A} + \vec{B}) = r \cdot \vec{A} + r \cdot \vec{B} $
-- $(r + s) \cdot \vec{A} = r \cdot \vec{A} + s \cdot \vec{A}$
-
-**Propiedades de la suma de vectores**
-- $ \vec{A} + \vec{B} = \vec{B} + \vec{A} $
-- $ (\vec{A} + \vec{B}) + Z = \vec{A} + (\vec{B} + Z) $
-- $ \vec{A} + O = \vec{A} = O + \vec{A} $
+**Propiedades de la resta de vectores**
 - $ \vec{A} - \vec{A} = 0 $
 - $ \vec{A} - \vec{B} \neq \vec{B} - \vec{A}$
+
+### Regla del paralelogramo.
+---
+
+
+
 
 **Propiedades del producto cruz**
