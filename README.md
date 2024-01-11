@@ -6,7 +6,7 @@ La plataforma web para mi [Curso de geometria vectorial](https://imlargo-vectori
 
 ## Feedback and Contributing
 
-Si tienes alguna retroalimentación, duda, o sugerencia contactame al: fake@fake.com
+Si tienes alguna retroalimentación, duda, o sugerencia contactame al: im.j.largo@gmail.com
 
 Contributions are always welcome! Puedes corregir typos directamente en los archivos md, si deseas realizar alguna corrección o encuentras algún error de escritura, no dudes en compartirlo conmigo <3
 
