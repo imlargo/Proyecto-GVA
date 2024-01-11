@@ -18,5 +18,5 @@ Contributions are always welcome! Puedes corregir typos directamente en los arch
 ### Tools used and Tech Stack
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,firebase,bootstrap,md,latex&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,js,html,css,bootstrap,md,latex,firebase,githubactions&theme=dark" />
 </a>
