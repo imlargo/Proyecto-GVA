@@ -1,72 +1,62 @@
-{
-    "1": {
-        "tittle": "Vectores",
+[
+    {
+        "index": "1",
+        "title": "Vectores",
         "descripcion": "Nos enfocaremos en los vectores, los objetos fundamentales con los que trabajaremos en el curso.",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-
-    "2": {
-        "tittle": "Operaciones fundamentales",
+    {
+        "index": "2",
+        "title": "Operaciones fundamentales",
         "descripcion": "Exploraremos las operaciones clave entre vectores de una manera clara y sencilla. Abordaremos conceptos como escalar, dependencia e independencia lineal, así como rectas y rayos generados por vectores. Además, nos sumergiremos en las operaciones de suma y resta de vectores para comprender mejor su aplicación práctica.",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-
-    "3": {
-        "tittle": "Combinaciones lineales",
+    {
+        "index": "3",
+        "title": "Combinaciones lineales",
         "descripcion": "Aprenderemos acerca de las combinaciones lineales",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-
-    "4": {
-        "tittle": "El producto punto",
+    {
+        "index": "4",
+        "title": "El producto punto",
         "descripcion": "Aprenderemos acerca el producto punto",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-    
-    "5": {
-        "tittle": "Teoremas e implicaciones del producto punto",
+    {
+        "index": "5",
+        "title": "Teoremas e implicaciones del producto punto",
         "descripcion": "Aprenderemos acerca de teoremas",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-
-    "6": {
-        "tittle": "Proyecciones y reflexiones",
+    {
+        "index": "6",
+        "title": "Proyecciones y reflexiones",
         "descripcion": "Aprenderemos acerca de las proyecciones y reflexiones",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-
-    "7": {
-        "tittle": "Vectores libres",
+    {
+        "index": "7",
+        "title": "Vectores libres",
         "descripcion": "Aprenderemos acerca de los vectores libres",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-
-    "8": {
-        "tittle": "Angulos",
+    {
+        "index": "8",
+        "title": "Angulos",
         "descripcion": "Aprenderemos acerca de Angulos en el contexto vectorial",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-
-    "9": {
-        "tittle": "Tips y recomendaciones",
+    {
+        "index": "9",
+        "title": "Tips y recomendaciones",
         "descripcion": "Aprenderemos algunos tips y recomendaciones para ejercicios y parciales",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     },
-
-    "10": {
-        "tittle": "Ejercicios",
+    {
+        "index": "0",
+        "title": "Ejercicios",
         "descripcion": "Recopilacion de algunos ejercicios interesantes",
-        "img": "https://img.youtube.com/vi/gw1exf19lQM/maxresdefault.jpg",
         "video": "https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview"
     }
-
-}
+]

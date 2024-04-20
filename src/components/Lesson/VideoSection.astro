@@ -1,0 +1,35 @@
+---
+const { src } = Astro.props;
+---
+
+<section class="mb-5">
+    <div class="video-container py-5">
+        <div>
+            <span class="video-tag">
+                <i class="bi bi-bookmark"></i>
+                <span>Video de la leccion</span>
+            </span>
+            <hr class="pink-hr">
+            <iframe width="704" height="396"
+                src={src}
+                title="Video de la leccion" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .video-tag {
+        color: #ffffff;
+    }
+    
+</style>

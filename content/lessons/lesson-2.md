@@ -1,10 +1,11 @@
-<!-- Titulo:
-Operaciones fundamentales con vectores y sus propiedades
--->
+---
+layout: ../../layouts/BaseLesson.astro
 
-<!-- 
-- Vector: $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$
--->
+num: '2'
+title: 'Operaciones fundamentales con vectores y sus propiedades'
+description: '...'
+video: 'https://drive.google.com/file/d/1lR8yixoFN9cpzuUowdCGBnr00fyOCkv2/preview'
+---
 
 Asi como se pueden hacer operaciones con números, los vectores también tienen _operaciones fundamentales_. Una de ellas es la _multiplicación_ de un vector por un número real.
 

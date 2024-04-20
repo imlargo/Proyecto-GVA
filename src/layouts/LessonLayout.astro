@@ -1,0 +1,343 @@
+---
+import Nav from "../components/Nav.astro";
+import VideoSection from "../components/Lesson/VideoSection.astro";
+import Footer from "../components/Footer.astro";
+
+const { frontmatter } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+    	<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<meta name="generator" content={Astro.generator} />
+    	<title>Leccion {frontmatter.index} | {frontmatter.title}</title>
+
+		<!-- Marked.js -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+	
+		<!-- Boostrap 5 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  	</head>
+
+  	<body>
+		<header>
+
+			<Nav />
+
+			<!-- Seccion del video -->
+			<VideoSection src={frontmatter.video} />
+		
+		</header>
+
+
+		<main>
+			<br>
+			<!-- Headers leccion -->
+			<section class="mb-5 mt-4">
+				<div class="d-flex justify-content-center align-items-center leccion-headers gap-3">
+					<span class="insignia-purple mb-2">Leccion {frontmatter.index}</span>
+					<h1>{frontmatter.title}</h1>
+				</div>
+			</section>
+	
+			<!-- Contenido leccion -->
+			<section class="container">
+				<hr class="pink-hr">
+	
+				<!-- Rendered markdown -->
+				<div id="rendered" class="my-contenido">
+					<slot/>
+				</div>
+			</section>
+	
+			<br>
+		</main>
+	
+		
+		<Footer />
+
+  	</body>
+</html>
+
+<style>
+	header {
+		background-image: url('../../public/assets/my-background.png');
+    	background-repeat: repeat-y;
+    	animation: animatedBackground 20s linear infinite;
+	}
+
+	/* Contenedor video */
+body {
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Estilos contenido */
+.header-badget {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(214, 179, 252);
+    border-radius: 999px;
+    display: inline;
+    font-family: Poppins, sans-serif;
+    font-size: 12.8px;
+    font-weight: normal;
+    height: auto;
+    line-height: 18.56px;
+
+    padding: 0.2rem 0.5rem;
+
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+
+}
+
+blockquote {
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin-block: calc(1em + 1ex);
+    margin-inline-start: 0;
+    padding-inline-start: calc(1em + 1ex);
+    position: relative;
+    text-align: justify;
+}
+
+blockquote:before {
+    background-color: var(--lesson-blockquote);
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 100%;
+    inset-inline-start: 0;
+    position: absolute;
+    width: calc(0.25em + .25ex);
+}
+
+.my-contenido h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.my-contenido li::marker {
+    color: var(--lesson-li);
+}
+
+.my-contenido hr {
+    border: 1px solid;
+    border-color: var(--lesson-hr);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-contenido p {
+    text-align: justify;
+}
+
+.my-contenido img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px var(--lesson-img);
+
+    width: 40rem;
+    border-radius: 0.3rem;
+}
+
+.my-contenido strong {
+    color: var(--lesson-strong);
+}
+
+.my-contenido li {
+    text-align: justify;
+}
+
+
+/**
+ * Global CSS styles for the project.
+ * 
+ * This file contains the global CSS styles that are applied to the entire project.
+ * It includes color variables, font styles, animation, and various component styles.
+ * The styles are defined for both light and dark modes.
+ * 
+ * @file global.css
+ */
+ :root {
+    /* Colores */
+    --color-bg: #ffffff;
+    --color-content: #000000;
+
+    /* Leccion vars */
+    --lesson-color: #000000;
+    --lesson-blockquote: rgb(225, 198, 253);
+
+    --lesson-li: rgb(213, 115, 255);
+    --lesson-hr: rgb(213, 115, 255);
+    --lesson-img: rgb(213, 115, 255);
+
+    --lesson-strong: rgb(117 32 167);
+
+    --lesson-card-hover: #dcbcff90;
+}
+
+body {
+    /* Light mode */
+    background-color: var(--color-bg);
+    color: var(--color-content);
+
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-kerning: normal;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+/* Dark mode */
+body.dark {
+
+    /* Colores */
+    --color-bg: #16161e;
+    --color-content: #ffffff;
+
+    /* Leccion vars */
+    --lesson-strong: rgb(215, 145, 255);
+    --lesson-blockquote: rgb(186, 121, 255);
+
+    --lesson-hr: rgb(229, 168, 255);
+    --lesson-li: rgb(229, 168, 255);
+    --lesson-img: rgb(229, 168, 255);
+
+    --lesson-card-hover: #da96ffd4;
+}
+
+/* Header */
+.my-brand {
+    color: #ffffff !important;
+    font-family: "FreeMono", monospace;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -100%;
+    }
+}
+
+.my-background {
+    background-image: url('../assets/my-background.png');
+    background-repeat: repeat-y;
+    animation: animatedBackground 20s linear infinite;
+}
+
+/* Nav */
+.my-nav {
+    color: #ffffff;
+}
+
+.my-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.my-nav a:hover {
+    color: #c175ff;
+}
+
+
+/* Footer */
+
+.my-footer {
+    font-family: "FreeMono", monospace;
+}
+
+.my-icon {
+    color: var(--color-content);
+}
+
+/* Other */
+.theme-button {
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    font-size: 2rem;
+    color: #ac45c9cc;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    color: #ac45c9;
+}
+
+.white-hr {
+    border: 1px solid #ffffff;
+}
+
+.pink-hr {
+    border: 1px solid rgb(213, 115, 255);
+}
+
+/* Materials */
+.card-1 {
+    border-radius: 10px;
+    background: linear-gradient(270deg, #03a9f4, #cc39a4, #ffb5d2);
+    box-shadow: inset 0px 0px 180px 5px #ffffff;
+}
+.full-background {
+    min-height: 100vh;
+    height: 100vh!important;
+}
+
+.insignia-green {
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    text-decoration: none;
+
+    --badget-color: rgb(63, 185, 80);
+    color: var(--badget-color);
+    border: 1px var(--badget-color) solid;
+    background-color: rgb(63, 185, 80, 0.1);
+
+    border-radius: 9999px;
+
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(79, 70, 229, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+
+.insignia-purple {
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    text-decoration: none;
+
+    --badget-color: rgb(165, 70, 229);
+    color: var(--badget-color);
+    border: 1px var(--badget-color) solid;
+    background-color: rgb(165, 70, 229, 0.1);
+
+    border-radius: 9999px;
+
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(79, 70, 229, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+</style>
