@@ -1,0 +1,20 @@
+---
+import LessonLayout from "../../layouts/LessonLayout.astro"
+import { getEntry } from 'astro:content';
+
+export function getStaticPaths() {
+    return [1,2,3,4,5,6,7,8].map((lesson) => ({
+        params: { lesson: `lesson-${lesson}` }
+    }));
+}
+
+const { lesson } = Astro.params;
+
+const entry = await getEntry("lessons", lesson);
+const { Content } = await entry.render();
+
+---
+
+<LessonLayout frontmatter={entry.data}>
+    <Content />
+</LessonLayout>
