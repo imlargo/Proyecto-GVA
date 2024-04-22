@@ -1,0 +1,33 @@
+---
+const { class: className,  ...rest } = Astro.props;
+//<slot />
+---
+
+<div class={`pe-3 py-3 rounded-3 ${className}`}>
+    <slot />
+</div>
+
+<style>
+
+    div {
+        box-shadow: 6px 6px 10px rgba(160, 59, 255, 0.1), -6px -6px 12px rgba(244, 194, 255, 0.2);
+    }
+
+    /* Animacion delinear */
+    div::after {
+        margin-right: auto;
+    }
+
+    div::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(149 119 235);
+        display: block;
+        transition: 0.5s;
+    }
+
+    div:hover::after {
+        width: 100%;
+    }
+</style>

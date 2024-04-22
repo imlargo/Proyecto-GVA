@@ -1,5 +1,12 @@
 ---
-import Footer from '../components/Footer.astro';
+
+import Footer from "../components/Footer.astro";
+
+import Header from "../components/Home/Header.astro";
+import SectionIntro from "../components/Home/SectionIntro.astro";
+import SectionAbout from "../components/Home/SectionAbout.astro";
+import SectionFeatures from "../components/Home/SectionFeatures.astro";
+import SectionInscribir from "../components/Home/SectionInscribir.astro";
 
 ---
 
@@ -23,284 +30,83 @@ import Footer from '../components/Footer.astro';
     <link rel="shortcut icon" href="src/assets/my-background.png" type="image/png" />
 </head>
 
-
-<header class="my-background full-background">
-
-    <div class="wrapper-degradado full-background">
-
-        <nav class="my-nav p-4 px-xl-5 d-flex justify-content-between align-content-center">
-            <div>
-                <h3 class="my-brand">
-                    <i class="bi bi-code-slash"></i>
-                    imlargo
-                </h3>
-            </div>
-
-            <div class="d-flex justify-content-end gap-5">
-                <a class="my-nav-pill" href="#">
-                    <i class="bi bi-house"></i>
-                    Inicio</a>
-                <a class="my-nav-pill" href="./pages/lessons.html">
-                    <i class="bi bi-bookmarks"></i>
-                    Lecciones</a>
-                <a class="my-nav-pill" href="./pages/about.html">
-                    <i class="bi bi-heart"></i>
-                    Acerca de</a>
-            </div>
-        </nav>
-
-        <div class="p-4 px-xl-5 ">
-
-            <div class="banner-container ">
-                <a class="my-badget" href="pages/lessons.html">
-                    Ver lecciones gratis
-                </a>
-                <h1 class="mt-4">La Esencia de la Geometría Vectorial</h1>
-                <hr class="pink-hr mt-3">
-                <p class="mt-3 lead">
-                    Simplificando el aprendizaje a través de un enfoque visual, brindando una comprensión sencilla pero
-                    completa de temas fundamentales para establecer bases sólidas en geometría vectorial.
-                </p>
-
-                <div class="d-flex align-items-center mt-5 gap-5">
-                    <a href="https://wa.me/573136566689" target="_blank" class="p-2 rounded-3 inscribir lead">
-                        Inscribete ahora!
-                    </a>
-
-                    <a class="cta" href="#info">
-                        <span class="hover-underline-animation lead">Leer mas</span>
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-
-                </div>
-
-                <div class="mt-5 d-flex justify-content-end align-items-center gap-4 hero-footer py-4">
-                    <a class="" href="https://www.instagram.com/imlargo" target="_blank">
-                        <i class="bi bi-instagram text-white"></i>
-                    </a>
-                    <div class="vr"></div>
-
-                    <a class="" href="https://github.com/imlargo" target="_blank">
-                        <i class="bi bi-github text-white"></i>
-                    </a>
-                    <div class="vr"></div>
-
-                    <a class="" href="https://www.linkedin.com/in/imlargo" target="_blank">
-                        <i class="bi bi-linkedin text-white"></i>
-                    </a>
-                </div>
-
-                <div class="d-flex justify-content-center align-content-center down-arrow">
-                    <a class="bi bi-chevron-down text-white" href="#info"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<header class="my-background">
+    <Header />
 </header>
 
-
 <body>
-    <main>
         <!-- Introduccion -->
-        <section id="info" class="py-5 my-4 container-intro">
-            <div class="container">
-                <div class="row d-flex justify-content-between align-items-center">
-                    <div class="col">
-                        <h1>
-                            Hola!<br>
-                            soy Juan Carlos Largo
-                        </h1>
-
-                        <img src="lessons/content/images/l0-meme.jpg">
-                    </div>
-
-                    <div class="col">
-                        <blockquote class="animation-delign">
-                            <p class="justify font-weight-350">
-                                <i class="bi bi-quote"></i>
-                                Creé estas lecciones con el objetivo de
-                                explicar
-                                de una manera más visual y sencilla conceptos fundamentales de geometría vectorial. Mi
-                                enfoque se
-                                centra
-                                en comprender el "porqué" detrás de los conceptos en lugar de simplemente computar o
-                                calcular.
-                            </p>
-                            <p class="justify font-weight-350">
-                                En particular, pienso que abordar la geometría vectorial desde una perspectiva visual
-                                facilita la
-                                comprensión de los temas y, sobre todo, ayuda a aplicarlos de manera efectiva para
-                                resolver
-                                problemas.
-                            </p>
-                        </blockquote>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
+        <SectionIntro />
 
         <!-- Acerca del curso -->
-        <section id="about" class="purple-bg py-5 container-about">
-            <div class="container my-5">
-                <div>
-                    <span class="about-text">Acerca de</span>
-                    <h1 class="d-flex gap-3">
-                        La Esencia de la Geometría Vectorial
-                    </h1>
-                </div>
-
-                <hr class="purple-hr w-25">
-
-                <div class="row mt-4">
-                    <div class="col">
-                        <p class="justify font-weight-350">
-                            <i class="bi bi-check"></i>
-                            Este curso busca simplificar el aprendizaje a través de un enfoque visual, brindando una
-                            comprensión sencilla pero completa de los temas. Gracias a mis habilidades de programación,
-                            he creado animaciones y videos que facilitan la comprensión de los conceptos.
-                        </p>
-                        <p class="justify font-weight-350">
-                            <i class="bi bi-check"></i>
-                            Durante las lecciones, exploraremos temas fundamentales para establecer bases sólidas en
-                            geometría
-                            vectorial, al igual que proporcionando una perspectiva visual que mejorará tu capacidad para
-                            resolver problemas.
-                        </p>
-
-                        <a href="https://wa.me/573136566689" target="_blank" class="link-inscribir learn-more mt-3">
-                            <span class="circle" aria-hidden="true">
-                                <span class="icon arrow"></span>
-                            </span>
-                            <span class="button-text">Inscribete ahora!</span>
-                        </a>
-                    </div>
-
-                    <div class="col d-flex justify-content-end">
-                        <video class="rounded" autoplay="" loop="" muted=""
-                            src="src/assets/homepage-animation.mp4"></video>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <SectionAbout />
 
         <!-- Beneficios -->
-        <section id="features" class="container py-5 mt-5 mb-4 container-beneficios">
-            <h2 class="text-center">Avanza a tu propio ritmo y según tus necesidades.</h2>
-            <hr class="purple-hr">
-
-            <div class="row my-5 gap-3">
-
-                <div class="col pe-3 py-3 card-me animation-delign rounded-3">
-                    <h5>
-                        Personalizado
-                        <i class="bi bi-sliders"></i>
-                    </h5>
-                    <p class="font-weight-350">Todas las lecciones fueron redactadas por mí con el objetivo de ser
-                        claras y
-                        explicar de manera
-                        sencilla pero completa los conceptos.</p>
-                </div>
-
-                <div class="col animation-delign p-3 card-important card-me rounded-3">
-                    <h5 class="d-flex gap-2">Lecciones
-                        <span class="star-animation">
-                            <i class="bi bi-star"></i>
-                        </span>
-                    </h5>
-                    <p class="font-weight-350">Cada lección consta de un video explicativo detallado donde abordo los
-                        temas, además
-                        de una
-                        versión escrita con animaciones y ejemplos. Esto proporciona flexibilidad para revisar los temas
-                        y estudiar en cualquier momento.</p>
-                </div>
-
-                <div class="col ps-3 py-3 card-me animation-delign rounded-3">
-                    <h5>
-                        Herramientas
-                        <i class="bi bi-circle-square"></i>
-                    </h5>
-                    <p class="font-weight-350">El curso está diseñado para ir más allá de los números, utilizando apoyos
-                        visuales
-                        para
-                        garantizar una comprensión integral y mejora tus habilidades para resolver problemas.</p>
-                </div>
-            </div>
-
-            <p class="font-weight-350 text-center pt-4">Ver plan de estudios <i class="bi bi-arrow-right"></i></p>
-
-            <!-- Plan de estudios
-            <br>
-            <hr class="pink-hr mt-5">
-
-            <div class="mt-5">
-                <div class="accordion-item">
-                    <h1 class=" header-temas" type="button" data-bs-toggle="collapse" data-bs-target="#panel-temas">
-                        Plan de estudios
-                    </h1>
-                    <div id="panel-temas" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <div class="container-temas p-5">
-
-                                <ul class="lista-temas">
-                                    <li class="pb-3">
-                                        <span class="lead ms-3">Leccion 1</span>
-                                        <h3 class="ms-3">Vectores</h3>
-                                    </li>
-                                    <li class="pb-3">
-                                        <span class="lead ms-3">Leccion 2</span>
-                                        <h3 class="ms-3">Operaciones fundamentales</h3>
-                                    </li>
-                                    <li class="pb-3">
-                                        <span class="lead ms-3">Leccion 3</span>
-                                        <h3 class="ms-3">Combinaciones lineales</h3>
-                                    </li>
-                                    <li class="pb-3">
-                                        <span class="lead ms-3">Leccion 4</span>
-                                        <h3 class="ms-3">El producto punto</h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                 -->
-
-
-        </section>
+        <SectionFeatures />
 
         <!-- Inscribir -->
-        <section id="inscribir" class="card-important py-5">
-            <div class="my-4 container d-flex justify-content-between align-items-center">
-                <div>
-                    <h2 class="">
-                        Listo para iniciar?<br>
-                        Inscribete o mira las
-                        <a href="pages/lessons.html" target="_blank" class="free-lesson-link">
-                            lecciones gratis
-                            <i class="bi bi-arrow-right-short"></i>
-                        </a>
-                    </h2>
-                    <a href="https://wa.me/573136566689" target="_blank" class="lead basic-link animation-delign">No
-                        dudes en contactarme si tienes alguna duda o necesitas mas
-                        informacion<i class="ms-2 bi bi-whatsapp"></i></a>
-                </div>
-
-                <a href="https://wa.me/573136566689" target="_blank" class="link-inscribir learn-more">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Inscribete!</span>
-                </a>
-            </div>
-        </section>
-    </main>
+        <SectionInscribir />
 
     <Footer />
     
 </body>
 </html>
+
+
+<style is:global>
+    @import "../styles/global.css";
+    
+    body h3 {
+        font-weight: bold;
+    }
+
+    .hover-underline-animation {
+        position: relative;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    .hover-underline-animation:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    /* Other */
+    .justify {
+        text-align: justify;
+    }
+
+    /* UI elements */
+    .purple-bg {
+        background-color: rgb(250, 245, 255);
+    }
+
+
+    .font-weight-350 {
+        font-weight: 350;
+        font-size: 1.16rem;
+    }
+
+    @keyframes animatedBackground {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 0 -100%;
+        }
+    }
+
+    .my-background {
+        background-image: url('../assets/my-background.png');
+        background-repeat: repeat-y;
+        animation: animatedBackground 20s linear infinite;
+    }
+</style>

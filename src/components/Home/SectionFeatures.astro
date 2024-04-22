@@ -1,0 +1,44 @@
+---
+import Card from "./Card.astro";
+---
+
+<section id="features" class="container py-5 mt-5 mb-4">
+    <h2 class="text-center">Avanza a tu propio ritmo y según tus necesidades.</h2>
+    <hr class="purple-hr">
+
+    <div class="row my-5 gap-3">
+        <Card class="col">
+            <h5><span>Personalizado</span><i class="bi bi-sliders"></i></h5>
+            <p class="font-weight-350">Todas las lecciones fueron redactadas por mí con el objetivo de ser claras y explicar de manera sencilla pero completa los conceptos.</p>
+        </Card>
+
+        <Card class="col bg-gradient-me">
+            <h5 class="d-flex gap-2">Lecciones<span><i class="bi bi-star"></i></span></h5>
+            <p class="font-weight-350">Cada lección consta de un video explicativo detallado donde abordo los temas, además de una versión escrita con animaciones y ejemplos. Esto proporciona flexibilidad para revisar los temas y estudiar en cualquier momento.</p>
+        </Card>
+
+        <Card class="col">
+            <h5><span>Herramientas</span><i class="bi bi-circle-square"></i></h5>
+            <p class="font-weight-350">El curso está diseñado para ir más allá de los números, utilizando apoyos visuales para garantizar una comprensión integral y mejora tus habilidades para resolver problemas.</p>
+        </Card>
+    </div>
+
+    <p class="font-weight-350 text-center pt-4">Ver plan de estudios <i class="bi bi-arrow-right"></i></p>
+
+</section>
+
+<style>
+    h5 {
+        font-weight: bold;
+    }
+
+    p {
+        text-align: justify;
+    }
+    
+    hr {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>

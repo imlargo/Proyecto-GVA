@@ -1,0 +1,56 @@
+---
+import ButtonInscribir from "./ButtonInscribir.astro";
+---
+
+<section id="about" class="purple-bg py-5">
+    <div class="container my-5">
+        <div>
+            <span class="about-text">Acerca de</span>
+            <h1 class="d-flex gap-3">La Esencia de la Geometría Vectorial</h1>
+        </div>
+
+        <hr class="w-25">
+
+        <div class="row mt-4">
+            <div class="col">
+                <p class="justify font-weight-350">
+                    <i class="bi bi-check"></i>
+                    Este curso busca simplificar el aprendizaje a través de un enfoque visual, brindando una
+                    comprensión sencilla pero completa de los temas. Gracias a mis habilidades de programación,
+                    he creado animaciones y videos que facilitan la comprensión de los conceptos.
+                </p>
+                <p class="justify font-weight-350">
+                    <i class="bi bi-check"></i>
+                    Durante las lecciones, exploraremos temas fundamentales para establecer bases sólidas en
+                    geometría
+                    vectorial, al igual que proporcionando una perspectiva visual que mejorará tu capacidad para
+                    resolver problemas.
+                </p>
+
+                <ButtonInscribir class="mt-5" />
+                
+            </div>
+
+            <div class="col d-flex justify-content-end">
+                <video class="rounded" autoplay="" loop="" muted="" src="public/assets/homepage-animation.mp4"></video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about-text {
+        color: rgb(105, 44, 179);
+        font-weight: bolder;
+    }
+
+    hr {
+        border: 2px solid rgb(142, 77, 255);
+        opacity: 0.4!important;
+    }
+
+    video {
+        height: 18rem;
+        object-fit: cover;
+    }
+</style>

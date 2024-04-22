@@ -1,0 +1,43 @@
+---
+import ButtonInscribir from "./ButtonInscribir.astro";
+
+---
+
+<section id="inscribir" class="bg-gradient-me py-5">
+    <div class="my-4 container d-flex justify-content-between align-items-center">
+        <div>
+            <h2>
+                <span>Listo para iniciar?</span>
+                <br>
+                <span>Inscribete o mira las</span>
+                <a href="pages/lessons.html" target="_blank" class="link-free-lesson">
+                    <span>lecciones gratis</span>
+                    <i class="bi bi-arrow-right-short"></i>
+                </a>
+            </h2>
+            <a href="https://wa.me/573136566689" target="_blank" class="lead link-base animation-delign">
+                <span>No dudes en contactarme si tienes alguna duda o necesitas mas informacion</span>
+                <i class="ms-2 bi bi-whatsapp"></i>
+            </a>
+        </div>
+
+        <ButtonInscribir />
+    </div>
+</section>
+
+<style>
+    .link-free-lesson {
+        color: rgb(165, 91, 255);
+        text-decoration: none;
+    }
+
+    .link-free-lesson:hover {
+        color: rgb(127, 56, 212);
+    }
+
+    .link-free-lesson:hover i {
+        margin-left: 0.3rem;
+        transition: all 0.3s ease;
+    }
+
+</style>

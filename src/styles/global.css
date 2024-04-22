@@ -40,10 +40,30 @@ body {
     transition: 0.4s;
 }
 
+.bg-gradient-me {
+    background: linear-gradient(90deg, rgba(111, 3, 244, 0.15), rgba(204, 57, 164, 0.15), rgba(255, 181, 210, 0.15));
+    box-shadow: inset 0px 0px 180px 5px #ffffff;
+    box-shadow: 6px 6px 10px rgba(160, 59, 255, 0.1),
+        -6px -6px 12px rgba(244, 194, 255, 0.2);
+}
+
 .hr-white {
     border: 1px solid #ffffff;
 }
 
 .hr-pink {
     border: 1px solid rgb(213, 115, 255);
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.link-base {
+    text-decoration: none;
+    color: black;
+}
+
+.link-base:hover {
+    color: rgb(0, 0, 0);
 }
