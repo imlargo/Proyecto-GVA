@@ -1,11 +1,10 @@
-<main>
-  <slot />
+<main class="lesson-content">
+  <slot/>
 </main>
 
 <style is:global>
-	@import "../../styles/global.css";
 
-	blockquote {
+	.lesson-content blockquote {
 	  word-wrap: break-word;
 	  box-sizing: border-box;
 	  margin-block: calc(1em + 1ex);
@@ -15,7 +14,7 @@
 	  text-align: justify;
 	}
 
-  	blockquote:before {
+  	.lesson-content blockquote:before {
     	background-color: var(--lesson-blockquote);
     	border-radius: 3px;
     	content: "";
@@ -26,16 +25,16 @@
     	width: calc(0.25em + 0.25ex);
   	}	
 
-  	h3 {
+  	.lesson-content h3 {
     	text-align: center;
     	margin-top: 2rem;
   	}	
 
-  	li::marker {
+  	.lesson-content li::marker {
     	color: var(--lesson-li);
   	}	
 
-  	hr {
+  	.lesson-content hr {
     	border: 1px solid;
     	border-color: var(--lesson-hr);
     	width: 30%;
@@ -43,11 +42,11 @@
     	margin-right: auto;
   	}	
 
-  	p {
+  	.lesson-content p {
     	text-align: justify;
   	}	
 
-  	img {
+  	.lesson-content img {
     	display: block;
     	margin-left: auto;
     	margin-right: auto;
@@ -57,11 +56,11 @@
     	border-radius: 0.3rem;
   	}	
 
-  	strong {
+  	.lesson-content strong {
     	color: var(--lesson-strong);
   	}	
 
-  	li {
+  	.lesson-content li {
     	text-align: justify;
   	}
 </style>
