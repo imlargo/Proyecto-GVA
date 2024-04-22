@@ -1,7 +1,9 @@
 ---
 import Nav from "../components/Nav.astro";
-import VideoSection from "../components/Lesson/VideoSection.astro";
 import Footer from "../components/Footer.astro";
+
+import VideoSection from "../components/Lesson/VideoSection.astro";
+import LessonHeader from "../components/Lesson/LessonHeader.astro";
 
 const { frontmatter } = Astro.props;
 
@@ -26,23 +28,16 @@ const { frontmatter } = Astro.props;
 
   	<body>
 		<header>
-
 			<Nav />
-
 			<!-- Seccion del video -->
 			<VideoSection src={frontmatter.video} />
-		
 		</header>
-
 
 		<main>
 			<br>
 			<!-- Headers leccion -->
 			<section class="mb-5 mt-4">
-				<div class="d-flex justify-content-center align-items-center leccion-headers gap-3">
-					<span class="insignia-purple mb-2">Leccion {frontmatter.index}</span>
-					<h1>{frontmatter.title}</h1>
-				</div>
+				<LessonHeader title={frontmatter.title} index={frontmatter.index} />
 			</section>
 	
 			<!-- Contenido leccion -->

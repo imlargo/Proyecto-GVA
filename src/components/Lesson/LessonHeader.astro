@@ -1,0 +1,13 @@
+---
+const {title, index} = Astro.props;
+import Insignia from "../Misc/Insignia.astro"
+---
+
+<section class="mb-5 mt-4">
+
+    <div class="d-flex justify-content-center align-items-center gap-3">
+        <Insignia class="mb-2" color="purple" text={`Leccion ${index}`}/>
+        <h1>{title}</h1>
+    </div>
+    
+</section>
