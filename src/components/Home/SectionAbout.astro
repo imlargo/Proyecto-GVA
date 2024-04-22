@@ -1,5 +1,6 @@
 ---
 import ButtonInscribir from "./ButtonInscribir.astro";
+import HomepageAnimation from '../../../public/assets/homepage-animation.mp4';
 ---
 
 <section id="about" class="purple-bg py-5">
@@ -32,7 +33,7 @@ import ButtonInscribir from "./ButtonInscribir.astro";
             </div>
 
             <div class="col d-flex justify-content-end">
-                <video class="rounded" autoplay="" loop="" muted="" src="public/assets/homepage-animation.mp4"></video>
+                <video class="rounded" autoplay="" loop="" muted="" src={HomepageAnimation.src}></video>
             </div>
         </div>
     </div>
