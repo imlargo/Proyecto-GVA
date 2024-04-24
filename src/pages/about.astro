@@ -1,16 +1,109 @@
 ---
+import Nav from '../components/Nav.astro'
+import Footer from '../components/Footer.astro'
 
+import Insignia from '../components/Misc/Insignia.astro'
 ---
 
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acerca de | imlargo</title>
+    
+        <!-- Boostrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    
+        <link rel="shortcut icon" href="src/assets/my-background.png" type="image/png" />
+    </head>
 <body>
-    <p>About</p>
+    
+    <header>
+        <div>
+            <Nav />
+        </div>
+    </header>
+
+
+    <main class="container-sm px-5 py-5">
+        <h1 class="mb-1">Acerca de</h1>
+
+        <section class="rounded p-5">
+            <div class="d-flex rounded ">
+                <div class="">
+                    <img class="rounded-circle mx-auto" src="public/assets/imlargo.jpg" alt="me">
+                    
+                    <div class="d-flex gap-2 justify-content-center mt-3 text-center">
+                        <span class="lead text-center">
+                            <i class="bi bi-geo"></i>
+                            <span>Imlargo, developer</span>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class="d-flex align-items-center ps-5">
+                    <p class="text-justify">
+                        <i class="bi bi-quote"></i>
+                        <span class="lead">
+                            Hi, i'm largo, desarrollador y creador de este proyecto. Soy estudiante de Ingenieria de Sistemas y me apasiona la programación y crear cosas. Siempre estoy buscando nuevas formas de aprender y mejorar mis habilidades. También me gusta compartir mis conocimientos con los demás. Espero que disfrutes este proyecto y lo encuentres útil. Si tienes alguna pregunta o sugerencia, no dudes en contactarme. ¡Gracias por visitar!
+                        </span>
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="section-2 rounded  p-5">
+            <p class="lead text-justify">
+                <i class="bi bi-quote"></i>
+                <span>Creé estas lecciones con el objetivo de explicar de una manera más visual y sencilla conceptos fundamentales de geometría vectorial. Mi enfoque se centra en comprender el "porqué" detrás de los conceptos en lugar de simplemente computar o calcular. En particular, pienso que abordar la geometría vectorial desde una perspectiva visual facilita la comprensión de los temas y, sobre todo, ayuda a aplicarlos de manera efectiva para resolver problemas.</span>
+            </p>
+        </section>
+
+    </main>
+
+    <Footer />
     
 </body>
 </html>
+
+<style lang="scss">
+
+    img {
+        width: 300px;
+        height: auto;
+        display: block;
+    }
+
+    @keyframes animatedBackground {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 0 -100%;
+        }
+    }
+
+    header {
+        background: linear-gradient( 90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(213, 61, 255, 0.1));
+        
+        div {
+            background-image: url('../assets/my-background.png');
+        background-repeat: repeat-y;
+        animation: animatedBackground 20s linear infinite;
+        }
+    }
+
+    .text-justify {
+        text-align: justify;
+    }
+
+    .section-2 {
+        background-color: #fafafa;
+    }
+</style>
