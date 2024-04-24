@@ -1,66 +1,67 @@
 <main class="lesson-content">
-  <slot/>
+  <slot />
 </main>
 
-<style is:global>
+<style is:global lang="scss">
+  .lesson-content {
+    blockquote {
+      word-wrap: break-word;
+      box-sizing: border-box;
+      margin-block: calc(1em + 1ex);
+      margin-inline-start: 0;
+      padding-inline-start: calc(1em + 1ex);
+      position: relative;
+      text-align: justify;
 
-	.lesson-content blockquote {
-	  word-wrap: break-word;
-	  box-sizing: border-box;
-	  margin-block: calc(1em + 1ex);
-	  margin-inline-start: 0;
-	  padding-inline-start: calc(1em + 1ex);
-	  position: relative;
-	  text-align: justify;
-	}
+      &:before {
+        background-color: var(--lesson-blockquote);
+        border-radius: 3px;
+        content: "";
+        display: block;
+        height: 100%;
+        inset-inline-start: 0;
+        position: absolute;
+        width: calc(0.25em + 0.25ex);
+      }
+    }
 
-  	.lesson-content blockquote:before {
-    	background-color: var(--lesson-blockquote);
-    	border-radius: 3px;
-    	content: "";
-    	display: block;
-    	height: 100%;
-    	inset-inline-start: 0;
-    	position: absolute;
-    	width: calc(0.25em + 0.25ex);
-  	}	
+    h3 {
+      text-align: center;
+      margin-top: 2rem;
+    }
 
-  	.lesson-content h3 {
-    	text-align: center;
-    	margin-top: 2rem;
-  	}	
+    li::marker {
+      color: var(--lesson-li);
+    }
 
-  	.lesson-content li::marker {
-    	color: var(--lesson-li);
-  	}	
+    hr {
+      border: 1px solid;
+      border-color: var(--lesson-hr);
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  	.lesson-content hr {
-    	border: 1px solid;
-    	border-color: var(--lesson-hr);
-    	width: 30%;
-    	margin-left: auto;
-    	margin-right: auto;
-  	}	
+    p {
+      text-align: justify;
+    }
 
-  	.lesson-content p {
-    	text-align: justify;
-  	}	
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 10px var(--lesson-img);
 
-  	.lesson-content img {
-    	display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	box-shadow: 0 0 10px var(--lesson-img);	
+      width: 40rem;
+      border-radius: 0.3rem;
+    }
 
-    	width: 40rem;
-    	border-radius: 0.3rem;
-  	}	
+    strong {
+      color: var(--lesson-strong);
+    }
 
-  	.lesson-content strong {
-    	color: var(--lesson-strong);
-  	}	
-
-  	.lesson-content li {
-    	text-align: justify;
-  	}
+    li {
+      text-align: justify;
+    }
+  }
 </style>

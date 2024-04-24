@@ -4,155 +4,155 @@ import Insignia from "../Misc/Insignia.astro";
 ---
 
 <section>
+  <Nav />
 
-    <Nav />
+  <div class="p-4 px-xl-5">
+		<div class="banner-container">
+		  <a href="lessons link-basic">
+				<Insignia color="purple">Ver lecciones gratis</Insignia>
+		  </a>
 
-    <div class="p-4 px-xl-5">
+		  <h1 class="mt-4">La Esencia de la Geometría Vectorial</h1>
+		  <hr class="hr-pink mt-3" />
+		  <p class="mt-3 lead">
+				Simplificando el aprendizaje a través de un enfoque visual, brindando
+				una comprensión sencilla pero completa de temas fundamentales para
+				establecer bases sólidas en geometría vectorial.
+		  </p>
 
-        <div class="banner-container">
-            <a href="lessons link-basic">
-                <Insignia color="purple">Ver lecciones gratis</Insignia>
-            </a>
-            
-            <h1 class="mt-4">La Esencia de la Geometría Vectorial</h1>
-            <hr class="hr-pink mt-3">
-            <p class="mt-3 lead">
-                Simplificando el aprendizaje a través de un enfoque visual, brindando una comprensión sencilla pero
-                completa de temas fundamentales para establecer bases sólidas en geometría vectorial.
-            </p>
+		  <div class="d-flex align-items-center mt-5 gap-5">
+				<a
+				  href="https://wa.me/573136566689"
+				  target="_blank"
+				  class="p-2 rounded-3 inscribir lead"
+				>
+				  Inscribete ahora!
+				</a>
 
-            <div class="d-flex align-items-center mt-5 gap-5">
-                <a href="https://wa.me/573136566689" target="_blank" class="p-2 rounded-3 inscribir lead">
-                    Inscribete ahora!
-                </a>
+				<a class="link-read-more" href="#info">
+				  <span class="hover-underline-animation lead">Leer mas</span>
+				  <i class="bi bi-arrow-right"></i>
+				</a>
+		  </div>
 
-                <a class="link-read-more" href="#info">
-                    <span class="hover-underline-animation lead">Leer mas</span>
-                    <i class="bi bi-arrow-right"></i>
-                </a>
+		  <div
+				class="mt-5 d-flex justify-content-end align-items-center gap-4 hero-footer py-4"
+		  >
+				<a class="" href="https://www.instagram.com/imlargo" target="_blank">
+				  <i class="bi bi-instagram text-white"></i>
+				</a>
+				<div class="vr"></div>
 
-            </div>
+				<a class="" href="https://github.com/imlargo" target="_blank">
+				  <i class="bi bi-github text-white"></i>
+				</a>
+				<div class="vr"></div>
 
-            <div class="mt-5 d-flex justify-content-end align-items-center gap-4 hero-footer py-4">
-                <a class="" href="https://www.instagram.com/imlargo" target="_blank">
-                    <i class="bi bi-instagram text-white"></i>
-                </a>
-                <div class="vr"></div>
-
-                <a class="" href="https://github.com/imlargo" target="_blank">
-                    <i class="bi bi-github text-white"></i>
-                </a>
-                <div class="vr"></div>
-
-                <a class="" href="https://www.linkedin.com/in/imlargo" target="_blank">
-                    <i class="bi bi-linkedin text-white"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+				<a class="" href="https://www.linkedin.com/in/imlargo" target="_blank">
+				  <i class="bi bi-linkedin text-white"></i>
+				</a>
+		  </div>
+		</div>
+  </div>
 </section>
 
-<style>
-    section {
-        background: linear-gradient(90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(213, 61, 255, 0.1));
-    }
+<style lang="scss">
+	section {
+		background: linear-gradient( 90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(213, 61, 255, 0.1));
+  	}
 
-    
-    /* Hero section */
-    .banner-container {
-        color: white;
-    }
+	/* Hero section */
+	.banner-container {
+		color: white;
 
-    .hero-footer {
-        color: white;
-    }
+		h1 {
+			font-weight: bolder;
+			font-size: 3rem;
+		}
 
-    .banner-container h1 {
-        font-weight: bolder;
-        font-size: 3rem;
-    }
+		hr {
+			width: 40%;
+		}
 
-    .banner-container hr {
-        width: 40%;
-    }
+		h3 {
+			font-size: 1.5rem;
+			margin-top: 2rem;
+		}
 
-    .banner-container h3 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-    }
+		p {
+			width: 50%;
+			text-align: justify;
+		}
+	}
 
-    .banner-container p {
-        width: 50%;
-        text-align: justify;
-    }
+	.hero-footer {
+		color: white;
+	}
 
-    
+	/* Read more */
+	.link-read-more {
+				border: none;
+		background: none;
+		cursor: pointer;
+		text-decoration: none;
 
-    /* Read more */
-    .link-read-more {
-        border: none;
-        background: none;
-        cursor: pointer;
-        text-decoration: none;
-    }
+		span {
+			padding-bottom: 7px;
+			padding-right: 15px;
+		}
 
-    .link-read-more span {
-        padding-bottom: 7px;
-        padding-right: 15px;
-    }
+		i {
+			transition: all 0.3s ease;
+			color: white;
+		}
 
-    .link-read-more i {
-        transition: all 0.3s ease;
-        color: white;
-    }
+		&:hover i {
+			margin-left: 0.3rem;
+		}
 
-    .link-read-more:hover i {
-        margin-left: 0.3rem;
-    }
+		&:active i {
+			margin-left: 0.3rem;
+		}
 
-    .link-read-more:active i {
-        margin-left: 0.3rem;
-    }
+		&:hover .hover-underline-animation:after {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		}
+	}
 
-    .link-read-more:hover .hover-underline-animation:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+	.inscribir {
+		display: inline-block;
 
-    
-    .inscribir {
-        display: inline-block;
+		border: 3px solid rgb(225, 198, 253);
 
-        border: 3px solid rgb(225, 198, 253);
+		position: relative;
+		background-color: transparent;
+		text-decoration: none;
+		color: white;
 
-        position: relative;
-        background-color: transparent;
-        text-decoration: none;
-        color: white;
+		overflow: hidden;
+		z-index: 1;
+		
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgb(225, 198, 253);
+			transform: translateX(-100%);
+			transition: all 0.3s;
+			z-index: -1;
+		}
 
-        overflow: hidden;
-        z-index: 1;
-    }
+		&:hover {
+			text-decoration: none;
+			color: black;
+		}
 
-    .inscribir::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(225, 198, 253);
-        transform: translateX(-100%);
-        transition: all .3s;
-        z-index: -1;
-    }
-
-    .inscribir:hover {
-        text-decoration: none;
-        color: black;
-    }
-
-    .inscribir:hover::before {
-        transform: translateX(0);
-    }
+		&:hover::before {
+			transform: translateX(0);
+		}
+	}
 </style>

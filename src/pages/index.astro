@@ -48,7 +48,7 @@ import SectionInscribir from "../components/Home/SectionInscribir.astro";
 </html>
 
 
-<style is:global>
+<style is:global lang="scss">
     @import "../styles/global.css";
     
     body h3 {
@@ -59,9 +59,8 @@ import SectionInscribir from "../components/Home/SectionInscribir.astro";
         position: relative;
         color: white;
         padding-bottom: 20px;
-    }
 
-    .hover-underline-animation:after {
+        &:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -72,6 +71,7 @@ import SectionInscribir from "../components/Home/SectionInscribir.astro";
         background-color: white;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
+    }
     }
 
     /* Other */
