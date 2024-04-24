@@ -1,15 +1,79 @@
-<a class="lesson container rounded-3" href="./lessons/lesson-${index}.html">
-    <div class="lesson-card-image">
-        <img src="${lesson.img}" alt="">
+---
+const { data } = Astro.props;
+
+import Insignia from "./Misc/Insignia.astro";
+
+const link = `lessons/lesson-${data.index}`;
+---
+
+<a class="container rounded-3" href={link}>
+    <div class="image-container">
+        <img src={data.image} alt="">
     </div>
-    <div class="lesson-card-info">
-        <span class="lesson-card-tittle">${lesson.tittle}</span>
-        <span class="lesson-card-description">
-        ${lesson.descripcion}
+    <div class="info-container">
+        <span class="title">{data.title}</span>
+        <span class="description">
+            {data.description}
         </span>
-        <span>
-            <span class="insignia-purple">Leccion ${index}</span>
-            <span class="insignia-green">Gratis</span>
-        </span>
+        <div class="d-flex gap-3">
+            <Insignia color="purple">Leccion {data.index}</Insignia>
+            <Insignia color="green">Gratis</Insignia>
+        </div>
     </div>
 </a>
+
+<style lang="scss">
+    
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 2rem;
+    line-height: normal;
+    text-decoration: none;
+    text-align: left;
+    color: var(--color-content);
+    transition: background 0.4s ease;
+
+    &:hover {
+        background: var(--lesson-card-hover);
+    }
+}
+
+.image-container {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-right: 20px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.2rem;
+    }
+}
+
+.info-container {
+    display: grid;
+    grid-gap: 20px;
+    flex-grow: 1;
+    word-break: break-word;
+}
+
+.title {
+    color: var(--color-content);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.description {
+    color: var(--color-content);
+}
+
+</style>

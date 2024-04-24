@@ -1,5 +1,10 @@
 ---
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import LessonCard from "../../components/LessonCard.astro";
+import "../../styles/global.css";
 
+const lecciones = await Astro.glob('../../content/lessons/*.mdx');
 ---
 
 <!DOCTYPE html>
@@ -20,29 +25,13 @@
 </head>
 
 
-<header class="my-background">
+<header>
 
-    <nav class="my-nav p-4 px-xl-5 d-flex justify-content-between align-content-center">
-        <div>
-            <h3 class="my-brand">
-                <i class="bi bi-code-slash"></i>
-                imlargo
-            </h3>
-        </div>
+    <div>
+    <Nav />
+        
+    </div>
 
-        <div>
-            <a class="my-nav-pill mx-4" href="../index.html">
-                <i class="bi bi-house"></i>
-                Inicio</a>
-            <a class="my-nav-pill mx-4" href="#">
-                <i class="bi bi-bookmarks"></i>
-                Lecciones</a>
-            <a class="my-nav-pill mx-4" href="./about.html">
-                <i class="bi bi-heart"></i>
-                Acerca de</a>
-        </div>
-
-    </nav>
 
 </header>
 
@@ -65,7 +54,14 @@
         <section class="container">
             <hr class="pink-hr">
 
-            <div id="contenedor-lecciones">
+            <div class="container-sm px-5">
+                {
+                    lecciones.map((leccion, index) => (
+                        <LessonCard data={leccion.frontmatter} key={index} />
+                    
+                    ))
+                }
+
             </div>
         </section>
 
@@ -75,30 +71,31 @@
         <br>
     </main>
 
-    <footer class="container d-flex flex-wrap justify-content-center align-items-center py-3 my-4 gap-4 my-footer">
-        <span class="">© Juan Carlos Largo</span>
-        <div class="vr"></div>
-
-        <span class=" mx-5">imlargo</span>
-        <div class="vr"></div>
-
-        <a class="" href="https://www.instagram.com/imlargo" target="_blank">
-            <i class="bi bi-instagram my-icon"></i>
-        </a>
-        <div class="vr"></div>
-
-        <a class="" href="https://github.com/imlargo" target="_blank">
-            <i class="bi bi-github my-icon"></i>
-        </a>
-        <div class="vr"></div>
-
-        <a class="" href="https://www.linkedin.com/in/imlargo" target="_blank">
-            <i class="bi bi-linkedin my-icon"></i>
-        </a>
-    </footer>
+    <Footer />
 
 
-    <i class="bi bi-moon theme-button" onclick="changeMode(this)"></i>
 </body>
 
 </html>
+
+<style lang="scss">
+
+    @keyframes animatedBackground {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 0 -100%;
+        }
+    }
+
+    header {
+        background: linear-gradient( 90deg, rgba(111, 3, 244, 0.1), rgba(204, 57, 164, 0.1), rgba(213, 61, 255, 0.1));
+        
+        div {
+            background-image: url('../assets/my-background.png');
+        background-repeat: repeat-y;
+        animation: animatedBackground 20s linear infinite;
+        }
+    }
+</style>
