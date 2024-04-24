@@ -41,20 +41,22 @@ const lecciones = await Astro.glob('../../content/lessons/*.mdx');
     <main>
         <br>
         <!-- Seccion headers -->
-        <section class="mb-5 mt-4">
+        <section class="mb-5 mt-4 text-center">
             <div class="d-flex justify-content-center align-items-center leccion-headers gap-3">
                 <h1 id="tittle">
                     <i class="bi bi-bookmarks"></i>
                     Lecciones
                 </h1>
             </div>
+            <span class="lead">Todas las lecciones del curso.</span>
         </section>
 
         <!-- Seccion contenido -->
         <section class="container">
-            <hr class="pink-hr">
+            
 
-            <div class="container-sm px-5">
+            <div class="container-sm px-5 ">
+                <hr class="pink-hr">
                 {
                     lecciones.map((leccion, index) => (
                         <LessonCard data={leccion.frontmatter} key={index} />

@@ -1,0 +1,37 @@
+---
+const { nextLesson } = Astro.props;
+
+const link = `/lessons/lesson-${nextLesson.index}`;
+---
+
+<section class="d-flex justify-content-center py-5">
+    <a href={link} class="d-flex align-items-center justify-content-between gap-2 p-3 rounded w-25">
+        <div>
+            <h5>{nextLesson.title}</h5>
+            <span class="lead">Siguiente leccion</span>
+    
+        </div>
+    
+        <i class="bi bi-arrow-right"></i>
+    </a>
+</section>
+
+
+<style lang="scss">
+    section {
+        background-color: #fafafa;
+    }
+
+    a {
+        box-shadow: 6px 6px 12px #f4e7ff, -6px -6px 12px #ffffff;
+
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            background-color: #f0d0ff;
+        }
+    }
+
+</style>

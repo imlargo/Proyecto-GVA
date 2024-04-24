@@ -5,8 +5,14 @@ import Footer from "../components/Footer.astro";
 import VideoSection from "../components/Lesson/VideoSection.astro";
 import LessonHeader from "../components/Lesson/LessonHeader.astro";
 import LessonContent from "../components/Lesson/LessonContent.astro";
+import LessonFooter from "../components/Lesson/LessonFooter.astro";
 
 const { frontmatter } = Astro.props;
+
+const lecciones = await Astro.glob('../content/lessons/*.mdx');
+const nextLessonData = lecciones.find((l) => {
+	return parseInt(l.frontmatter.index) === (parseInt(frontmatter.index) + 1)
+});
 
 ---
 
@@ -38,6 +44,8 @@ const { frontmatter } = Astro.props;
 
             <LessonContent><slot/></LessonContent>
 		</main>
+
+		<LessonFooter nextLesson={nextLessonData ? nextLessonData.frontmatter : lecciones[0].frontmatter} />
 		
 		<Footer />
 

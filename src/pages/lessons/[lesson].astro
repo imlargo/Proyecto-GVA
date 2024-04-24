@@ -10,6 +10,7 @@ export function getStaticPaths() {
 
 const { lesson } = Astro.params;
 
+
 const entry = await getEntry("lessons", lesson);
 const { Content } = await entry.render();
 
