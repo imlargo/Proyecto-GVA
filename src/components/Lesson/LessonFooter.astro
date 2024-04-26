@@ -4,7 +4,7 @@ const { nextLesson } = Astro.props;
 const link = `/lessons/lesson-${nextLesson.index}`;
 ---
 
-<section class="d-flex justify-content-center py-5">
+<section class="d-flex justify-content-center py-5 mt-5">
     <a href={link} class="d-flex align-items-center justify-content-between gap-2 p-3 rounded w-25">
         <div>
             <h5>{nextLesson.title}</h5>

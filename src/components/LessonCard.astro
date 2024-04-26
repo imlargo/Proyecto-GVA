@@ -6,7 +6,7 @@ import Insignia from "./Misc/Insignia.astro";
 const link = `lessons/lesson-${data.index}`;
 ---
 
-<a class="container rounded-3" href={link}>
+<a class="container rounded-3 mb-2" href={link}>
     <div class="image-container">
         <img src={data.image} alt="">
     </div>
@@ -15,7 +15,7 @@ const link = `lessons/lesson-${data.index}`;
         <span class="description fw-light">
             {data.description}
         </span>
-        <div class="d-flex gap-3">
+        <div class="d-flex gap-2">
             <Insignia color="purple">Leccion {data.index}</Insignia>
             <Insignia color="green">Gratis</Insignia>
         </div>
